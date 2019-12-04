@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+.filter a{
+	text-decoration: none;
+	color: #333333;
+}
+/*общие стили для элементов*/
+
+p{
+	font-family: 'Roboto';
+	font-size: 14px;
+}
+
+
+/****************/
+
+
+wrapper {
+	width: 1440px;
+	background: #ffffff;
+}
+
+/*стили header*/
+
+/*top header*/
+.contacts {
+	width: 100%;
+	background: #333333;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.email {
+	margin-left: 70px;
+}
+
+.phones {
+	margin-right: 70px;
+}
+
+
+header span {
+	font-family: 'Roboto';
+	font-size: 18px;
+	color: #ffffff;
+	margin-left: 10px;
+
+}
+/*******************/
+
+
+/*стили mainHeader*/
+
+.mainHeader {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 70px 0 70px;
+}
+
+.searchAndButtons {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+
+/*Поиск*/
+
+.search form {
+	position: relative;
+	width: 291px;
+	height: 46px;
+	margin: 0 auto;
+}
+
+.search input,
+button {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+}
+
+.search input {
+	width: 100%;
+	height: 46px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding-left: 15px;
+}
+
+.search button {
+	width: 56px;
+	height: 36px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border-radius: 4px;
+	background: #FFDB4D;
+	cursor: pointer;
+}
+
+.search button:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #666666;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/***************/
+
+
+/*иконки избранного, корзины, кнопка обратной связи*/
+.favourites {
+	background: #ffffff;
+	margin: 0 20px 0 40px;
+	cursor: pointer;
+}
+
+.busket{
+	background: #ffffff;
+	margin-right:10px;
+	cursor: pointer;
+	
+}
+
+.searchAndButtons span{
+	color: #333333;
+	margin: 0;
+}
+
+.feedback{
+	background: #ffffff;
+	margin-left:40px;
+	cursor: pointer;
+}
+/***************/
+
+/*стили для фильтра*/
+
+.cd-main-content{
+	margin-top: 204px;
+}
+.cd-filter{
+	margin-top: 37px;
+}
+.offer__filter-title{
+	color: #666666;
+	font-size: 14px;
+}
+
+.form-control {
+	width: 64px;
+	height: calc(24px + .75rem + 2px);
+}
+
+.offer__form-label{
+	color: #333333;
+	font-size: 16px;
+}
+
+input[type="checkbox"] { display: none; }
+input[type="checkbox"] + label {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	width: 114px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+input[type=checkbox] + label:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	border: 1px solid #000;
+	border-radius: 3px;
+
+}
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+
+	text-align: center;
+	line-height: 15px;
+	background-color:#FFDB4D;
+	border: none;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+footer{
+	width: 100%;
+	height: 60px;
+	background: #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

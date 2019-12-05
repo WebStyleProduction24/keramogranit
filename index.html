@@ -63,20 +63,23 @@
 				<div class="cd-tab-filter-wrapper">
 					<div class="cd-tab-filter">
 						<ul class="cd-filters   d-flex">
-							<li class="filter"><a class="selected" href="#0" data-type="all">X</a></li>
+							<li class="filter"><a class="selected" href="#0" data-type="all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg></a></li>
 							<li class="filter"><a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a></li>
 						</ul> <!-- cd-filters -->
 					</div> <!-- cd-tab-filter -->
 				</div> <!-- cd-tab-filter-wrapper -->
 				<div class="cd-filter">
-					<form>
+					<form id="enter">
 						<h4 class="offer__filter-title">Цена</h4>
 						<div class="form-row d-flex">
 							<div class="col">
 								<label class="offer__form-label">От</label>
 								<div class="form__list-item d-flex">
 									<input type="text" class="form-control" placeholder="0">
-									<p class="offer__form-text mt-2 ml-1">р/м2</p>
+									<p class="offer__form-text mr">р/м2</p>
 								</div>
 							</div>
 							<div class="col">
@@ -148,7 +151,9 @@
 									<label class="checkbox-label" for="checkbox9">Для улицы</label>
 								</li>
 							</ul> <!-- cd-filter-content -->
-						</div> <!-- cd-filter-block -->
+						</div>
+					</form>
+				</div>
 			</aside>
 			<!--	для контента	-->
 			<div class="main-content">

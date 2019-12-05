@@ -265,7 +265,7 @@ main {
 }
 
 .main-container aside {
-	width: 200px;
+	min-width: 200px;
 	height: 674px;
 	margin-right: 20px;
 	background: #000;

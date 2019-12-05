@@ -58,7 +58,7 @@ span{
 /****************/
 
 
-wrapper {
+.wrapper {
 	width: 1440px;
 	background: #ffffff;
 }
@@ -204,16 +204,23 @@ button {
 }
 
 .form-control {
-	width: 64px;
+	width: 50px;
 	height: calc(11px + .75rem + 2px);
     border-radius: 4px;
     font-size: 16px;
+    margin-right: 9px;
+}
+
+.mr{
+    margin-right: 10px;
 }
 
 .offer__form-label {
 	color: #333333;
 	font-size: 16px;
 }
+
+
 /*input for checkbox*/
 input[type="checkbox"] {
 	display: none;

@@ -30,6 +30,7 @@ button {
 .filter a {
 	text-decoration: none;
 	color: #333333;
+    margin-right: 10px;
 }
 
 /*общие стили для элементов*/
@@ -204,14 +205,16 @@ button {
 
 .form-control {
 	width: 64px;
-	height: calc(24px + .75rem + 2px);
+	height: calc(11px + .75rem + 2px);
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .offer__form-label {
 	color: #333333;
 	font-size: 16px;
 }
-
+/*input for checkbox*/
 input[type="checkbox"] {
 	display: none;
 }
@@ -220,7 +223,7 @@ input[type="checkbox"] + label {
 	display: block;
 	position: relative;
 	padding-left: 35px;
-	width: 114px;
+
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -257,7 +260,7 @@ input[type=checkbox]:checked + label:before {
 main {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+
 }
 
 .main-container {

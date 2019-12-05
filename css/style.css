@@ -17,21 +17,7 @@ li {
 	margin: 0;
 }
 
-div,
-p,
-form,
-input,
-a,
-span,
-button {
-	box-sizing: border-box;
-}
 
-.filter a {
-	text-decoration: none;
-	color: #333333;
-    margin-right: 10px;
-}
 
 /*общие стили для элементов*/
 
@@ -190,18 +176,57 @@ button {
 /***************/
 
 /*стили для фильтра*/
+.form__list-item{
+    margin-top: 5px;
+}
 
+.offer__form-text{
+    margin-top: 3px;
+}
+.cd-filter-block{
+    margin-top: 32px;
+}
+
+.mr__filter{
+    margin-right: 150px;
+}
+.mr__filter-middle{
+    margin-right: 130px;
+}
+
+.mr__filter-end{
+    margin-right: 107px;
+}
+.svg__arrow {
+    margin-top: -2px;
+}
+.offer__checkbox-item{
+    margin-bottom: 10px;
+}
+.filter a {
+    text-decoration: none;
+    color: #333333;
+    margin-right: 10px;
+    font-weight: 600;
+    margin-left: 11px;
+}
+.offer__form-line{
+    border-bottom: 1px solid  #EEEEEE;
+    width: 200px;
+    margin-top: 20px;
+}
 .cd-main-content {
 	margin-top: 204px;
 }
 
 .cd-filter {
-	margin-top: 37px;
+	margin-top: 11px;
 }
 
 .offer__filter-title {
 	color: #666666;
 	font-size: 14px;
+    margin-bottom: 19px;
 }
 
 .form-control {
@@ -327,6 +352,7 @@ main {
 	border: 1px solid #e5e5e5;
 	margin-right: 20px;
 	margin-top: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -359,11 +385,12 @@ hr{
 
 
 
-footer {
+.footer {
 	width: 100%;
 	height: 60px;
 	background: #eeeeee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    margin-top: 60px;
 }

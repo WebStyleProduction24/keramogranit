@@ -51,6 +51,9 @@ span{
 }
 
 
+.d-flex{
+	display: flex;
+}
 /****************/
 
 
@@ -239,15 +242,15 @@ input[type=checkbox] + label:before {
 }
 
 input[type=checkbox]:checked + label:before {
-	content: "\2713";
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	content: "";
+
 	font-size: 15px;
 
 	text-align: center;
 	line-height: 15px;
-	background-color: #FFDB4D;
+	background:url("../img/Checkbox_Active.svg");
 	border: none;
-	color: #000;
+
 }
 
 
@@ -268,7 +271,7 @@ main {
 	width: 200px;
 	height: 674px;
 	margin-right: 20px;
-	background: #000;
+
 	margin-top: 51px;
 	/*бэк для наглядности, убрать*/
 }

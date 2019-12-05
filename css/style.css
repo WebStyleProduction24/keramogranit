@@ -6,24 +6,48 @@
 	box-sizing: border-box;
 }
 
-ul, li {
+body, html{
+	background: #ffffff;
+}
+
+ul,
+li {
 	display: block;
 	padding: 0;
 	margin: 0;
 }
-div, p, form, input, a, span, button {
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
 	box-sizing: border-box;
 }
 
-.filter a{
+.filter a {
 	text-decoration: none;
 	color: #333333;
 }
+
 /*общие стили для элементов*/
 
-p{
+p {
 	font-family: 'Roboto';
 	font-size: 14px;
+}
+
+h2 {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 56px;
+}
+
+span{
+	font-family: 'Roboto';
+
 }
 
 
@@ -63,6 +87,7 @@ header span {
 	margin-left: 10px;
 
 }
+
 /*******************/
 
 
@@ -139,34 +164,37 @@ button {
 	cursor: pointer;
 }
 
-.busket{
+.busket {
 	background: #ffffff;
-	margin-right:10px;
+	margin-right: 10px;
 	cursor: pointer;
-	
+
 }
 
-.searchAndButtons span{
+.searchAndButtons span {
 	color: #333333;
 	margin: 0;
 }
 
-.feedback{
+.feedback {
 	background: #ffffff;
-	margin-left:40px;
+	margin-left: 40px;
 	cursor: pointer;
 }
+
 /***************/
 
 /*стили для фильтра*/
 
-.cd-main-content{
+.cd-main-content {
 	margin-top: 204px;
 }
-.cd-filter{
+
+.cd-filter {
 	margin-top: 37px;
 }
-.offer__filter-title{
+
+.offer__filter-title {
 	color: #666666;
 	font-size: 14px;
 }
@@ -176,12 +204,15 @@ button {
 	height: calc(24px + .75rem + 2px);
 }
 
-.offer__form-label{
+.offer__form-label {
 	color: #333333;
 	font-size: 16px;
 }
 
-input[type="checkbox"] { display: none; }
+input[type="checkbox"] {
+	display: none;
+}
+
 input[type="checkbox"] + label {
 	display: block;
 	position: relative;
@@ -192,6 +223,7 @@ input[type="checkbox"] + label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
+
 input[type=checkbox] + label:before {
 	content: "";
 	display: inline-block;
@@ -205,6 +237,7 @@ input[type=checkbox] + label:before {
 	border-radius: 3px;
 
 }
+
 input[type=checkbox]:checked + label:before {
 	content: "\2713";
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
@@ -212,19 +245,107 @@ input[type=checkbox]:checked + label:before {
 
 	text-align: center;
 	line-height: 15px;
-	background-color:#FFDB4D;
+	background-color: #FFDB4D;
 	border: none;
 	color: #000;
 }
 
 
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.main-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 0 70px 0 70px;
+}
+
+.main-container aside {
+	width: 200px;
+	height: 674px;
+	margin-right: 20px;
+	background: #000;
+	margin-top: 51px;
+	/*бэк для наглядности, убрать*/
+}
+
+
+.main-content {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	text-align: left;
+
+}
+
+
+.sort span{
+	color:#999999;
+	margin-right: 24px;
+	font-weight: bold;
+}
+
+.sort .main-filter-span{
+	color:#666666;
+	margin-right: 34px;
+	
+}
+
+.main-filter-span i{
+	color:#333333;
+}
+
+.goods{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.product_icon{
+	width: 200px;
+	height: 379px;
+	border: 1px solid #e5e5e5;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+
+.product_icon p{
+	font-size: 16px;
+	margin: 0 10px 0 10px;
+}
+
+.product_icon img{
+	padding: 10px;
+}
+
+
+.product_icon_price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 10px;
+	
+}
+
+hr{
+	margin: 0 10px 10px 10px;
+	color:#eeeeee;
+}
+
+.art{
+	text-align: center;
+}
 
 
 
-
-
-
-footer{
+footer {
 	width: 100%;
 	height: 60px;
 	background: #eeeeee;

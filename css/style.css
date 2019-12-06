@@ -246,6 +246,30 @@ button {
 	font-size: 16px;
 }
 
+
+/*стили для js фильтра */
+
+
+#close__color{
+	display: block;
+}
+
+#close__format{
+	display: block;
+}
+
+#close__way{
+	display: block;
+}
+
+#close__area{
+	display: block;
+}
+
+#close__style{
+	display: block;
+}
+
 input[type="text"]:focus{outline: 1px solid #FFDB4D;}
 /*input for checkbox*/
 input[type="checkbox"] {
@@ -279,19 +303,28 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
 	content: "";
-
 	font-size: 15px;
-
 	text-align: center;
 	line-height: 15px;
 	background:url("../img/Checkbox_Active.svg");
 	border: none;
+}
+.offer__filter{
 
 }
 
+.mr__filter-bottom{
+	margin-right:100px;
+}
+
+.mr__filter-foot{
+	margin-right: 143px;
+}
 
 
 /*стили для + -*/
+
+
 .quantity input {
     display: inline-block;
     width: 40px;
@@ -339,7 +372,6 @@ main {
 	min-width: 200px;
 	height: 674px;
 	margin-right: 20px;
-
 	margin-top: 51px;
 	/*бэк для наглядности, убрать*/
 }
@@ -351,6 +383,7 @@ main {
 	justify-content: flex-start;
 	flex-direction: column;
 	text-align: left;
+
 
 }
 

@@ -17,15 +17,6 @@ li {
 	margin: 0;
 }
 
-div,
-p,
-form,
-input,
-a,
-span,
-button {
-	box-sizing: border-box;
-}
 
 .filter a {
 	text-decoration: none;

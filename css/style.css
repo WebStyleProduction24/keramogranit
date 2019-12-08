@@ -60,6 +60,9 @@ span {
 }
 
 /*стили header*/
+header {
+	position: relative;
+}
 
 /*top header*/
 .contacts {
@@ -93,7 +96,7 @@ header span {
 
 /*стили mainHeader*/
 
-main{
+main {
 	margin-bottom: 60px;
 }
 
@@ -216,10 +219,10 @@ button {
 	margin: 0;
 }
 
-.feedback {
+#feedback {
 	width: 192px;
 	height: 44px;
-	background: #ffffff;
+	background-color: #ffffff;
 	margin-left: 40px;
 	cursor: pointer;
 	border: 2px solid #FFDB4D;
@@ -227,10 +230,16 @@ button {
 	background-image: url(../img/telephone14px.png);
 	background-repeat: no-repeat;
 	background-position: 10% 50%;
-	
+
 }
 
-.feedback span{
+
+#feedback:hover {
+	border: 2px solid #EFC622;
+	background-color: #EFC622;
+}
+
+#feedback span {
 	font-size: 16px;
 	margin-left: 30px;
 }
@@ -269,9 +278,16 @@ button {
 	font-size: 16px;
 }
 
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*
 input[type="text"]:focus {
 	outline: 1px solid #FFDB4D;
 }
+*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*input for checkbox*/
 input[type="checkbox"] {
@@ -332,7 +348,7 @@ main {
 .main-container aside {
 	min-width: 200px;
 	height: 674px;
-	
+
 	margin-top: 51px;
 	/*бэк для наглядности, убрать*/
 }
@@ -348,7 +364,7 @@ main {
 }
 
 
-.sort{
+.sort {
 	display: flex;
 	flex-direction: row;
 	margin-left: 20px;
@@ -378,7 +394,7 @@ main {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	flex-direction: row;
-/*	max-width: 1300px;*/
+	/*	max-width: 1300px;*/
 }
 
 .product_icon {
@@ -387,7 +403,7 @@ main {
 	border: 1px solid #e5e5e5;
 	margin-left: 20px;
 	margin-top: 20px;
-	box-shadow: 0 0 3px rgba(51,51,51,0.5)
+	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
 
 
@@ -418,7 +434,7 @@ main {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*корзина и избранное в товарах*/
-.product_icon_price_icons_block{
+.product_icon_price_icons_block {
 	display: flex;
 	flex-direction: row;
 }
@@ -433,7 +449,7 @@ main {
 
 }
 
-.iconBusket{
+.iconBusket {
 	height: 16px;
 	width: 16px;
 	background-image: url(../img/bucketInactive16px.png);
@@ -442,7 +458,7 @@ main {
 }
 
 
-.iconHeart{
+.iconHeart {
 	height: 16px;
 	width: 16px;
 	background-image: url(../img/HeartInactive16px.png);
@@ -453,12 +469,12 @@ main {
 
 
 
-.iconBusket:active{
+.iconBusket:active {
 	background-image: url(../img/bucketActive16px.png);
 
 }
 
-.iconHeart:active{
+.iconHeart:active {
 	background-image: url(../img/HeartActive16px.png);
 
 }
@@ -466,7 +482,7 @@ main {
 /*************************************************/
 
 
-hr {
+.goods hr {
 	margin: 0 10px 10px 10px;
 	color: #eeeeee;
 }
@@ -484,4 +500,95 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+
+
+/*стили модального окна*/
+
+
+
+.popup {
+	position: absolute;
+	width: 310px;
+	height: 334px;
+	right: 70px;
+	top: 100%;
+	background: #EEEEEE;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+.popupShow{
+	display: block;
+}
+
+
+.popup p {
+	color: #666666;
+}
+
+.popup p a {
+	color: #333333;
+}
+
+.popup_container {
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.popup hr {
+	margin: 20px 0;
+	color: #999999;
+}
+
+.close_container {
+	display: flex;
+	justify-content: flex-end;
+	margin: 13.5px 0 8px 0;
+}
+
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top:
+
+}
+
+.popup input {
+	width: 280px;
+	height: 46px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #999999;
+
+}
+
+.popup input[type='text'],
+input[type='phone'] {
+	padding-left: 20px;
+}
+
+
+.modalBut {
+	background-color: #FFDB4D;
+	width: 218px;
+	height: 44px;
+	border: none !important;
+	border-radius: 50px;
+	font-size: 16px;
+	font-family: "Roboto";
+	color: #333333;
+	line-height: 43px;
+	text-align: center;
+	transition: 0.35s ease-in-out;
+
 }

@@ -12,7 +12,7 @@
 
 <body>
 
-	<wrapper>
+	
 
 		<header>
 			<div class="contacts">
@@ -26,7 +26,7 @@
 					<span>+7 (495) 22-55-700</span><span>+7 (800) 000-00-00</span></div>
 			</div>
 			<div class="mainHeader">
-				<div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+				<div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
 				<div class="searchAndButtons">
 					<div class="search">
 						<form action="" method="get">
@@ -34,8 +34,8 @@
 							<button type="submit"></button>
 						</form>
 					</div>
-					<button class="favourites"><a href="#"></a></button>
-					<button class="busket"><a href="#"></a></button>
+					<a href="favourites.html"><button class="favourites"></button></a>
+					<a href=""><button class="busket"></button></a>
 					<span>24000р</span>
 
 					<button id="feedback"><span>Заказать звонок</span></button>
@@ -67,102 +67,168 @@
 		<main>
 			<h2>Избранное</h2>
 			<div class="main-container">
-				<aside>
-					<div class="cd-tab-filter-wrapper">
-						<div class="cd-tab-filter">
-							<ul class="cd-filters   d-flex">
-								<li class="filter"><a class="selected" href="#0" data-type="all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-											<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-										</svg></a></li>
-								<li class="filter"><a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a></li>
-							</ul> <!-- cd-filters -->
-						</div> <!-- cd-tab-filter -->
-					</div> <!-- cd-tab-filter-wrapper -->
-					<div class="cd-filter">
-						<form id="enter">
-							<h4 class="offer__filter-title">Цена</h4>
-							<div class="form-row d-flex">
-								<div class="col">
-									<label class="offer__form-label">От</label>
-									<div class="form__list-item d-flex">
-										<input type="text" class="form-control" placeholder="0">
-										<p class="offer__form-text mr">р/м2</p>
-									</div>
-								</div>
-								<div class="col">
-									<label class="offer__form-label">До</label>
-									<div class="form__list-item d-flex">
-										<input type="text" class="form-control" placeholder="0">
-										<p class="offer__form-text mt-2 ml-1">р/м2</p>
-									</div>
-								</div>
-							</div>
-							<div class="cd-filter-block">
-								<h4 class="offer__filter-title">Цвет</h4>
-
-								<ul class="cd-filter-content cd-filters list">
-									<li>
-										<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-										<label class="checkbox-label" for="checkbox1">Красный</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-										<label class="checkbox-label" for="checkbox2">Красный</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-										<label class="checkbox-label" for="checkbox3">Красный</label>
-									</li>
-								</ul> <!-- cd-filter-content -->
-							</div> <!-- cd-filter-block -->
-
-							<div class="cd-filter-block">
-								<h4 class="offer__filter-title">Формат</h4>
-
-								<ul class="cd-filter-content cd-filters list">
-									<li>
-										<input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
-										<label class="checkbox-label" for="checkbox4">20х60</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
-										<label class="checkbox-label" for="checkbox5">30х20</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check6" type="checkbox" id="checkbox6">
-										<label class="checkbox-label" for="checkbox6">30х30</label>
-									</li>
-								</ul> <!-- cd-filter-content -->
-							</div> <!-- cd-filter-block -->
-
-							<div class="cd-filter-block">
-								<h4 class="offer__filter-title">Назначения</h4>
-
-								<ul class="cd-filter-content cd-filters list">
-									<li>
-										<input class="filter" data-filter=".check7" type="checkbox" id="checkbox7">
-										<label class="checkbox-label" for="checkbox7">Для окон</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check8" type="checkbox" id="checkbox8">
-										<label class="checkbox-label" for="checkbox8">Для стен</label>
-									</li>
-
-									<li>
-										<input class="filter" data-filter=".check9" type="checkbox" id="checkbox9">
-										<label class="checkbox-label" for="checkbox9">Для улицы</label>
-									</li>
-								</ul> <!-- cd-filter-content -->
-							</div>
-						</form>
+				<aside class="offer__filter">
+				<div class="cd-tab-filter-wrapper">
+					<div class="cd-tab-filter">
+						<ul class="cd-filters   d-flex">
+							<li class="filter"><a class="selected" href="#0" data-type="all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg></a></li>
+							<li class="filter"><a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a></li>
+						</ul>
 					</div>
-				</aside>
+				</div>
+				<div class="offer__form-line"></div>
+				<div class="cd-filter">
+					<form id="enter">
+						<h4 class="offer__filter-title">Цена</h4>
+						<div class="form-row d-flex">
+							<div class="col">
+								<label class="offer__form-label">От</label>
+								<div class="form__list-item d-flex">
+									<input type="text" class="form-control" placeholder="0">
+									<p class="offer__form-text mr">р/м2</p>
+								</div>
+							</div>
+							<div class="col">
+								<label class="offer__form-label">До</label>
+								<div class="form__list-item d-flex">
+									<input type="text" class="form-control" placeholder="0">
+									<p class="offer__form-text mt-2 ml-1">р/м2</p>
+								</div>
+							</div>
+						</div>
+						<div class="cd-filter-block" >
+							<div class="cd-filter-block-title d-flex" >
+								<h4 class="offer__filter-title mr__filter">Цвет</h4>
+								<a  class="svg__arrow" id="open__color">
+									<img src="img/arrowUp.png" alt="" class="arrow">
+								</a>
+							</div>
+							<ul class="cd-filter-content cd-filters list" id="close__color">
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+									<label class="checkbox-label" for="checkbox1">Красный</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+									<label class="checkbox-label" for="checkbox2">Красный</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+									<label class="checkbox-label" for="checkbox3">Красный</label>
+								</li>
+							</ul>
+						</div>
+						<div class="offer__form-line"></div>
+						<div class="cd-filter-block">
+							<div class="cd-filter-block-title d-flex">
+								<h4 class="offer__filter-title mr__filter-middle">Формат</h4>
+								<a class="svg__arrow-format" id="open__format">
+									<img src="img/arrowUp.png" alt="" class="arrow">
+								</a>
+							</div>
+
+							<ul class="cd-filter-content cd-filters list" id="close__format">
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
+									<label class="checkbox-label" for="checkbox4">20х60</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
+									<label class="checkbox-label" for="checkbox5">30х20</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check6" type="checkbox" id="checkbox6">
+									<label class="checkbox-label" for="checkbox6">30х30</label>
+								</li>
+							</ul>
+						</div>
+						<div class="offer__form-line"></div>
+						<div class="cd-filter-block">
+							<div class="cd-filter-block-title d-flex">
+								<h4 class="offer__filter-title mr__filter-end">Назначение</h4>
+								<a class="svg__arrow-way" id="open__way">
+									<img src="img/arrowUp.png" alt="" class="arrow">
+								</a>
+							</div>
+							<ul class="cd-filter-content cd-filters list" id="close__way">
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check7" type="checkbox" id="checkbox7">
+									<label class="checkbox-label" for="checkbox7">Для окон</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check8" type="checkbox" id="checkbox8">
+									<label class="checkbox-label" for="checkbox8">Для стен</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check9" type="checkbox" id="checkbox9">
+									<label class="checkbox-label" for="checkbox9">Для улицы</label>
+								</li>
+							</ul> <!-- cd-filter-content -->
+						</div>
+						<div class="offer__form-line"></div>
+						<div class="cd-filter-block">
+							<div class="cd-filter-block-title d-flex">
+								<h4 class="offer__filter-title mr__filter-bottom">Поверхность</h4>
+								<a class="svg__arrow-area" id="open__area">
+									<img src="img/arrowUp.png" alt="" class="arrow">
+								</a>
+							</div>
+
+							<ul class="cd-filter-content cd-filters list" id="close__area">
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check10" type="checkbox" id="checkbox10">
+									<label class="checkbox-label" for="checkbox10">Для окон</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check11" type="checkbox" id="checkbox11">
+									<label class="checkbox-label" for="checkbox11">Для стен</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check12" type="checkbox" id="checkbox12">
+									<label class="checkbox-label" for="checkbox12">Для улицы</label>
+								</li>
+							</ul> <!-- cd-filter-content -->
+						</div>
+						<div class="offer__form-line"></div>
+						<div class="cd-filter-block">
+							<div class="cd-filter-block-title d-flex">
+								<h4 class="offer__filter-title mr__filter-foot">Стиль</h4>
+								<a class="svg__arrow-style" id="open__style">
+									<img src="img/arrowUp.png" alt="" class="arrow">
+								</a>
+							</div>
+
+							<ul class="cd-filter-content cd-filters list" id="close__style">
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check13" type="checkbox" id="checkbox13">
+									<label class="checkbox-label" for="checkbox13">Для окон</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check14" type="checkbox" id="checkbox14">
+									<label class="checkbox-label" for="checkbox14">Для стен</label>
+								</li>
+
+								<li class="offer__checkbox-item">
+									<input class="filter" data-filter=".check15" type="checkbox" id="checkbox15">
+									<label class="checkbox-label" for="checkbox15">Для улицы</label>
+								</li>
+							</ul> <!-- cd-filter-content -->
+						</div>
+					</form>
+				</div>
+			</aside>
 				<!--	для контента	-->
 				<div class="main-content">
 					<div class="sort">
@@ -311,15 +377,65 @@
 					</div>
 				</div>
 			</div>
+			<div style="display: none;">
+			<div class="box-modal" id="exampleModal">
+				<div class="box-modal_close arcticmodal-close">закрыть</div>
+				<div class="arctic__goods-list">
+					<div class="arctic__goods-slider">
+
+					</div>
+					<div class="arctic__goods-info">
+						<div class="arctic__goods-art"><p>Артикул <span>119608</span></p></div>
+						<p class="arctic__goods-name">
+							Керамогранит Estima Standard ST 07 матовый 300х300 мм
+							io
+						</p>
+						<button class="arctic__goods-btn">
+							В наличии
+						</button>
+						<p class="arctic__goods-quantity">
+							Кол-во коробок
+						</p>
+						<form method='POST' action='#'>
+							<div class="quantity">
+								<input type='button' value='-' class='minus' field='quantity' />
+								<input type='text' name='quantity' value='0' class='qty' />
+								<input type='button' value='+' class='plus' field='quantity' />
+							</div>
+						</form>
+						<div class="arctic__goods-warring">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="8" cy="8" r="7" stroke="#666666" stroke-width="2"/>
+								<rect x="7" y="4" width="2" height="5" rx="1" fill="#666666"/>
+								<rect x="7" y="10" width="2" height="2" rx="1" fill="#666666"/>
+							</svg>
+							<p class="arctic__goods-warring-text">
+								Товар продается кратно коробкам
+							</p>
+						</div>
+						<div class="arctic__goods-payment">
+							<span class="arctic__goods-money">
+								650
+							</span>
+							<p class="arctic__goods-money-m2">
+								/м2
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
 		</main>
 		<footer>
 			<p>2019, Универдом</p>
 		</footer>
 
-	</wrapper>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/formScript.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

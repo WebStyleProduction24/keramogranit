@@ -54,10 +54,7 @@ span {
 /****************/
 
 
-.wrapper {
-	width: 1440px;
-	background: #ffffff;
-}
+
 
 /*стили header*/
 header {
@@ -98,6 +95,7 @@ header span {
 
 main {
 	margin-bottom: 60px;
+
 }
 
 .mainHeader {
@@ -247,18 +245,64 @@ button {
 /***************/
 
 /*стили для фильтра*/
+.form__list-item {
+	margin-top: 5px;
+}
+
+.offer__form-text {
+	margin-top: 3px;
+}
+
+.cd-filter-block {
+	margin-top: 32px;
+}
+
+.mr__filter {
+	margin-right: 150px;
+}
+
+.mr__filter-middle {
+	margin-right: 130px;
+}
+
+.mr__filter-end {
+	margin-right: 107px;
+}
+
+.svg__arrow {
+	margin-top: -2px;
+}
+
+.offer__checkbox-item {
+	margin-bottom: 10px;
+}
+
+.filter a {
+	text-decoration: none;
+	color: #333333;
+	margin-right: 10px;
+	font-weight: 600;
+	margin-left: 11px;
+}
+
+.offer__form-line {
+	border-bottom: 1px solid #EEEEEE;
+	width: 200px;
+	margin-top: 20px;
+}
 
 .cd-main-content {
 	margin-top: 204px;
 }
 
 .cd-filter {
-	margin-top: 37px;
+	margin-top: 11px;
 }
 
 .offer__filter-title {
 	color: #666666;
 	font-size: 14px;
+	margin-bottom: 19px;
 }
 
 .form-control {
@@ -267,6 +311,7 @@ button {
 	border-radius: 4px;
 	font-size: 16px;
 	margin-right: 9px;
+	border: 1px solid #999999;
 }
 
 .mr {
@@ -279,17 +324,35 @@ button {
 }
 
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*стили для js фильтра начало*/
 
-/*
-input[type="text"]:focus {
-	outline: 1px solid #FFDB4D;
+
+#close__color {
+	display: block;
 }
-*/
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#close__format {
+	display: block;
+}
 
-/*input for checkbox*/
+#close__way {
+	display: block;
+}
+
+#close__area {
+	display: block;
+}
+
+#close__style {
+	display: block;
+}
+
+/*стили для js фильтра конец*/
+input[type="text"]:focus,input[type="phone"]:focus  {
+	border: 1px solid #FFDB4D;
+}
+
+/*input for checkbox начало*/
 input[type="checkbox"] {
 	display: none;
 }
@@ -298,7 +361,6 @@ input[type="checkbox"] + label {
 	display: block;
 	position: relative;
 	padding-left: 35px;
-
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -321,15 +383,59 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
 	content: "";
-
 	font-size: 15px;
-
 	text-align: center;
 	line-height: 15px;
 	background: url("../img/Checkbox_Active.svg");
 	border: none;
-
 }
+
+/*input for checkbox конец*/
+
+.mr__filter-bottom {
+	margin-right: 100px;
+}
+
+.mr__filter-foot {
+	margin-right: 143px;
+}
+
+
+/*стили для + - начало*/
+
+
+.quantity input {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-right: 1px solid #ccc;
+}
+
+.quantity input:first-child {
+	background: #E5E5E5;
+	border-radius: 6px 0px 0px 6px;
+	margin-right: -5px;
+}
+
+.quantity input:last-child {
+	background: #E5E5E5;
+	border-right: 1px solid #ccc;
+	border-radius: 0px 6px 6px 0px;
+	margin-left: -6px;
+}
+
+input[type="button"] {
+	cursor: pointer
+}
+
+/*стили для + - конец*/
+
 
 
 main {
@@ -343,14 +449,14 @@ main {
 	justify-content: space-between;
 	flex-direction: row;
 	margin: 0 70px 0 70px;
+
 }
 
 .main-container aside {
 	min-width: 200px;
-	height: 674px;
-
+	height: auto;
 	margin-top: 51px;
-	/*бэк для наглядности, убрать*/
+	
 }
 
 
@@ -362,7 +468,6 @@ main {
 	text-align: left;
 
 }
-
 
 .sort {
 	display: flex;
@@ -518,10 +623,10 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+
 }
 
-.popupShow{
+.popupShow {
 	display: block;
 }
 

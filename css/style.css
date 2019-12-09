@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
 * {
 	margin: 0;
@@ -28,7 +28,7 @@ li {
 
 /*общие стили для элементов*/
 
-p {
+p, span {
 	font-family: 'Roboto';
 	font-size: 14px;
 }
@@ -42,10 +42,6 @@ h2 {
 	margin-top: 67px;
 }
 
-span {
-	font-family: 'Roboto';
-
-}
 
 
 .d-flex {
@@ -410,32 +406,73 @@ input[type=checkbox]:checked + label:before {
 
 .quantity input {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 43px;
+	height: 28px;
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	background: #fff;
-	border: 1px solid #ccc;
-	border-right: none;
-	border-right: 1px solid #ccc;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+
 }
 
+/*цвета кнопок начало*/
 .quantity input:first-child {
 	background: #E5E5E5;
 	border-radius: 6px 0px 0px 6px;
 	margin-right: -5px;
+	background: #eeeeee;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
 }
+
+.quantity input:first-child:active {
+
+	background: #FFDB4D;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
 
 .quantity input:last-child {
 	background: #E5E5E5;
 	border-right: 1px solid #ccc;
 	border-radius: 0px 6px 6px 0px;
 	margin-left: -6px;
+	background-color: #eeeeee;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
+.quantity input:last-child:active {
+
+	background-color: #FFDB4D;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*цвета кнопок конец*/
+
+
 input[type="button"] {
-	cursor: pointer
+	cursor: pointer;
+}
+
+
+.quantity[type='text'] {
+	font-size: 16px;
+	color: #333333;
+}
+
+.qty {
+	width: 95px !important;
+
 }
 
 /*стили для + - конец*/
@@ -600,7 +637,15 @@ main {
 	text-align: center;
 }
 
+.art p {
+	font-size: 14px;
+	color: #999999;
+}
 
+.art p > span {
+	color: #666666;
+	font-weight: 500;
+}
 
 footer {
 	width: 100%;
@@ -627,6 +672,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	z-index: 1000;
 
 }
 
@@ -719,28 +765,28 @@ input[type='phone'] {
 	left: 25%;
 }
 
-.artic-goods-container{
+.artic-goods-container {
 	display: flex;
 	flex-direction: row;
 }
 
 
-.artic__goods-img img{
+.artic__goods-img img {
 	width: 310px;
 	height: 310px;
 }
 
-.arctic__goods-list{
+.arctic__goods-list {
 	display: flex;
 	flex-direction: column;
 }
 
-.arctic__property{
+.arctic__property {
 	display: flex;
 	flex-direction: row;
 }
 
-.arctic__property-column{
+.arctic__property-column {
 	display: flex;
 	justify-content: space-between;
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,6 +8,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -387,10 +391,13 @@
 <!--				<div class="box-modal_close arcticmodal-close">закрыть</div>-->
 			
 			<div class="artic-goods-container">
-				<!--	слайдер тут		-->
-				<div class="artic__goods-img"><img src="" alt="">
-				<div class="arctic__goods-slider">
-
+				
+				<div class="artic__goods-img">
+					<div class="fotorama" data-nav="thumbs" >	
+                   		 <img src="img/main_slide.png">
+					     <img src="img/slide1.png">
+					     <img src="img/slide2.png">
+					     <img src="img/slide3.png">
 					</div>
 				</div>
 				<!--				-->
@@ -449,6 +456,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/formScript.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 <script src="js/main.js"></script>
 </body>
 

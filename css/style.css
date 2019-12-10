@@ -17,8 +17,6 @@ li {
 	margin: 0;
 }
 
-
-
 /*общие стили для элементов*/
 
 p {
@@ -33,13 +31,7 @@ h2 {
 	text-align: center;
 }
 
-span{
-	font-family: 'Roboto';
-
-}
-
-
-.d-flex{
+.d-flex {
 	display: flex;
 }
 /****************/
@@ -177,44 +169,52 @@ button {
 
 /*стили для фильтра*/
 .form__list-item{
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
-.offer__form-text{
-    margin-top: 3px;
-}
-.cd-filter-block{
-    margin-top: 32px;
+.offer__form-text {
+	margin-top: 3px;
 }
 
-.mr__filter{
-    margin-right: 150px;
-}
-.mr__filter-middle{
-    margin-right: 130px;
+.cd-filter-block {
+	margin-top: 32px;
 }
 
-.mr__filter-end{
-    margin-right: 107px;
+.mr__filter {
+	margin-right: 150px;
 }
+
+.mr__filter-middle {
+	margin-right: 130px;
+}
+
+.mr__filter-end {
+	margin-right: 107px;
+}
+
 .svg__arrow {
-    margin-top: -2px;
+	margin-top: -2px;
 }
-.offer__checkbox-item{
-    margin-bottom: 10px;
+
+.offer__checkbox-item {
+	margin-bottom: 10px;
 }
+
+
 .filter a {
-    text-decoration: none;
-    color: #333333;
-    margin-right: 10px;
-    font-weight: 600;
-    margin-left: 11px;
+	text-decoration: none;
+	color: #333333;
+	margin-right: 10px;
+	font-weight: 600;
+	margin-left: 11px;
 }
-.offer__form-line{
-    border-bottom: 1px solid  #EEEEEE;
-    width: 200px;
-    margin-top: 20px;
+
+.offer__form-line {
+	border-bottom: 1px solid #EEEEEE;
+	width: 200px;
+	margin-top: 20px;
 }
+
 .cd-main-content {
 	margin-top: 204px;
 }
@@ -226,7 +226,7 @@ button {
 .offer__filter-title {
 	color: #666666;
 	font-size: 14px;
-    margin-bottom: 19px;
+	margin-bottom: 19px;
 }
 
 .form-control {
@@ -247,31 +247,36 @@ button {
 }
 
 
-/*стили для js фильтра */
+/*стили для js фильтра начало*/
 
 
-#close__color{
+#close__color {
 	display: block;
 }
 
-#close__format{
+#close__format {
 	display: block;
 }
 
-#close__way{
+#close__way {
 	display: block;
 }
 
-#close__area{
+#close__area {
 	display: block;
 }
 
-#close__style{
+#close__style {
 	display: block;
 }
 
-input[type="text"]:focus{outline: 1px solid #FFDB4D;}
-/*input for checkbox*/
+/*стили для js фильтра конец*/
+input[type="text"]:focus,
+input[type="phone"]:focus {
+	border: 1px solid #FFDB4D;
+}
+
+/*input for checkbox начало*/
 input[type="checkbox"] {
 	display: none;
 }
@@ -309,51 +314,172 @@ input[type=checkbox]:checked + label:before {
 	background:url("../img/Checkbox_Active.svg");
 	border: none;
 }
-.offer__filter{
 
-}
+/*input for checkbox конец*/
 
-.mr__filter-bottom{
-	margin-right:100px;
-}
-
-.mr__filter-foot{
+.mr__filter-foot {
 	margin-right: 143px;
 }
 
 
-/*стили для + -*/
+/*стили для + - начало*/
 
 
 .quantity input {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin: 0;
-    text-align:center;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-right: 1px solid #ccc;
+	display: inline-block;
+	width: 43px;
+	height: 28px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+
 }
 
+/*цвета кнопок начало*/
 .quantity input:first-child {
-    background: #E5E5E5;
-    border-radius: 6px 0px 0px 6px;
-    margin-right: -5px;
+	background: #E5E5E5;
+	border-radius: 6px 0px 0px 6px;
+	margin-right: -5px;
+	background: #eeeeee;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
 }
+
+.quantity input:first-child:active {
+
+	background: #FFDB4D;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
 
 .quantity input:last-child {
-    background: #E5E5E5;
-    border-right: 1px solid #ccc;
-    border-radius: 0px 6px 6px 0px;
-    margin-left: -6px;
+	background: #E5E5E5;
+	border-right: 1px solid #ccc;
+	border-radius: 0px 6px 6px 0px;
+	margin-left: -6px;
+	background-color: #eeeeee;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
-input[type="button"] {
-    cursor: pointer
+.quantity input:last-child:active {
+
+	background-color: #FFDB4D;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
+
+/*цвета кнопок конец*/
+
+
+input[type="button"] {
+	cursor: pointer;
+}
+
+
+.quantity[type='text'] {
+	font-size: 16px;
+	color: #333333;
+}
+
+.qty {
+	width: 95px !important;
+}
+
+.mr__filter-bottom {
+	margin-right: 100px;
+}
+
+
+/*стили для + - конец*/
+
+
+
+/*стили для + - начало*/
+
+
+.quantity input {
+	display: inline-block;
+	width: 43px;
+	height: 28px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+
+}
+
+/*цвета кнопок начало*/
+.quantity input:first-child {
+	background: #E5E5E5;
+	border-radius: 6px 0px 0px 6px;
+	margin-right: -5px;
+	background: #eeeeee;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+.quantity input:first-child:active {
+
+	background: #FFDB4D;
+	background-image: url(../img/Less.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+
+.quantity input:last-child {
+	background: #E5E5E5;
+	border-right: 1px solid #ccc;
+	border-radius: 0px 6px 6px 0px;
+	margin-left: -6px;
+	background-color: #eeeeee;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.quantity input:last-child:active {
+
+	background-color: #FFDB4D;
+	background-image: url(../img/Plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*цвета кнопок конец*/
+
+
+input[type="button"] {
+	cursor: pointer;
+}
+
+
+.quantity[type='text'] {
+	font-size: 16px;
+	color: #333333;
+}
+
+.qty {
+	width: 95px !important;
+
+}
+
+/*стили для + - конец*/
+
 
 main {
 	display: flex;
@@ -370,8 +496,7 @@ main {
 
 .main-container aside {
 	min-width: 200px;
-	height: 674px;
-	margin-right: 20px;
+	height: auto;
 	margin-top: 51px;
 	/*бэк для наглядности, убрать*/
 }
@@ -383,7 +508,6 @@ main {
 	justify-content: flex-start;
 	flex-direction: column;
 	text-align: left;
-
 
 }
 
@@ -417,7 +541,7 @@ main {
 	border: 1px solid #e5e5e5;
 	margin-right: 20px;
 	margin-top: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
 
 
@@ -450,12 +574,167 @@ hr{
 
 
 
-.footer {
+footer {
 	width: 100%;
 	height: 60px;
 	background: #eeeeee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    margin-top: 60px;
+}
+
+/*стили модального окна*/
+
+
+
+.popup {
+	position: absolute;
+	width: 310px;
+	height: 334px;
+	right: 70px;
+	top: 100%;
+	background: #EEEEEE;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 1000;
+
+}
+
+.popupShow {
+	display: block;
+}
+
+
+.popup p {
+	color: #666666;
+}
+
+.popup p a {
+	color: #333333;
+}
+
+.popup_container {
+	width: 280px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.popup hr {
+	margin: 20px 0;
+	color: #999999;
+}
+
+.close_container {
+	display: flex;
+	justify-content: flex-end;
+	margin: 13.5px 0 8px 0;
+}
+
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top:
+
+}
+
+.popup input {
+	width: 280px;
+	height: 46px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #999999;
+
+}
+
+.popup input[type='text'],
+input[type='phone'] {
+	padding-left: 20px;
+}
+
+
+.modalBut {
+	background-color: #FFDB4D;
+	width: 218px;
+	height: 44px;
+	border: none !important;
+	border-radius: 50px;
+	font-size: 16px;
+	font-family: "Roboto";
+	color: #333333;
+	line-height: 43px;
+	text-align: center;
+	transition: 0.35s ease-in-out;
+	cursor: pointer;
+
+}
+
+
+/*!!!!!!!!!!!!!!!МОДАЛЬНОЕ ОКНО НА ГЛАВНОЙ!!!!!!!!!!!!!!!!*/
+
+.box-modal {
+	width: 680px;
+	height: 695px;
+	background: #FFFFFF;
+	border: 2px solid #FFDB4D;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}
+
+.artic-goods-container {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.artic__goods-img img {
+	width: 310px;
+	height: 310px;
+}
+
+.arctic__goods-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.arctic__property {
+	display: flex;
+	flex-direction: row;
+}
+
+.arctic__property-column {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*стили для слайдера*/
+
+.owl-carousel {
+	width: 100%;
+}
+
+.item {
+	width: 100%;
+}
+
+.owl-stage-outer {
+	border: 5px solid;
+}
+
+.owl-dots {
+	display: flex;
+}
+
+.owl-dot {
+	padding: 0 10px;
+	margin: 10px;
 }

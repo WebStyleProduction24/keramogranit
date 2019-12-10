@@ -1,11 +1,11 @@
 
-<aside>
+<aside class="offer__filter">
 	<div class="cd-tab-filter-wrapper">
 		<div class="cd-tab-filter">
 			<ul class="cd-filters   d-flex">
 				<li class="filter"><a class="selected" href="#0" data-type="all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
 				</svg></a></li>
 				<li class="filter"><a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a></li>
 			</ul>
@@ -34,13 +34,11 @@
 			<div class="cd-filter-block">
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter">Цвет</h4>
-					<a href="#" class="svg__arrow">
-						<svg width="10" height="5"  viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1 4L5 1L9 4" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					<a class="svg__arrow" id="open__color">
+						<img src="img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
-				<ul class="cd-filter-content cd-filters list">
+				<ul class="cd-filter-content cd-filters list" id="close__color">
 					<li class="offer__checkbox-item">
 						<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
 						<label class="checkbox-label" for="checkbox1">Красный</label>
@@ -61,14 +59,12 @@
 			<div class="cd-filter-block">
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-middle">Формат</h4>
-					<a href="#" class="svg__arrow">
-						<svg width="10" height="5"  viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1 4L5 1L9 4" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					<a class="svg__arrow-format" id="open__format">
+						<img src="img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 
-				<ul class="cd-filter-content cd-filters list">
+				<ul class="cd-filter-content cd-filters list" id="close__format">
 					<li class="offer__checkbox-item">
 						<input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
 						<label class="checkbox-label" for="checkbox4">20х60</label>
@@ -89,14 +85,11 @@
 			<div class="cd-filter-block">
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-end">Назначение</h4>
-					<a href="#" class="svg__arrow">
-						<svg width="10" height="5"  viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1 4L5 1L9 4" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					<a class="svg__arrow-way" id="open__way">
+						<img src="img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
-
-				<ul class="cd-filter-content cd-filters list">
+				<ul class="cd-filter-content cd-filters list" id="close__way">
 					<li class="offer__checkbox-item">
 						<input class="filter" data-filter=".check7" type="checkbox" id="checkbox7">
 						<label class="checkbox-label" for="checkbox7">Для окон</label>
@@ -110,6 +103,58 @@
 					<li class="offer__checkbox-item">
 						<input class="filter" data-filter=".check9" type="checkbox" id="checkbox9">
 						<label class="checkbox-label" for="checkbox9">Для улицы</label>
+					</li>
+				</ul> <!-- cd-filter-content -->
+			</div>
+			<div class="offer__form-line"></div>
+			<div class="cd-filter-block">
+				<div class="cd-filter-block-title d-flex">
+					<h4 class="offer__filter-title mr__filter-bottom">Поверхность</h4>
+					<a class="svg__arrow-area" id="open__area">
+						<img src="img/arrowUp.png" alt="" class="arrow">
+					</a>
+				</div>
+
+				<ul class="cd-filter-content cd-filters list" id="close__area">
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check10" type="checkbox" id="checkbox10">
+						<label class="checkbox-label" for="checkbox10">Для окон</label>
+					</li>
+
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check11" type="checkbox" id="checkbox11">
+						<label class="checkbox-label" for="checkbox11">Для стен</label>
+					</li>
+
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check12" type="checkbox" id="checkbox12">
+						<label class="checkbox-label" for="checkbox12">Для улицы</label>
+					</li>
+				</ul> <!-- cd-filter-content -->
+			</div>
+			<div class="offer__form-line"></div>
+			<div class="cd-filter-block">
+				<div class="cd-filter-block-title d-flex">
+					<h4 class="offer__filter-title mr__filter-foot">Стиль</h4>
+					<a class="svg__arrow-style" id="open__style">
+						<img src="img/arrowUp.png" alt="" class="arrow">
+					</a>
+				</div>
+
+				<ul class="cd-filter-content cd-filters list" id="close__style">
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check13" type="checkbox" id="checkbox13">
+						<label class="checkbox-label" for="checkbox13">Для окон</label>
+					</li>
+
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check14" type="checkbox" id="checkbox14">
+						<label class="checkbox-label" for="checkbox14">Для стен</label>
+					</li>
+
+					<li class="offer__checkbox-item">
+						<input class="filter" data-filter=".check15" type="checkbox" id="checkbox15">
+						<label class="checkbox-label" for="checkbox15">Для улицы</label>
 					</li>
 				</ul> <!-- cd-filter-content -->
 			</div>

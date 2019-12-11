@@ -40,7 +40,8 @@
 				
 				
 				
-				<a href="#"><span>+7 (495) 22-55-700</span></a><a href="#"><span>+7 (800) 000-00-00</span></a>
+				<a href="#" class="secondNum"><span>+7 (495) 22-55-700</span></a>
+				<a href="#"><span>+7 (800) 000-00-00</span></a>
 
 			</div>
 		</div>

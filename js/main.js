@@ -65,13 +65,7 @@ $(function(){
 
     });
 
-    $('#open__modal').on('click', function() {
-        $('#close__modal').slideToggle(100, function(){
-            if( $(this).css('display') === "none"){
-                $(this).attr('display',"flex");
-            }
-        });
-    });
+
     let open__area=0;
     let close__area=["img/arrowUp.png","img/arrowDown.png"];
     $(this).find('.svg__arrow-area').click(function(){
@@ -98,6 +92,17 @@ $(function(){
             open__style=0;
         }
         $(this).find('img').attr("src",close__style[open__style]);
+    });
+
+
+    let modalBtn=0;
+    let modalArr=["img/HeartActive24px.png","img/HeartInactive24px.png"];
+    $(this).find('.arctic__btn-heart').click(function(){
+        modalBtn++;
+        if(modalBtn>=modalArr.length){
+            modalBtn=0;
+        }
+        $(this).find('img').attr("src",modalArr[modalBtn]);
     });
 
     $('#thumbs .thumb a').each(function(i) {

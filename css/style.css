@@ -244,7 +244,7 @@ button {
 }
 
 .cd-filter-block {
-	margin-top: 32px;
+	margin-top: 15px;
 }
 
 .mr__filter {
@@ -274,6 +274,18 @@ button {
 	margin-right: 10px;
 	font-weight: 600;
 	margin-left: 11px;
+}
+.btn__filter{
+	width: 290px;
+	height: 40px;
+	background: #EEEEEE;
+	display: none;
+}
+
+.btn__filter-text{
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
 }
 
 .offer__form-line {
@@ -467,11 +479,7 @@ input[type="button"] {
 }
 
 
-/*стили для + - конец*/
 
-
-
-/*стили для + - начало*/
 
 
 .quantity input {
@@ -853,17 +861,140 @@ input[type='phone'] {
 
 .arctic__property {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .arctic__property-column {
+
+	justify-content: space-between;
+	display: flex;
+}
+
+.arctic__goods-art{
+
+	margin-bottom: 20px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.art__number{
+	font-size: 16px;
+	color: #333333;
+	font-weight: normal;
+}
+
+.arctic__goods-name{
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 20px;
+	width: 314px;
+	height: 72px;
+}
+.arctic__goods-btn{
+	width: 107px;
+	height: 24px;
+	border-radius: 0px;
+	margin-bottom: 20px;
+	background: #EEEEEE;
+	font-weight: bold;
+	font-size: 14px;
+	color: #666666;
+}
+
+.arctic__goods-quantity{
+	margin-bottom: 2px;
+}
+
+.arctic__goods-basket{
+	width: 218px;
+	height: 44px;
+	background-color: #FFDB4D;
+	border-radius: 3px;
+	background-image: url(../img/bucketActive16px.png);
+	background-repeat: no-repeat;
+	background-position: 17% 50%;
+	padding: 13px 20px 12px 46px;
+	margin-top: 10px;
+}
+
+.arctic__goods-warring{
+	margin-top: 10px;
+}
+
+.arctic__goods-warring-text{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.arctic__goods-money{
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.arctic__goods-money-m2{
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.arctic__btn-heart{
+	cursor: pointer;
+	background-color: #fff;
+	margin-top: 32px;
+}
+
+.arctic__goods-heart-text{
+	font-weight: normal;
+	font-size: 16px;
+	color: #666666;
+	margin-left: 10px;
+}
+
+.arctic__title{
+	text-align: center;
+
+}
+
+.arctic__goods-item{
+	font-weight: bold;
+	font-size: 14px;
+	color: #666666;
+	margin-left: 20px;
+	margin-right: 170px;
+}
+
+.arctic__goods-spesh{
+	font-weight: normal;
+	font-size: 16px;
+	color: #333333;
+	margin-right: 30px;
+}
+
+.arctic__flex{
 	display: flex;
 	justify-content: space-between;
 }
 
-.fotorama-img{
-	width: 310px;
-	height: 310px;
+.arctic__margin{
+
+	margin-right: 110px;
+}
+
+.arctic__line{
+	border: 1px solid #EEEEEE;
+	width: 331px;
+	margin-left: 13px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.arctic__line-1{
+	border: 1px solid #EEEEEE;
+	width: 257px;
+	margin-left: 13px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*стили для слайдера*/

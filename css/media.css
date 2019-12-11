@@ -1,0 +1,79 @@
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+	.product_icon {
+
+		margin-left: 15px;
+
+	}
+	
+	
+}
+
+
+@media screen and (min-width:992px){
+	#phoneMobile, #mailMobile{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+/*	!!!!!!!!!!!!ДЛЯ МОБИЛЬНЫХ ВЕРСИЙ!!!!!!!!!!!!!!!*/
+/*иконки телефона и почты в блоке email*/
+/*переход в корзину и избранное в блоке phones*/
+	
+	.email,
+	.phones {
+		height: 26px;
+	}
+
+
+	.email img, .phones img {
+		display: none;
+		margin: 0;
+	}
+
+	.mobilePhoneMail span, .mobileFavouritesBusket span {
+		display: none;
+
+	}
+
+	.mobilePhoneMail, .mobileFavouritesBusket {
+		width: 75px;
+
+
+	}
+	#phoneMobile, #mailMobile, #favouritesMobile, #busketMobile{
+		display: block;
+	}
+	
+	#phoneMobile, #favouritesMobile{
+		margin-right: 20px;
+	}
+	
+	#feedback{
+		display: none;
+	}
+	
+	.phones a:not(:last-child) {
+	margin-right:0;
+}
+	
+	.searchAndButtons{
+		display: none;
+	}
+	
+	.mainHeader{
+		justify-content: center;
+	}
+	
+	h2 {
+
+    margin-top: 30px;
+
+}
+
+}

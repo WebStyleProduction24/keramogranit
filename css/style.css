@@ -21,7 +21,8 @@ li {
 
 /*общие стили для элементов*/
 
-p, span {
+p,
+span {
 	font-family: 'Roboto';
 	font-size: 14px;
 }
@@ -49,6 +50,16 @@ header {
 	position: relative;
 }
 
+/*нужно здесь чтоб не перекрывать стили phones span*/
+
+header span {
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #ffffff;
+
+}
+
+
 /*top header*/
 .contacts {
 	width: 100%;
@@ -59,22 +70,55 @@ header {
 	align-items: center;
 }
 
+.contacts a {
+	text-decoration: none;
+}
+
+.email,
+.phones {
+	height: 20px;
+}
+
+
 .email {
 	margin-left: 70px;
+	width: 195px;
+	display: flex;
+	align-items: center;
+	text-align: right;
 }
+
+.email img {
+	margin-right: 10px;
+}
+
 
 .phones {
 	margin-right: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 355px;
+	text-align: right;
+
 }
 
 
-header span {
-	font-family: 'Roboto';
+.phones img {
+	margin-right: 10px;
+}
+
+.phones span {
 	font-size: 18px;
-	color: #ffffff;
-	margin-left: 10px;
-
 }
+
+.phones a:not(:last-child) {
+	margin-right: 20px;
+}
+
+
+
+
 
 /*******************/
 
@@ -235,7 +279,7 @@ button {
 /***************/
 
 /*стили для фильтра*/
-.form__list-item{
+.form__list-item {
 	margin-top: 5px;
 }
 
@@ -567,6 +611,7 @@ main {
 	min-width: 200px;
 	height: auto;
 	margin-top: 51px;
+	font-family: 'Roboto';
 
 }
 

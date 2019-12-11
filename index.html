@@ -248,7 +248,6 @@
 				<div class="goods">
 
 					<div class="product_icon">
-                        <a href="#" id="open__modal">
 						<img src="img/Rectangle%20104.png" alt="">
 						<p>Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
 						<div class="product_icon_price"><span>650р/м<sup>2</sup></span>
@@ -257,7 +256,6 @@
 								<div class="iconHeart"></div>
 							</div>
 						</div>
-                        </a>
 						<hr>
 						<div class="art">
 							<p>Артикул <span>119608</span></p>
@@ -387,60 +385,21 @@
 		<p>2019, Универдом</p>
 	</footer>
 
-	<div id="close__modal">
-		<div class="box-modal" >
-
+	<div style="display: block;">
+		<div class="box-modal" id="exampleModal">
+			<!--				<div class="box-modal_close arcticmodal-close">закрыть</div>-->
+			
 			<div class="artic-goods-container">
-				<!--
+				
 				<div class="artic__goods-img">
-					<div class="fotorama" data-nav="thumbs" data-width="310"
-						 data-height="310" >
-						<img class="fotorama-img" src="img/main_slide.png">
-						<img class="fotorama-img" src="img/slide1.png">
-						<img class="fotorama-img" src="img/slide2.png">
-						<img class="fotorama-img" src="img/slide3.png">
+					<div class="fotorama" data-nav="thumbs" >	
+						<img src="img/main_slide.png">
+						<img src="img/slide1.png">
+						<img src="img/slide2.png">
+						<img src="img/slide3.png">
 					</div>
 				</div>
-				-->
-				<div id="gallery">
-					<div id="main">
-						<div id="images">
-							<div class="slide">
-								<a href=""></a>
-								<img src="img/slide1.png" alt="" width="310" height="310" />
-							</div>
-							<div class="slide">
-								<a href=""></a>
-								<img src="img/slide2.png" alt="" width="310" height="310" />
-							</div>
-							<div class="slide">
-								<a href=""></a>
-								<img src="img/slide3.png" alt="" width="310" height="310" />
-							</div>
-						</div>
-					</div>
-					<div id="thumbs">
-						<div class="thumb">
-							<a href=""></a>
-							<img src="img/slide1.png" alt="" width="80" height="80" />
-						</div>
-						<div class="thumb">
-							<a href=""></a>
-							<img src="img/slide2.png" alt="" width="80" height="80" />
-						</div>
-						<div class="thumb">
-							<a href=""></a>
-							<img src="img/slide3.png" alt="" width="80" height="80" />
-						</div>
-					</div>
-					<a href="#" class="thumbs" id="prev">Previous</a>
-					<a href="#" class="thumbs" id="next">Next</a>
-				</div>
-
-
-
-
-			<!--				-->
+				<!--				-->
 				
 				<div class="arctic__goods-list">
 					
@@ -496,8 +455,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/formScript.js"></script>
-    <script src="js/jquery.carouFredSel-5.2.3.js"></script>
-
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

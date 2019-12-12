@@ -13,18 +13,16 @@
 
 <body>
 
-
-
 	<header>
 		<div class="contacts">
 
 			<div class="email mobilePhoneMail">
-				<a href=""><img src="img/MailYellowDesktop.png" alt=""></a>
+				<img src="img/MailYellowDesktop.png" alt="">
+				
+				<a href="#"><div id="phoneMobile"></div></a>
+				<a href="#"><div id='mailMobile'></div></a>
 
-				<a href="#"><img src="img/PhoneYellowMobile.png" alt="" id="phoneMobile"></a>
-				<a href="#"><img src="img/MailYellowMobile.png" alt="" id='mailMobile'></a>
-
-				<span>zakaz@keramogranit.ru</span>
+				<a href=""><span>zakaz@keramogranit.ru</span></a>
 
 			</div>
 
@@ -34,9 +32,9 @@
 				<img src="img/PhoneYellowDesktop.png" alt="">
 				
 				
-				<a href="#"><img src="img/FavouriteYellowMobile.png" alt="" id="favouritesMobile"></a>
+				<a href="#"><div id="favouritesMobile"></div></a>
 				
-				<a href="#"><img src="img/BucketYellowMobile.png" alt="" id="busketMobile"></a>
+				<a href="#"><div id="busketMobile"></div></a>
 				
 				
 				

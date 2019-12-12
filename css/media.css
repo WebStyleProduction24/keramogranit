@@ -47,8 +47,14 @@
 	.mobilePhoneMail,
 	.mobileFavouritesBusket {
 		width: 75px;
+	}
 
+	.mobilePhoneMail {
+		margin-left: 40px;
+	}
 
+	.mobileFavouritesBusket {
+		margin-right: 40px;
 	}
 
 	#phoneMobile,
@@ -56,6 +62,50 @@
 	#favouritesMobile,
 	#busketMobile {
 		display: block;
+	}
+
+	#phoneMobile {
+		width: 26px;
+		height: 26px;
+		background: url(../img/PhoneYellowMobile.png) no-repeat center;
+	}
+
+	#phoneMobile:active {
+		background: url(../img/PhoneActiveWhiteMobile.png) no-repeat center;
+	}
+
+
+	#mailMobile {
+		width: 26px;
+		height: 26px;
+		background: url(../img/MailYellowMobile.png)no-repeat center;
+	}
+
+	#mailMobile:active {
+
+		background: url(../img/MailActiveWhiteMobile.png)no-repeat center;
+	}
+
+	#favouritesMobile {
+		width: 26px;
+		height: 26px;
+		background: url(../img/FavouriteYellowMobile.png)no-repeat center;
+	}
+
+	#favouritesMobile:active {
+
+		background: url(../img/FavouriteActiveWhiteMobile.png)no-repeat center;
+	}
+
+
+	#busketMobile {
+		width: 26px;
+		height: 26px;
+		background: url(../img/BucketYellowMobile.png)no-repeat center;
+	}
+
+	#busketMobile:active {
+		background: url(../img/BusketActiveWhiteMobile.png)no-repeat center;
 	}
 
 	#phoneMobile,
@@ -86,7 +136,6 @@
 
 	}
 
-
 }
 
 
@@ -96,7 +145,7 @@
 		margin-left: 10px;
 
 	}
-	
+
 	.main-container {
 		display: flex;
 		justify-content: center;
@@ -104,21 +153,87 @@
 		margin: 0 55px 0 55px;
 
 	}
-	
-	.offer__filter{
+
+	.offer__filter {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		margin: 0 auto;
 	}
-		
-.goods {
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1300px;
+	.goods {
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		max-width: 1300px;
+
+	}
+
+	.sort {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	h2 {
+		font-size: 46px;
+	}
 
 }
-}
+
+
+@media screen and (max-width: 320px) {
+
+	h2 {
+		font-size: 42px;
+	}
+
+	.mobilePhoneMail {
+		margin-left: 15px;
+	}
+
+	.mobileFavouritesBusket {
+		margin-right: 15px;
+	}
+
+	.product_icon {
+		margin: 0;
+		margin-top: 20px;
+		width: 140px;
+		height: 355px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product_icon:nth-child(even) {
+		margin-left: 10px;
+	}
+
+	.product_icon img {
+		width: 120px;
+		height: 120px;
+		padding: 0;
+		margin: 10px;
+	}
+
+
+	.main-container {
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0;
+
+	}
+
+	.goods {
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 100%;
+	}

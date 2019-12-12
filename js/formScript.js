@@ -3,6 +3,9 @@ $(document).ready(function(){
 	$('#feedback').click(function(){$('.popup').addClass('popupShow').slideToggle(500);
 	 $(this).removeClass('popupShow'); 
 	});
+	
+	
+	
 
 });
 	

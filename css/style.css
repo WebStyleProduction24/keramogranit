@@ -21,7 +21,8 @@ li {
 
 /*общие стили для элементов*/
 
-p, span {
+p,
+span {
 	font-family: 'Roboto';
 	font-size: 14px;
 }
@@ -49,6 +50,16 @@ header {
 	position: relative;
 }
 
+/*нужно здесь чтоб не перекрывать стили phones span*/
+
+header span {
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #ffffff;
+
+}
+
+
 /*top header*/
 .contacts {
 	width: 100%;
@@ -59,22 +70,55 @@ header {
 	align-items: center;
 }
 
+.contacts a {
+	text-decoration: none;
+}
+
+.email,
+.phones {
+	height: 20px;
+}
+
+
 .email {
 	margin-left: 70px;
+	width: 195px;
+	display: flex;
+	align-items: center;
+	text-align: right;
 }
+
+.email img {
+	margin-right: 10px;
+}
+
 
 .phones {
 	margin-right: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 375px;
+	text-align: right;
+
 }
 
 
-header span {
-	font-family: 'Roboto';
+.phones img {
+	margin-right: 10px;
+}
+
+.phones span {
 	font-size: 18px;
-	color: #ffffff;
-	margin-left: 10px;
-
 }
+
+.secondNum{
+	margin-right: 15px;
+}
+
+
+
+
 
 /*******************/
 
@@ -235,7 +279,7 @@ button {
 /***************/
 
 /*стили для фильтра*/
-.form__list-item{
+.form__list-item {
 	margin-top: 5px;
 }
 
@@ -566,6 +610,7 @@ main {
 	min-width: 200px;
 	height: auto;
 	margin-top: 51px;
+	font-family: 'Roboto';
 
 }
 
@@ -830,7 +875,7 @@ input[type='phone'] {
 	flex-direction: column;
 	justify-content: space-around;
 	position: absolute;
-	top: 25%;
+	top: 50%;
 	left: 25%;
 }
 
@@ -860,113 +905,25 @@ input[type='phone'] {
 	justify-content: space-between;
 }
 
-.fotorama-img{
-	width: 310px;
-	height: 310px;
-}
-
 /*стили для слайдера*/
 
-
-
-#gallery {
-
-	position:relative;
-
-}
-#gallery #main {
-	width:310px;
-	height:310px;
-
-	position:relative;
-
-}
-#gallery #images, #gallery #thumbs {
-	overflow: hidden;
-}
-#gallery #images {
-	width:310px;
-	height:310px;
-	margin:0 auto;
-	position:absolute;
-	left:16px;
-	top:0;
-}
-#gallery #images .slide {
-	width: 400px;
-	height:210px;
-	position:relative;
-	float:left;
-}
-#gallery #images .slide a {
-	display:block;
-	position:absolute;
-	top:0;
-	left:0;
-
-	width: 310px;
-	height:310px;
-
-}
-#gallery #images .slide img {
-
+.owl-carousel {
+	width: 100%;
 }
 
-#gallery #thumbs {
-	width: 330px;
-	height:40px;
-	margin:10px 0 0 73px;
-}
-#gallery #thumbs .thumb {
-	width:59px;
-	height:80px;
-	float: left;
-	position:relative;
-	margin:0 30px 0 0;
+.item {
+	width: 100%;
 }
 
-#gallery #thumbs .thumb a {
-	display:block;
-	position:absolute;
-	top:0;
-	left:0;
-	width: 80px;
-	height:80px;
-
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
+.owl-stage-outer {
+	border: 5px solid;
 }
 
-
-
-#gallery #prev, #gallery #next {
-	text-indent:-999em;
-	position: absolute;
-	display:block;
-	width:19px;
-	height:20px;
-	background: transparent url('../img/left.png') no-repeat 0 0;
-	bottom:20px;
-}
-#gallery #prev {
-	background-position: 0 0;
-	left: 25px;
+.owl-dots {
+	display: flex;
 }
 
-#gallery #next {
-	background-position: -19px 0;
-	right: 25px;
-}
-
-#main .caroufredsel_wrapper{
-	height: 310px !important;
-	margin: 0 !important;
-}
-#images {
-	height: 310px !important;
-}
-
-#close__modal{
-    display: none;
+.owl-dot {
+	padding: 0 10px;
+	margin: 10px;
 }

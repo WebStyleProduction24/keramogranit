@@ -146,6 +146,17 @@ $(function(){
     });
 
 
+    let bl = document.getElementById('hover'),
+        hv = document.getElementById('show');
+
+    bl.onmouseover = function () {
+        hv.style.display = 'block';
+    }
+
+    hv.onmouseout = function () {
+        hv.style.display = 'none';
+    }
+
 
 
 

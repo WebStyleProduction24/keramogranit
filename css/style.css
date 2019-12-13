@@ -462,6 +462,11 @@ input[type=checkbox]:checked + label:before {
 
 /*стили для + - начало*/
 
+.quantity{
+	display: flex;
+	align-items: center;
+}
+
 
 .quantity input {
 	display: inline-block;

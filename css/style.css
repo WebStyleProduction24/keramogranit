@@ -36,6 +36,14 @@ h2 {
 	margin-top: 67px;
 }
 
+h3{
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 40px;
+}
+
 .d-flex {
 	display: flex;
 }
@@ -832,7 +840,7 @@ form {
 
 }
 
-.popup input {
+.popup input, .busket_form input{
 	width: 280px;
 	height: 46px;
 	margin: 0 auto;
@@ -843,7 +851,8 @@ form {
 }
 
 .popup input[type='text'],
-input[type='phone'] {
+input[type='phone'],
+.busket_form input[type='text']{
 	padding-left: 20px;
 }
 
@@ -853,7 +862,6 @@ input[type='phone'] {
 	width: 218px;
 	height: 44px;
 	border: none !important;
-	border-radius: 50px;
 	font-size: 16px;
 	font-family: "Roboto";
 	color: #333333;

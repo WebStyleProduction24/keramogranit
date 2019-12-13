@@ -62,7 +62,7 @@
 
 		<div class="popup">
 			<div class="popup_container">
-				<div class="close_container"><a href="#" id="close"><img src="img/Close.png" alt=""></a></div>
+				<div class="close_container"><img id='close' src="img/Close.png" alt=""></div>
 
 				<p>Работаем с понедельника по пятницу,
 					с 10:00 до 19:00</p>
@@ -76,6 +76,11 @@
 				<p>Нажимая на кнопку, я принимаю <br>правила <a href="#">политики конфиденциальности</a></p>
 
 			</div>
+		</div>
+		
+		<div class="mail-window">
+		<div class="close_container"><img id='mail-window-close' src="img/Close.png" alt=""></div>
+			<span>zakaz@keramogranit.ru</span>
 		</div>
 
 

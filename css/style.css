@@ -36,7 +36,7 @@ h2 {
 	margin-top: 67px;
 }
 
-h3{
+h3 {
 	font-family: 'Roboto';
 	font-weight: bold;
 	font-size: 36px;
@@ -120,7 +120,7 @@ header span {
 	font-size: 18px;
 }
 
-.secondNum{
+.secondNum {
 	margin-right: 15px;
 }
 
@@ -189,11 +189,22 @@ button {
 	right: 5px;
 	border-radius: 4px;
 	background: #FFDB4D;
-	background-image: url(../img/search_button.png);
+	background-image: url(../img/Search.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
 }
+
+
+.search button:hover {
+	
+	background: #EFC622;
+	background-image: url(../img/Search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
 
 /*
 .search button:before {
@@ -228,7 +239,10 @@ button {
 	background-image: url(../img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+}
 
+.favourites:hover{
+	border: 2px solid #EFC622;
 }
 
 .busket {
@@ -250,6 +264,11 @@ button {
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 
+}
+
+
+.busket:hover{
+	border: 2px solid #EFC622;
 }
 
 
@@ -830,6 +849,9 @@ footer {
 	margin: 13.5px 0 8px 0;
 }
 
+#close {
+	cursor: pointer;
+}
 
 form {
 	display: flex;
@@ -840,7 +862,8 @@ form {
 
 }
 
-.popup input, .busket_form input{
+.popup input,
+.busket_form input {
 	width: 280px;
 	height: 46px;
 	margin: 0 auto;
@@ -852,7 +875,7 @@ form {
 
 .popup input[type='text'],
 input[type='phone'],
-.busket_form input[type='text']{
+.busket_form input[type='text'] {
 	padding-left: 20px;
 }
 
@@ -870,6 +893,31 @@ input[type='phone'],
 	transition: 0.35s ease-in-out;
 	cursor: pointer;
 
+}
+
+
+/*окошко почты*/
+
+.mail-window {
+	width: 320px;
+	height: 84px;
+	background: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	display: none;
+	position: absolute;
+
+}
+
+.mail-window span {
+	font-weight: 500;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+
+#mail-window-close{
+	margin-right: 15.5px;
 }
 
 

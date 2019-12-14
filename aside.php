@@ -1,19 +1,27 @@
-
 <aside class="offer__filter">
 	<div class="cd-tab-filter-wrapper">
 		<div class="cd-tab-filter">
-			<ul class="cd-filters   d-flex">
-				<li class="filter"><a class="selected" href="#0" data-type="all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-					<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-				</svg></a></li>
-				<li class="filter"><a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a></li>
+			<ul class="cd-filters d-flex">
+				<li class="filter">
+					<a class="selected" href="#0" data-type="all">
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.82861 2.82843L3.17176 8.48528" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M8.82861 8.48528L3.17176 2.82843" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+				</li>
+				<li class="filter">
+					<a class="selected  ml-3" href="#0" data-type="all">Сбросить фильтр</a>
+				</li>
 			</ul>
 		</div>
 	</div>
+
 	<div class="offer__form-line"></div>
+
 	<div class="cd-filter">
 		<form id="enter">
+
 			<h4 class="offer__filter-title">Цена</h4>
 			<div class="form-row d-flex">
 				<div class="col">
@@ -31,6 +39,9 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="offer__form-line"></div>
+
 			<div class="cd-filter-block">
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter">Цвет</h4>

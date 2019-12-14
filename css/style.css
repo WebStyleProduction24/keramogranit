@@ -10,6 +10,7 @@ body,
 html {
 	background: #ffffff;
 	position: relative;
+	font-family: 'Roboto';	
 }
 
 ul,
@@ -21,14 +22,11 @@ li {
 
 /*общие стили для элементов*/
 
-p,
-span {
-	font-family: 'Roboto';
+p, span {
 	font-size: 14px;
 }
 
-h2 {
-	font-family: 'Roboto';
+h2 {	
 	font-weight: bold;
 	font-size: 56px;
 	text-align: center;
@@ -39,7 +37,9 @@ h2 {
 .d-flex {
 	display: flex;
 }
-
+.fa {
+	margin-right: 5px;
+}
 /****************/
 
 
@@ -104,11 +104,7 @@ header span {
 }
 
 
-.phones img {
-	margin-right: 10px;
-}
-
-.phones span {
+header span {	
 	font-size: 18px;
 }
 
@@ -128,7 +124,6 @@ header span {
 main {
 	margin-bottom: 60px;
 	position: relative;
-
 }
 
 .mainHeader {
@@ -212,7 +207,6 @@ button {
 	background-image: url(../img/HeartActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 
@@ -220,7 +214,6 @@ button {
 	background-image: url(../img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 .busket {
@@ -234,14 +227,12 @@ button {
 	background-image: url(../img/bucketInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 .busket:active {
 	background-image: url(../img/bucketActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 
@@ -261,8 +252,6 @@ button {
 	background-image: url(../img/telephone14px.png);
 	background-repeat: no-repeat;
 	background-position: 10% 50%;
-
-
 }
 
 
@@ -508,7 +497,6 @@ input[type="button"] {
 	cursor: pointer;
 }
 
-
 .quantity[type='text'] {
 	font-size: 16px;
 	color: #333333;
@@ -674,8 +662,85 @@ main {
 	margin-top: 20px;
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
+/*классы для ховера */
+.product_icon-slide {
+	width: 310px;
+	height: 440px;
+	border: 1px solid  #FFDB4D;
+	background: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 20px;
+	box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 163px;
+	top: 209px;
+}
+
+#show{
+	display: none;
+}
+
+.product_icon-img{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.icon-btn{
+	width: 80px;
+	height: 20px;
+	background: #FFDB4D;
+}
+
+.top__img{
+	margin-top: 10px;
+}
+
+.img__top{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.icon-img{
+	margin-top: 10px;
+}
+
+.font__bold{
+	font-weight: 500;
+	font-size: 22px;
+	color: #333333;
+}
+
+.m2{
+	margin-top: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #666666;
+}
+
+.product_icon-text{
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 20px;
+}
 
 
+
+
+.product_icon-img{
+
+}
+
+.shadow__btn{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quantity__text{
+	margin-left: 59px;
+	font-size: 14px;
+	color: #999999;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
 .product_icon p {
 	font-size: 16px;
 	margin: 0 10px 0 10px;
@@ -686,13 +751,14 @@ main {
 }
 
 
+
+
 /*КЛАССЫ ДЛЯ ИКОНОК КОРЗИНЫ И ИЗБРАННОГО*/
 
 .bucket_icon {
 	padding: 0 !important;
 	margin-left: 50px;
 	display: none;
-
 }
 
 
@@ -714,8 +780,6 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 10px;
-
-
 }
 
 .iconBusket {
@@ -740,12 +804,10 @@ main {
 
 .iconBusket:active {
 	background-image: url(../img/bucketActive16px.png);
-
 }
 
 .iconHeart:active {
 	background-image: url(../img/HeartActive16px.png);
-
 }
 
 /*************************************************/
@@ -796,7 +858,6 @@ footer {
 	justify-content: center;
 	flex-direction: column;
 	z-index: 1000;
-
 }
 
 .popupShow {
@@ -837,7 +898,6 @@ form {
 	flex-direction: column;
 	margin: 0 auto;
 	margin-top:
-
 }
 
 .popup input {
@@ -847,7 +907,6 @@ form {
 	margin-bottom: 10px;
 	border-radius: 4px;
 	border: 1px solid #999999;
-
 }
 
 .popup input[type='text'],
@@ -1021,7 +1080,6 @@ input[type='phone'] {
 	justify-content: space-between;
 }
 .arctic__margin{
-
 	margin-right: 110px;
 }
 
@@ -1041,19 +1099,60 @@ input[type='phone'] {
 	margin-bottom: 10px;
 }
 
-
 /*стили для слайдера*/
 
-.owl-carousel {
-	width: 100%;
+
+
+#gallery {
+	position:relative;
+
+}
+#gallery #main {
+	width:310px;
+	height:310px;
+	position:relative;
+
+}
+#gallery #images, #gallery #thumbs {
+	overflow: hidden;
+}
+#gallery #images {
+	width:310px;
+	height:310px;
+	margin:0 auto;
+	position:absolute;
+	left:16px;
+	top:0;
+}
+#gallery #images .slide {
+	width: 400px;
+	height:210px;
+	position:relative;
+	float:left;
+}
+#gallery #images .slide a {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 310px;
+	height:310px;
 }
 
 .item {
 	width: 100%;
 }
 
-.owl-stage-outer {
-	border: 5px solid;
+#gallery #thumbs .thumb a {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 80px;
+	height:80px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
 }
 
 .owl-dots {

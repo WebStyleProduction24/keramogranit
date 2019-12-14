@@ -13,7 +13,7 @@
 		<p>Артикул <span>119608</span></p>
 	</div>
 </div>
-<div class="product_icon-slide " id="show" onclick="$('#exampleModal1').arcticmodal();">
+<div class="product_icon-slide " id="show" >
 	<div class="product_icon-flex d-flex">
 		<div class="product_icon-img">
 			<button class="icon-btn shadow__btn"><img src="img/arrowUp.png" alt=""></button>
@@ -25,7 +25,7 @@
 		</div>
 		<div class="product_icon-item img__top">
 			<img src="img/Rectangle%20104.png" alt="">
-			<p class="product_icon-text">Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
+			<p class="product_icon-text" onclick="$('#exampleModal1').arcticmodal();">Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
 			<div class="product_icon_price ">
 				<span class="font__bold d-flex">650р/ <span class="m2">м<sup>2</sup></span> </span>
 				<div class="product_icon_price_icons_block">

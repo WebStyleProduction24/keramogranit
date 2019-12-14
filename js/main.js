@@ -150,11 +150,15 @@ $(function(){
         hv = document.getElementById('show');
 
     bl.onmouseover = function () {
-        hv.style.display = 'block';
+        bl.style.display = 'none';
+        hv.style.display='block';
+
+
     }
 
-    hv.onmouseout = function () {
+    hv.onpointerleave = function () {
         hv.style.display = 'none';
+        bl.style.display = 'block';
     }
 
 

@@ -1,50 +1,51 @@
-<div class="product_icon test" id="hover">
-	<img src="img/Rectangle%20104.png" alt="">
-	<p>Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
-	<div class="product_icon_price">
-		<span>650р/м<sup>2</sup></span>
-		<div class="product_icon_price_icons_block">
-			<div class="iconBusket"></div>
-			<div class="iconHeart"></div>
-		</div>
-	</div>
-	<hr>
-	<div class="art">
-		<p>Артикул <span>119608</span></p>
-	</div>
-</div>
-<div class="product_icon-slide " id="show" onclick="$('#exampleModal1').arcticmodal();">
-	<div class="product_icon-flex d-flex">
-		<div class="product_icon-img">
-			<button class="icon-btn shadow__btn"><img src="img/arrowUp.png" alt=""></button>
-			<img src="img/slide1.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide2.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide3.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide1.png" class="icon-img" width="80" height="80" />
-			<button class="icon-btn top__img"><img src="img/arrowDown.png" alt=""></button>
-		</div>
-		<div class="product_icon-item img__top">
-			<img src="img/Rectangle%20104.png" alt="">
-			<p class="product_icon-text">Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
-			<div class="product_icon_price ">
-				<span class="font__bold d-flex">650р/ <span class="m2">м<sup>2</sup></span> </span>
-				<div class="product_icon_price_icons_block">
-					<div class="iconBusket"></div>
-					<div class="iconHeart"></div>
-				</div>
+
+<div style="display: none;">
+	<div class="box-modal" id="exampleModal">
+		<div class="box-modal_close arcticmodal-close">закрыть</div>
+		<div class="arctic__goods-list">
+			<div class="arctic__goods-slider">
+
 			</div>
-			<form method='post' action='#' class="form__item">
-				<div class="quantity">
-					<input type='button' value='-' class='minus' field='quantity' />
-					<input type='text' name='quantity' value='0' class='qty' />
-					<input type='button' value='+' class='plus' field='quantity' />
+			<div class="arctic__goods-info">
+				<div class="arctic__goods-art"><p>Артикул <span>119608</span></p></div>
+				<p class="arctic__goods-name">
+					Керамогранит Estima Standard ST 07 матовый 300х300 мм
+					io
+				</p>
+				<button class="arctic__goods-btn">
+					В наличии
+				</button>
+				<p class="arctic__goods-quantity">
+					Кол-во коробок
+				</p>
+				<form method='POST' action='#'>
+					<div class="quantity">
+						<input type='button' value='-' class='minus' field='quantity' />
+						<input type='text' name='quantity' value='0' class='qty' />
+						<input type='button' value='+' class='plus' field='quantity' />
+					</div>
+				</form>
+				<div class="arctic__goods-warring">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="8" cy="8" r="7" stroke="#666666" stroke-width="2"/>
+						<rect x="7" y="4" width="2" height="5" rx="1" fill="#666666"/>
+						<rect x="7" y="10" width="2" height="2" rx="1" fill="#666666"/>
+					</svg>
+					<p class="arctic__goods-warring-text">
+						Товар продается кратно коробкам
+					</p>
 				</div>
-				<p class="quantity__text">Коробки</p>
-			</form>
+				<div class="arctic__goods-payment">
+					<span class="arctic__goods-money">
+						650
+					</span>
+					<p class="arctic__goods-money-m2">
+						/м2
+					</p>
+				</div>
 
 
-			<div class="art">
-				<p>Артикул <span>119608</span></p>
+
 			</div>
 		</div>
 	</div>

@@ -10,7 +10,6 @@ body,
 html {
 	background: #ffffff;
 	position: relative;
-	font-family: 'Roboto';	
 }
 
 ul,
@@ -23,11 +22,12 @@ li {
 /*общие стили для элементов*/
 
 p, span {
-	
+	font-family: 'Roboto';
 	font-size: 14px;
 }
 
-h2 {	
+h2 {
+	font-family: 'Roboto';
 	font-weight: bold;
 	font-size: 56px;
 	text-align: center;
@@ -38,9 +38,7 @@ h2 {
 .d-flex {
 	display: flex;
 }
-.fa {
-	margin-right: 5px;
-}
+
 /****************/
 
 
@@ -70,7 +68,8 @@ header {
 }
 
 
-header span {	
+header span {
+	font-family: 'Roboto';
 	font-size: 18px;
 	color: #ffffff;
 	margin-left: 10px;
@@ -85,6 +84,7 @@ header span {
 main {
 	margin-bottom: 60px;
 	position: relative;
+
 }
 
 .mainHeader {
@@ -168,6 +168,7 @@ button {
 	background-image: url(../img/HeartActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+
 }
 
 
@@ -175,6 +176,7 @@ button {
 	background-image: url(../img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+
 }
 
 .busket {
@@ -188,12 +190,14 @@ button {
 	background-image: url(../img/bucketInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+
 }
 
 .busket:active {
 	background-image: url(../img/bucketActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+
 }
 
 
@@ -213,6 +217,8 @@ button {
 	background-image: url(../img/telephone14px.png);
 	background-repeat: no-repeat;
 	background-position: 10% 50%;
+
+
 }
 
 
@@ -634,6 +640,7 @@ main {
 	position: absolute;
 	left: 163px;
 	top: 209px;
+
 }
 
 #show{
@@ -681,6 +688,7 @@ main {
 	font-size: 16px;
 	color: #333333;
 	margin-bottom: 20px;
+
 }
 
 
@@ -692,6 +700,8 @@ main {
 
 .shadow__btn{
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
 }
 
 .quantity__text{
@@ -704,10 +714,12 @@ main {
 .product_icon p {
 	font-size: 16px;
 	margin: 0 10px 0 10px;
+
 }
 
 .product_icon img {
 	padding: 10px;
+
 }
 
 
@@ -719,6 +731,7 @@ main {
 	padding: 0 !important;
 	margin-left: 50px;
 	display: none;
+
 }
 
 
@@ -740,6 +753,8 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 10px;
+
+
 }
 
 .iconBusket {
@@ -764,10 +779,12 @@ main {
 
 .iconBusket:active {
 	background-image: url(../img/bucketActive16px.png);
+
 }
 
 .iconHeart:active {
 	background-image: url(../img/HeartActive16px.png);
+
 }
 
 /*************************************************/
@@ -818,6 +835,7 @@ footer {
 	justify-content: center;
 	flex-direction: column;
 	z-index: 1000;
+
 }
 
 .popupShow {
@@ -858,6 +876,7 @@ form {
 	flex-direction: column;
 	margin: 0 auto;
 	margin-top:
+
 }
 
 .popup input {
@@ -867,6 +886,7 @@ form {
 	margin-bottom: 10px;
 	border-radius: 4px;
 	border: 1px solid #999999;
+
 }
 
 .popup input[type='text'],
@@ -1041,6 +1061,7 @@ input[type='phone'] {
 }
 
 .arctic__margin{
+
 	margin-right: 110px;
 }
 
@@ -1065,12 +1086,14 @@ input[type='phone'] {
 
 
 #gallery {
+
 	position:relative;
 
 }
 #gallery #main {
 	width:310px;
 	height:310px;
+
 	position:relative;
 
 }
@@ -1096,8 +1119,12 @@ input[type='phone'] {
 	position:absolute;
 	top:0;
 	left:0;
+
 	width: 310px;
 	height:310px;
+
+}
+#gallery #images .slide img {
 
 }
 
@@ -1121,6 +1148,7 @@ input[type='phone'] {
 	left:0;
 	width: 80px;
 	height:80px;
+
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;

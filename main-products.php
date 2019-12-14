@@ -4,19 +4,18 @@
 
 		<!--		ТОВАРЫ			-->
 		<div class="goods">
-			<?php include 'hover-product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product-star.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product-star.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
-			<?php include 'product.php'; ?>
+			<?php include 'hover-product.php'; 
+			$i = 1;
+			while ($i <= 3) {
+				$i++; 
+				include 'product-star.php';
+			}
+			$i = 1;
+			while ($i <= 10) {
+				$i++; 
+				include 'product.php';
+			}
+			?>
 
 
 		</div>

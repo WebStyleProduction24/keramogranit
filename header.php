@@ -53,5 +53,7 @@
 				<button id="feedback"><span>Заказать звонок</span></button>
 			</div>
 		</div>
+		
+		<?php include 'popup.php'; ?>
 
 	</header>

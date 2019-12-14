@@ -64,6 +64,8 @@ $(function(){
         });
 
     });
+
+
     let open__area=0;
     let close__area=["img/arrowUp.png","img/arrowDown.png"];
     $(this).find('.svg__arrow-area').click(function(){
@@ -91,6 +93,7 @@ $(function(){
         }
         $(this).find('img').attr("src",close__style[open__style]);
     });
+
 
     let modalBtn=0;
     let modalArr=["img/HeartActive24px.png","img/HeartInactive24px.png"];
@@ -158,5 +161,4 @@ $(function(){
 
 
 });
-
 

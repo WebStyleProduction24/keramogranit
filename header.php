@@ -11,6 +11,7 @@
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 
 <body>

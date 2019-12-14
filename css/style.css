@@ -909,7 +909,6 @@ input[type='phone'],
 	background: #EEEEEE;
 	display: flex;
 	flex-direction: column;
-	display: none;
 	position: absolute;
 
 }
@@ -923,6 +922,7 @@ input[type='phone'],
 
 #mail-window-close{
 	margin-right: 15.5px;
+	cursor: pointer;
 }
 
 

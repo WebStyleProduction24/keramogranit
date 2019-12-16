@@ -10,6 +10,7 @@ body,
 html {
 	background: #ffffff;
 	position: relative;
+	font-family: 'Roboto';	
 }
 
 ul,
@@ -21,14 +22,12 @@ li {
 
 /*общие стили для элементов*/
 
-p,
-span {
-	font-family: 'Roboto';
+p, span {
+	
 	font-size: 14px;
 }
 
-h2 {
-	font-family: 'Roboto';
+h2 {	
 	font-weight: bold;
 	font-size: 56px;
 	text-align: center;
@@ -36,10 +35,24 @@ h2 {
 	margin-top: 67px;
 }
 
+h3 {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 40px;
+}
+
 .d-flex {
 	display: flex;
 }
+.fa {
+	margin-right: 5px;
+}
 
+img{
+	cursor: pointer;
+}
 /****************/
 
 
@@ -49,16 +62,6 @@ h2 {
 header {
 	position: relative;
 }
-
-/*нужно здесь чтоб не перекрывать стили phones span*/
-
-header span {
-	font-family: 'Roboto';
-	font-size: 16px;
-	color: #ffffff;
-
-}
-
 
 /*top header*/
 .contacts {
@@ -70,55 +73,24 @@ header span {
 	align-items: center;
 }
 
-.contacts a {
-	text-decoration: none;
-}
-
-.email,
-.phones {
-	height: 20px;
-}
-
-
 .email {
 	margin-left: 70px;
-	width: 195px;
-	display: flex;
-	align-items: center;
-	text-align: right;
 }
-
-.email img {
-	margin-right: 10px;
-}
-
 
 .phones {
 	margin-right: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	width: 375px;
-	text-align: right;
-
 }
 
 
-.phones img {
-	margin-right: 10px;
-}
-
-.phones span {
+header span {	
 	font-size: 18px;
+	color: #ffffff;
+	margin-left: 10px;
 }
 
-.secondNum{
+.secondNum {
 	margin-right: 15px;
 }
-
-
-
-
 
 /*******************/
 
@@ -128,7 +100,6 @@ header span {
 main {
 	margin-bottom: 60px;
 	position: relative;
-
 }
 
 .mainHeader {
@@ -181,11 +152,22 @@ button {
 	right: 5px;
 	border-radius: 4px;
 	background: #FFDB4D;
-	background-image: url(../img/search_button.png);
+	background-image: url(../img/Search.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
 }
+
+
+.search button:hover {
+	
+	background: #EFC622;
+	background-image: url(../img/Search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
 
 /*
 .search button:before {
@@ -212,7 +194,6 @@ button {
 	background-image: url(../img/HeartActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 
@@ -220,7 +201,10 @@ button {
 	background-image: url(../img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+}
 
+.favourites:hover{
+	border: 2px solid #EFC622;
 }
 
 .busket {
@@ -234,14 +218,17 @@ button {
 	background-image: url(../img/bucketInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
-
 }
 
 .busket:active {
 	background-image: url(../img/bucketActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
+}
 
+
+.busket:hover{
+	border: 2px solid #EFC622;
 }
 
 
@@ -261,8 +248,6 @@ button {
 	background-image: url(../img/telephone14px.png);
 	background-repeat: no-repeat;
 	background-position: 10% 50%;
-
-
 }
 
 
@@ -279,7 +264,7 @@ button {
 /***************/
 
 /*стили для фильтра*/
-.form__list-item {
+.form__list-item{
 	margin-top: 5px;
 }
 
@@ -446,6 +431,11 @@ input[type=checkbox]:checked + label:before {
 
 /*стили для + - начало*/
 
+.quantity{
+	display: flex;
+	align-items: center;
+}
+
 
 .quantity input {
 	display: inline-block;
@@ -506,7 +496,6 @@ input[type=checkbox]:checked + label:before {
 input[type="button"] {
 	cursor: pointer;
 }
-
 
 .quantity[type='text'] {
 	font-size: 16px;
@@ -618,7 +607,6 @@ main {
 	min-width: 200px;
 	height: auto;
 	margin-top: 51px;
-	font-family: 'Roboto';
 
 }
 
@@ -673,8 +661,86 @@ main {
 	margin-top: 20px;
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
+/*классы для ховера */
+.product_icon-slide {
+	width: 310px;
+	height: 440px;
+	border: 1px solid  #FFDB4D;
+	background: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 20px;
+	box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 163px;
+	top: 209px;
+}
+
+#show{
+	display: none;
+}
+
+.product_icon-img{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.icon-btn{
+	width: 80px;
+	height: 20px;
+	background: #FFDB4D;
+}
+
+.top__img{
+	margin-top: 10px;
+}
+
+.img__top{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.icon-img{
+	margin-top: 10px;
+}
+
+.font__bold{
+	font-weight: 500;
+	font-size: 22px;
+	color: #333333;
+}
+
+.m2{
+	margin-top: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #666666;
+}
+
+.product_icon-text{
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
 
 
+
+
+.product_icon-img{
+
+}
+
+.shadow__btn{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quantity__text{
+	margin-left: 59px;
+	font-size: 14px;
+	color: #999999;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
 .product_icon p {
 	font-size: 16px;
 	margin: 0 10px 0 10px;
@@ -685,13 +751,14 @@ main {
 }
 
 
+
+
 /*КЛАССЫ ДЛЯ ИКОНОК КОРЗИНЫ И ИЗБРАННОГО*/
 
 .bucket_icon {
 	padding: 0 !important;
 	margin-left: 50px;
 	display: none;
-
 }
 
 
@@ -713,8 +780,6 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 10px;
-
-
 }
 
 .iconBusket {
@@ -739,12 +804,10 @@ main {
 
 .iconBusket:active {
 	background-image: url(../img/bucketActive16px.png);
-
 }
 
 .iconHeart:active {
 	background-image: url(../img/HeartActive16px.png);
-
 }
 
 /*************************************************/
@@ -795,7 +858,6 @@ footer {
 	justify-content: center;
 	flex-direction: column;
 	z-index: 1000;
-
 }
 
 .popupShow {
@@ -829,6 +891,9 @@ footer {
 	margin: 13.5px 0 8px 0;
 }
 
+#close {
+	cursor: pointer;
+}
 
 form {
 	display: flex;
@@ -836,21 +901,21 @@ form {
 	flex-direction: column;
 	margin: 0 auto;
 	margin-top:
-
 }
 
-.popup input {
+.popup input,
+.busket_form input {
 	width: 280px;
 	height: 46px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 4px;
 	border: 1px solid #999999;
-
 }
 
 .popup input[type='text'],
-input[type='phone'] {
+input[type='phone'],
+.busket_form input[type='text'] {
 	padding-left: 20px;
 }
 
@@ -860,7 +925,6 @@ input[type='phone'] {
 	width: 218px;
 	height: 44px;
 	border: none !important;
-	border-radius: 50px;
 	font-size: 16px;
 	font-family: "Roboto";
 	color: #333333;
@@ -869,6 +933,31 @@ input[type='phone'] {
 	transition: 0.35s ease-in-out;
 	cursor: pointer;
 
+}
+
+
+/*окошко почты*/
+
+.mail-window {
+	width: 320px;
+	height: 84px;
+	background: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+}
+
+.mail-window span {
+	font-weight: 500;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+
+#mail-window-close{
+	margin-right: 15.5px;
+	cursor: pointer;
 }
 
 
@@ -883,7 +972,7 @@ input[type='phone'] {
 	flex-direction: column;
 	justify-content: space-around;
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	left: 25%;
 }
 
@@ -1021,7 +1110,6 @@ input[type='phone'] {
 }
 
 .arctic__margin{
-
 	margin-right: 110px;
 }
 
@@ -1043,23 +1131,98 @@ input[type='phone'] {
 
 /*стили для слайдера*/
 
-.owl-carousel {
-	width: 100%;
+
+
+#gallery {
+	position:relative;
+
+}
+#gallery #main {
+	width:310px;
+	height:310px;
+	position:relative;
+
+}
+#gallery #images, #gallery #thumbs {
+	overflow: hidden;
+}
+#gallery #images {
+	width:310px;
+	height:310px;
+	margin:0 auto;
+	position:absolute;
+	left:16px;
+	top:0;
+}
+#gallery #images .slide {
+	width: 400px;
+	height:210px;
+	position:relative;
+	float:left;
+}
+#gallery #images .slide a {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 310px;
+	height:310px;
+
 }
 
-.item {
-	width: 100%;
+#gallery #thumbs {
+	width: 330px;
+	height:40px;
+	margin:10px 0 0 73px;
+}
+#gallery #thumbs .thumb {
+	width:59px;
+	height:80px;
+	float: left;
+	position:relative;
+	margin:0 30px 0 0;
 }
 
-.owl-stage-outer {
-	border: 5px solid;
+#gallery #thumbs .thumb a {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 80px;
+	height:80px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
 }
 
-.owl-dots {
-	display: flex;
+
+
+#gallery #prev, #gallery #next {
+	text-indent:-999em;
+	position: absolute;
+	display:block;
+	width:19px;
+	height:20px;
+	background: transparent url('../img/left.png') no-repeat 0 0;
+	bottom:20px;
+}
+#gallery #prev {
+	background-position: 0 0;
+	left: 25px;
+}
+#gallery #next {
+	background-position: -19px 0;
+	right: 25px;
 }
 
-.owl-dot {
-	padding: 0 10px;
-	margin: 10px;
+#main .caroufredsel_wrapper{
+	height: 310px !important;
+	margin: 0 !important;
+}
+#images {
+	height: 310px !important;
+}
+
+#close__modal{
+    display: none;
 }

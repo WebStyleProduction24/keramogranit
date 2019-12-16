@@ -14,9 +14,6 @@
 
 	</div>
 
-
-	<?php include 'hover-product.php'; ?>
-
 </main>
 
 <?php include 'footer.php'; ?>

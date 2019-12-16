@@ -65,7 +65,6 @@ $(function(){
 
     });
 
-
     let open__area=0;
     let close__area=["img/arrowUp.png","img/arrowDown.png"];
     $(this).find('.svg__arrow-area').click(function(){

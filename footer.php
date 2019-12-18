@@ -194,7 +194,6 @@
 <script src="js/formScript.js"></script>
 <script src="js/jquery.carouFredSel-5.2.3.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
-
 <script src="js/main.js"></script>
 </body>
 

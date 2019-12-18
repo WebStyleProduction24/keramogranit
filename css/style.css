@@ -672,6 +672,11 @@ main {
 	top: 209px;
 }
 
+.product_icon-flex{
+	flex-direction: row;
+}
+
+
 #show{
 	display: none;
 }

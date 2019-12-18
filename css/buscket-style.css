@@ -19,7 +19,7 @@
 	height: 90px;
 	margin-right: 20px;
 }
-
+ 
 .buscket__item-name {
 	display: flex;
 	flex-direction: row;
@@ -79,6 +79,7 @@
 .buscket__item_other-info {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 
@@ -136,15 +137,37 @@
 	margin-top: 22px;
 }
 
+.total-container{
+	display: flex;
+	flex-direction: row;
+}
+
 .total-weight,
 .total-cost {
 	display: flex;
 	flex-direction: column;
 }
 
+.total-cost{
+	margin-left: 33px;
+}
+
 .total-weight span,
 .total-cost span {
 	margin: 20px 0 10px 0;
+}
+
+.about-cost{
+	display: flex;
+	flex-direction: column;
+}
+
+.about-cost form{
+	margin: 20px 0 10px 0;
+}
+
+.about-cost p {
+	margin-left: 46px;
 }
 
 .about-cost input {

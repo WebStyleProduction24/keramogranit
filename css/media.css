@@ -1,3 +1,10 @@
+@media screen and (max-width: 1600px) {
+	.main-content {
+		justify-content: space-around;
+	}
+}
+
+
 @media screen and (max-width: 1200px) {
 
 
@@ -6,7 +13,6 @@
 		margin-left: 15px;
 
 	}
-
 
 }
 
@@ -47,6 +53,9 @@
 	.mobilePhoneMail,
 	.mobileFavouritesBusket {
 		width: 75px;
+		display: flex;
+		flex-direction: row;
+
 	}
 
 	.mobilePhoneMail {
@@ -136,14 +145,24 @@
 
 	}
 
+
+
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 980px;
+	}
+
+
+	.buscket__item-quantity {
+		margin-right: 80px;
+	}
 }
 
 
 @media screen and (max-width: 768px) {
 	.product_icon {
-
 		margin-left: 10px;
-
 	}
 
 	.main-container {
@@ -174,6 +193,61 @@
 	.sort {
 		margin-top: 40px;
 	}
+
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 100%;
+
+	}
+
+	.main__buscket_container {
+		margin-bottom: 40px;
+	}
+
+	.buscket__item-name img {
+		width: 102px;
+		height: 102px;
+	}
+
+	.buscket__item {
+		flex-direction: column;
+		height: 300px;
+	}
+
+	.buscket__item-quantity {
+		margin: 0;
+	}
+
+	.buscket__item-quantity {
+		margin: 20px 0 30px
+	}
+
+
+	.busket_form {
+		width: 100%;
+		height: auto;
+	}
+
+
+	.busket_form form {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.busket_form input[type="phone"],
+	.busket_form input[type="text"] {
+		margin: 0;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.busket_form p {
+		margin: 0;
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -182,6 +256,39 @@
 		font-size: 46px;
 	}
 
+	.total-block{
+		width: 546px;
+		height: 194px;
+		flex-direction: column;
+	}
+	.total-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	.about-cost form{
+		margin: 0 auto;
+	}
+	
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 100%;
+
+	}
+
+}
+
+
+@media screen and(max-width: 480px) {
+	
+	.busket_form span{
+		margin: 0 auto;
+	}
+	
 }
 
 

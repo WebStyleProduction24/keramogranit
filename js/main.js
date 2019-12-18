@@ -160,6 +160,22 @@ $(function(){
         bl.style.display = 'block';
     }
 
+    $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+ 
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  vertical:true,
+  
+  
+  
+  focusOnSelect: true
+});
 
 
 

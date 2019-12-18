@@ -1226,3 +1226,9 @@ input[type='phone'],
 #close__modal{
     display: none;
 }
+
+.slider-for{
+  img{
+    width:100%;  
+  }
+}

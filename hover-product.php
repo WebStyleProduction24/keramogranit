@@ -17,14 +17,14 @@
 	<div class="product_icon-flex d-flex">
 		<div class="product_icon-img">
 			<button class="icon-btn shadow__btn"><img src="img/arrowUp.png" alt=""></button>
-			<img src="img/slide1.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide2.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide3.png" class="icon-img" width="80" height="80" />
-			<img src="img/slide1.png" class="icon-img" width="80" height="80" />
+			<img src="img/slide1.png" class="icon-img" width="80" height="80" onclick="$('#exampleModal1').arcticmodal();"/>
+			<img src="img/slide2.png" class="icon-img" width="80" height="80" onclick="$('#exampleModal1').arcticmodal();"/>
+			<img src="img/slide3.png" class="icon-img" width="80" height="80" onclick="$('#exampleModal1').arcticmodal();" />
+			<img src="img/slide1.png" class="icon-img" width="80" height="80" onclick="$('#exampleModal1').arcticmodal();" />
 			<button class="icon-btn top__img"><img src="img/arrowDown.png" alt=""></button>
 		</div>
 		<div class="product_icon-item img__top">
-			<img src="img/Rectangle%20104.png" alt="">
+			<img src="img/Rectangle%20104.png" alt="" onclick="$('#exampleModal1').arcticmodal();">
 			<p class="product_icon-text" onclick="$('#exampleModal1').arcticmodal();">Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
 			<div class="product_icon_price ">
 				<span class="font__bold d-flex">650р/ <span class="m2">м<sup>2</sup></span> </span>

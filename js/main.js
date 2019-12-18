@@ -65,7 +65,6 @@ $(function(){
 
     });
 
-
     let open__area=0;
     let close__area=["img/arrowUp.png","img/arrowDown.png"];
     $(this).find('.svg__arrow-area').click(function(){
@@ -150,11 +149,15 @@ $(function(){
         hv = document.getElementById('show');
 
     bl.onmouseover = function () {
-        hv.style.display = 'block';
+        bl.style.display = 'none';
+        hv.style.display='block';
+
+
     }
 
-    hv.onmouseout = function () {
+    hv.onpointerleave = function () {
         hv.style.display = 'none';
+        bl.style.display = 'block';
     }
 
 

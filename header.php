@@ -19,7 +19,6 @@
 
 	<header>
 		<div class="contacts">
-
 			<div class="email mobilePhoneMail">
 				<img src="img/MailYellowDesktop.png" alt="">
 				<a href="#">

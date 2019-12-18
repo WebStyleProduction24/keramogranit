@@ -42,7 +42,12 @@ h3 {
 	text-align: center;
 	margin-top: 40px;
 }
-
+.offer__filter-btn{
+	display: none;
+}
+.offer__filter-btn-ff{
+	display: none;
+}
 .d-flex {
 	display: flex;
 }
@@ -935,6 +940,7 @@ input[type='phone'],
 
 }
 
+/*стиль для кнопки фмльтр мобильная версия*/
 
 /*окошко почты*/
 

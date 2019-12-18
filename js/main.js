@@ -177,6 +177,94 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
+$('#open__btn-head').on('click', function() {
+        $('#close__btn-head').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+$('#open__btn-head').on('click', function() {
+        $('#header, #heaed__title').slideToggle(100, function(){
+            if( $(this).css('display') === "block"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+$('#open__btn-head').on('click', function() {
+        $('#main-content').slideToggle(100, function(){
+            if( $(this).css('display') === "flex"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+$('#open__btn-head').on('click', function() {
+        $('#open__btn-head').slideToggle(100, function(){
+            if( $(this).css('display') === "block"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+
+$('#open__btn-head').on('click', function() {
+        $('#btn-ff').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+$('#arrowLeft__btn').on('click', function() {
+        $('#btn-ff').slideToggle(100, function(){
+            if( $(this).css('display') === "block"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+$('#arrowLeft__btn').on('click', function() {
+        $('#open__btn-head').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+$('#arrowLeft__btn').on('click', function() {
+        $('#close__btn-head').slideToggle(100, function(){
+            if( $(this).css('display') === "block"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+$('#arrowLeft__btn').on('click', function() {
+        $('#main-content').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+$('#arrowLeft__btn').on('click', function() {
+        $('#header, #heaed__title').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+
+
 
 
 });

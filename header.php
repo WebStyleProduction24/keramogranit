@@ -11,14 +11,15 @@
 	
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
-	<link rel="stylesheet" href="css/media.css">
+	
 	<link rel="stylesheet" href="css/buscket-style.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
 
-	<header>
+	<header class="header" id="header">
 		<div class="contacts">
 			<div class="email mobilePhoneMail">
 				<img src="img/MailYellowDesktop.png" alt="">				

@@ -1,4 +1,24 @@
-<aside class="offer__filter">
+
+<div class="offer__filter-btn" id="open__btn-head">
+	<div class="offer__filter-btnFlex d-flex">
+		<img src="img/arrowDown.png" alt="" class="img__btn">
+		<p class="offer__filter-btnText">
+			Показать фильтры
+		</p>
+	</div>
+</div>
+<div class="offer__filter-btn-ff" id="btn-ff">
+	<div class="offer__filter-btn-ffBLock d-flex">
+		<img src="img/arrowLeft.png" class="arrowLeft__btn" id="arrowLeft__btn">
+		<p class="offer__filter-btn-ffText">
+			Фильтры
+		</p>
+		<img src="img/OK.png" class="OK__btn" id="OK__btn">
+	</div>
+</div>
+
+<aside class="offer__filter" id="close__btn-head">
+
 	<div class="cd-tab-filter-wrapper">
 		<div class="cd-tab-filter">
 			<ul class="cd-filters d-flex">

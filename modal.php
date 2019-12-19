@@ -3,51 +3,20 @@
 	<div class="box-modal" >
 
 		<div class="artic-goods-container">
-				<!--
-				<div class="artic__goods-img">
-					<div class="fotorama" data-nav="thumbs" data-width="310"
-						 data-height="310" >
-						<img class="fotorama-img" src="img/main_slide.png">
-						<img class="fotorama-img" src="img/slide1.png">
-						<img class="fotorama-img" src="img/slide2.png">
-						<img class="fotorama-img" src="img/slide3.png">
-					</div>
-				</div>
+				<div class="slider slider-for">
+                    <div><img src="img/slide1.png" alt="" width="310" height="310" /></div>
+                    <div><img src="img/slide2.png" alt="" width="310" height="310" /></div>
+                    <div><img src="img/slide3.png" alt="" width="310" height="310" /></div>
+                    
+                </div>
+                <div class="slider slider-nav">
+                    <div><img src="img/slide1.png" alt="" width="80" height="80" /></div>
+                    <div><img src="img/slide2.png" alt="" width="80" height="80" /></div>
+                    <div><img src="img/slide3.png" alt="" width="80" height="80" /></div>                   
+                </div>
+			<!--
+
 			-->
-			<div id="gallery">
-				<div id="main">
-					<div id="images">
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide1.png" alt="" width="310" height="310" />
-						</div>
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide2.png" alt="" width="310" height="310" />
-						</div>
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide3.png" alt="" width="310" height="310" />
-						</div>
-					</div>
-				</div>
-				<div id="thumbs">
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide1.png" alt="" width="80" height="80" />
-					</div>
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide2.png" alt="" width="80" height="80" />
-					</div>
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide3.png" alt="" width="80" height="80" />
-					</div>
-				</div>
-				<a href="#" class="thumbs" id="prev">Previous</a>
-				<a href="#" class="thumbs" id="next">Next</a>
-			</div>
 
 
 

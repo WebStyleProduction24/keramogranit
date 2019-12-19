@@ -32,10 +32,10 @@
 
 			<div class="phones mobileFavouritesBusket">
 				<img src="img/PhoneYellowDesktop.png" alt="">
-				<a href="#">
+				<a href="/favourites.php">
 					<div id="favouritesMobile"></div>
 				</a>
-				<a href="#">
+				<a href="/busket.php">
 					<div id="busketMobile"></div>
 				</a>
 				<a href="#" class="secondNum"><span>+7 (495) 22-55-700</span></a>

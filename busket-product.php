@@ -21,7 +21,8 @@
 			<div class="other-info-price"><span>Цена</span>
 				<p>00000</p>
 			</div>
+			<div class="delete">Удалить</div>
 		</div>
-		<div class="delete">Удалить</div>
+<!--		<div class="delete">Удалить</div>-->
 	</div>
 </div>

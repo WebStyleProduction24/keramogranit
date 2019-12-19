@@ -1,3 +1,10 @@
+@media screen and (max-width: 1600px) {
+	.main-content {
+		justify-content: space-around;
+	}
+}
+
+
 @media screen and (max-width: 1200px) {
 
 
@@ -6,7 +13,6 @@
 		margin-left: 15px;
 
 	}
-
 
 }
 
@@ -47,6 +53,9 @@
 	.mobilePhoneMail,
 	.mobileFavouritesBusket {
 		width: 75px;
+		display: flex;
+		flex-direction: row;
+
 	}
 
 	.mobilePhoneMail {
@@ -136,15 +145,23 @@
 
 	}
 
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 980px;
+	}
+
+
+	.buscket__item-quantity {
+		margin-right: 80px;
+	}
 }
 
 
 @media screen and (max-width: 768px) {
 
 	.product_icon {
-
 		margin-left: 10px;
-
 	}
 
 	.main-container {
@@ -175,6 +192,65 @@
 	.sort {
 		margin-top: 40px;
 	}
+
+	.total-block{
+		width: 95%;
+	}
+	
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 100%;
+
+	}
+
+	.main__buscket_container {
+		margin-bottom: 40px;
+	}
+
+	.buscket__item-name img {
+		width: 102px;
+		height: 102px;
+	}
+
+	.buscket__item {
+		flex-direction: column;
+		height: 300px;
+	}
+
+	.buscket__item-quantity {
+		margin: 0;
+	}
+
+	.buscket__item-quantity {
+		margin: 20px 0 30px
+	}
+
+
+	.busket_form {
+		width: 80%;
+		height: auto;
+	}
+
+
+	.busket_form form {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.busket_form input[type="phone"],
+	.busket_form input[type="text"] {
+		margin: 0;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.busket_form p {
+		margin: 0;
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -183,10 +259,51 @@
 		font-size: 46px;
 	}
 
+	.total-block{
+		width: 95%;
+		height: 194px;
+		flex-direction: column;
+	}
+	.total-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.about-cost{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.about-cost form{
+		margin: 0 auto;
+	}
+	
+	/*Корзина*/
+
+	.main__buscket_container {
+		width: 100%;
+
+	}
+
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and(max-width: 480px) {
+	
+	.busket_form span{
+		margin: 0 auto;
+	}
+	
+	
+	
+	
+}
+
+
+@media (min-width: 300px) and (max-width:440px) {
 
 	h2 {
 		font-size: 42px;
@@ -242,72 +359,14 @@
 		flex-direction: row;
 		width: 100%;
 	}
-
-/* стили для кнопки фильтра*/	
-	.offer__filter-btn{
-		width: 290px;
-		height: 40px;
-		background: #EEEEEE;
-		align-items: center;
-	    margin: auto;
-	    display: block;
+/*Корзина*/
+	
+	.buscket__item-name img{
+		margin: 0;
+		margin-right: 8px;
 	}
-	.offer__filter-btnFlex{
-	    align-items: center;
-	    margin-top: 11px;
+	
+	.item-name-and-button{
+		width: 180px;
 	}
-
-	.img__btn{
-		margin-left: 69px;
-	}
-	.offer__filter-btnText{
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		color: #333333;
-		margin-left: 10px;
-
-	}
-
-	.offer__filter-btn-ff{
-		width: 320px;
-		height: 40px;
-		background: #333333;
-		display: none;
-		
-	}
-
-	.offer__filter-btn-ffBLock{
-		margin-top: 8px;
-	}
-
-	.offer__filter-btn-ffText{
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		color: #EEEEEE;
-		text-align: center;
-	}
-
-	.offer__filter-btn-ffBLock{
-		align-items: center;
-	}
-
-	.arrowLeft__btn{
-	 margin-left: 10px;
-	 margin-right: 96px;
-	}
-
-	.OK__btn{
-		margin-left: 95px;
-	}
-
-	.header{
-		display: block;
-	}
-
-	#heaed__title{
-		display: block;
-	}
-
 }

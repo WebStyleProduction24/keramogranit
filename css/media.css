@@ -474,6 +474,7 @@
 	.left-top{
 		margin-top: 0;
 	}
+
 	.more{
 	display: block;
 }
@@ -569,9 +570,5 @@
 .btn__arrow-artic{
 	height: 55px;
 }
-
-
-
-
 
 }

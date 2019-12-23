@@ -104,18 +104,45 @@ $(function(){
         $(this).find('img').attr("src",modalArr[modalBtn]);
     });
 
-    thumbs.onclick = function(event) {
-      let thumbnail = event.target.closest('a');
+    $('#thumbs .thumb a').each(function(i) {
+        $(this).addClass( 'itm'+i );
+        $(this).click(function() {
+            $('#images').trigger( 'slideTo', [i, 0, true] );
+            return false;
+        });
+    });
+    $('#thumbs a.itm0').addClass( 'selected' );
 
-      if (!thumbnail) return;
-      showThumbnail(thumbnail.href, thumbnail.title);
-      event.preventDefault();
-    }
+    $('#images').carouFredSel({
+        direction: 'left',
+        circular: true,
+        infinite: false,
+        items: 1,
+        auto: false,
+        scroll: {
+            fx: 'directscroll',
+            onBefore: function() {
+                var pos = $(this).triggerHandler( 'currentPosition' );
+                $('#thumbs a').removeClass( 'selected' );
+                $('#thumbs a.itm'+pos).addClass( 'selected' );
 
-    function showThumbnail(href, title) {
-      largeImg.src = href;
-      largeImg.alt = title;
-    }
+                var page = Math.floor( pos / 3 );
+                $('#thumbs').trigger( 'slideToPage', page );
+            }
+        }
+    });
+    $('#thumbs').carouFredSel({
+        direction: 'left',
+        circular: true,
+        infinite: false,
+        items: 3,
+        align: false,
+        auto: false,
+        height: 80,
+        margin: 0,
+        prev: '#prev',
+        next: '#next'
+    });
 
 
     let bl = document.getElementById('hover'),
@@ -133,7 +160,22 @@ $(function(){
         bl.style.display = 'block';
     }
 
-   
+    $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+ 
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  vertical:true,
+  
+  
+  
+  focusOnSelect: true
+});
 
 $('#open__btn-head').on('click', function() {
         $('#close__btn-head').slideToggle(100, function(){
@@ -220,36 +262,6 @@ $('#arrowLeft__btn').on('click', function() {
         });
 
     });
-function getTopOffset(e) { 
-    var y = 0;
-    do { y += e.offsetTop; } while (e = e.offsetParent);
-    return y;
-}
-var block = document.getElementById('#open__btn-head'); /* fixblock - значение атрибута id блока */
-if ( null != block ) {
-    var topPos = getTopOffset( block );
-
-    window.onscroll = function() {
-        var scrollHeight = Math.max( document.documentElement.scrollHeight, document.documentElement.clientHeight),
-
-            // определяем высоту рекламного блока
-            blockHeight = block.offsetHeight,
-
-            // вычисляем высоту подвала, footer заменить на значение атрибута id подвала
-            footerHeight = document.getElementById('#footer').offsetHeight,         
-
-            // считаем позицию, до которой блок будет зафиксирован 
-            stopPos = scrollHeight - blockHeight - footerHeight; 
-
-        var newcss = (topPos < window.pageYOffset) ? 
-            'top:20px; position: fixed;' : 'position:static;';
-
-        if ( window.pageYOffset > stopPos ) 
-            newcss = 'position:static;';
-
-        block.setAttribute( 'style', newcss );
-    }
-}
 
 
 

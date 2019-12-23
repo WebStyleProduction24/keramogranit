@@ -309,10 +309,6 @@
 		font-size: 42px;
 	}
 
-	.product_icon_price_icons_block{
-		display: none;
-	}
-
 	.offer__filter{
 		display: none;
 	}
@@ -364,18 +360,18 @@
 		width: 100%;
 	}
 
-	/* стили для кнопки фильтра*/	
+/* стили для кнопки фильтра*/	
 	.offer__filter-btn{
 		width: 290px;
 		height: 40px;
 		background: #EEEEEE;
 		align-items: center;
-		margin: auto;
-		display: block;
+	    margin: auto;
+	    display: block;
 	}
 	.offer__filter-btnFlex{
-		align-items: center;
-		margin-top: 11px;
+	    align-items: center;
+	    margin-top: 11px;
 	}
 
 	.img__btn{
@@ -415,8 +411,8 @@
 	}
 
 	.arrowLeft__btn{
-		margin-left: 10px;
-		margin-right: 96px;
+	 margin-left: 10px;
+	 margin-right: 96px;
 	}
 
 	.OK__btn{
@@ -431,9 +427,7 @@
 		display: block;
 	}
 
-
-
-	/*Корзина*/
+/*Корзина*/
 	
 	.buscket__item-name img{
 		margin: 0;
@@ -443,263 +437,4 @@
 	.item-name-and-button{
 		width: 180px;
 	}
-	/*End Корзина*/
-
-	.product_icon-slide-rigth{
-		width: 215px;
-		height: 416px;
-		background: #FFFFFF;
-		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
-		border: 1px solid #FFDB4D;
-		position: absolute;
-		top: 647px;
-		left: 13px;
-		display: none;
-	}
-
-	.product_icon-text-rigth{
-		font-size: 16px;
-		width: 120px;
-		height: 76px;
-		
-	}
-
-	.product_icon_price-rigth{
-		margin-top: 20px;
-
-	}
-
-	.font__bold{
-		font-size: 22px;
-	}
-
-	.product_icon_price_icons_block-rigth{
-
-		margin-top: 10px;
-		display: block;
-		margin-left: 28px;
-		display: flex;
-	}
-	.iconHeart{
-		margin-right: 20px;
-	}
-	.quantity{
-		
-		margin-top: 20px;
-		margin-bottom: 5px;
-	}
-
-	.qty{
-		width: 69px !important;
-	}
-
-	.quantity input {
-		width: 28px;
-	}
-
-	.quantity__text-rigth{
-		font-size: 14px;
-		color: #999999;
-		margin-left: 30px;
-	}
-
-	.art-rigth{
-		margin-top: 20px;
-		margin-left: 16px;
-	}
-
-	.art-rigth p > span {
-		color: #666666;
-		font-weight: 500;
-	}
-
-	.art-rigth p {
-		font-size: 14px;
-		color: #999999;
-	}
-
-	.product_icon-img-rigth{
-		width: 56px;
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-
-	.product_icon-item-rigth{
-		margin-left: 10px;
-	}
-
-	.icon-btn-rigth{
-		width: 55px;
-		height: 20px;
-		background: #FFDB4D;
-	}
-
-	.img__top{
-		margin-top: 0px;
-	}
-
-	.icon-img{
-		height: 55px;
-		width: 55px;
-	}
-	.product_icon-img{
-		width: 56px;
-	}
-
-	.icon-btn{
-		width: 55px;
-
-	}
-
-	.icon-img-size{
-		width: 120px;
-		height: 120px;
-	}
-
-	.product_icon-slide {
-		width: 215px;
-		height: 416px;		
-		left: 79px;
-		top: 253px;
-
-	}
-
-	.img__top-size{
-		margin-top: 10px;
-		margin-left: 21px;
-	}
-
-	.product_icon-text{
-		font-size: 16px;
-		width: 120px;
-		height: 76px;
-	}
-
-	.hidden-busket{
-		display: none;
-	}
-
-	.show-busket{
-		display: block;
-	}
-
-	.product_icon_price{
-		display: block;
-		margin-top: 10px;
-		margin-bottom: 20px;
-	}
-
-	.quantity__text {
-		margin-left: 30px;
-		margin-top: 0px;
-		margin-bottom: 21px;
-
-	}
-
-	.left{
-		display: flex;
-		margin-top: 10px;
-		margin-left: 24px;
-	}
-
-	.left-top{
-		margin-top: 0;
-	}
-
-	.more{
-		display: block;
-	}
-
-	.more__text{
-		display: block;
-	}
-
-	.more__item{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		margin-top: 4px;
-	}
-
-	.more{
-		background: #FFDB4D;
-		width: 140px;
-		height: 26px;
-		margin-top: 33px;
-	}
-
-	.more p{
-		font-weight: normal;
-		font-size: 14px;
-		color: #666666;
-		margin-right: 9px;
-		margin-left: 24px;
-
-	}
-
-	.more img{
-		width: 8px;
-		height: 3px;
-		margin-top: 8px;
-	}
-
-
-	.box-modal {
-		width: 320px;
-		height: auto;
-		background: #FFFFFF;
-		border: 2px solid #FFDB4D;
-		display: block;
-		flex-direction: column;
-		justify-content: space-around;
-
-		top: 25%;
-		left: 1%;
-	}
-
-	#largeImg {
-		width: 290px;
-		height: 290px;
-		margin: 15px;
-	}
-
-	.artic-goods-container {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.arctic__goods-art {
-		display: none;
-	}
-
-	.arctic__goods-name{
-		font-style: normal;
-		font-weight: 500;
-		font-size: 20px;
-	}
-
-	.thumbs__item img{
-		width: 55px;
-		height: 55px;
-	}
-
-	.arric-slider-btnLeft{
-		width: 20px;
-		height: 55px;
-		margin-right: 32px;
-	}
-
-	.arric-slider-btnRight{
-		width: 20px;
-		height: 55px;
-		margin-left: 33px;
-	}
-
-	.btn__arrow-artic{
-		height: 55px;
-	}
-
 }

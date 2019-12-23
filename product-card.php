@@ -13,5 +13,6 @@
 			<div class="art">
 				<p>Артикул <span>119608</span></p>
 			</div>
+			
 
 		</div>

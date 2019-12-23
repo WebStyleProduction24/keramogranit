@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
 	<p>2019, Универдом</p>
 </footer>
 
@@ -6,6 +6,7 @@
 	<div class="box-modal" id="exampleModal1">
 
 		<div class="artic-goods-container">
+			<<<<<<< HEAD
 				<!--
 				<div class="artic__goods-img">
 					<div class="fotorama" data-nav="thumbs" data-width="310"
@@ -51,8 +52,30 @@
 				<a href="#" class="thumbs" id="prev">Previous</a>
 				<a href="#" class="thumbs" id="next">Next</a>
 			</div>
+			=======
+			<div class="arric-slider">
+				<p><img id="largeImg" src="img/slide1.png" alt="Large image"></p>
+				<div class="arric-slider-thumbs">
+					<div class="arric-slider-btnLeft"><img src="img/left.png" class="btn__arrow-artic"></div>
+					>>>>>>> origin/badikov
 
+					<ul class="thumbs__item" id="thumbs">				   
+						<li >
+							<a href="img/slide1.png" title="Image 2"><img src="img/slide1.png" width="80" height="80"></a>
+						</li>
+						<li>
+							<a href="img/slide2.png" title="Image 3"><img src="img/slide2.png" width="80" height="80"></a>
+						</li>
+						<li>
+							<a href="img/slide3.png" title="Image 4"><img src="img/slide3.png" width="80" height="80"></a>
+						</li>				   
+					</ul>
+					<div class="arric-slider-btnRight"><img src="img/rigth.png" class="btn__arrow-artic"></div>
 
+				</div>				  
+			</div>
+			
+			
 
 
 			<!--				-->
@@ -189,16 +212,6 @@
 		</div>
 	</div>
 </div>
-<!-- 
-<script src="js/formScript.js"></script>
-<script src="js/jquery.carouFredSel-5.2.3.js"></script>
-<script src="js/jquery.arcticmodal-0.3.min.js"></script> -->
-
-
-
-
-
-<!-- <script src="js/main.js"></script> -->
 <?php wp_footer(); ?>
 </body>
 

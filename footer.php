@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
 	<p>2019, Универдом</p>
 </footer>
 
@@ -6,53 +6,28 @@
 	<div class="box-modal" id="exampleModal1">
 
 		<div class="artic-goods-container">
-				<!--
-				<div class="artic__goods-img">
-					<div class="fotorama" data-nav="thumbs" data-width="310"
-						 data-height="310" >
-						<img class="fotorama-img" src="img/main_slide.png">
-						<img class="fotorama-img" src="img/slide1.png">
-						<img class="fotorama-img" src="img/slide2.png">
-						<img class="fotorama-img" src="img/slide3.png">
-					</div>
-				</div>
-			-->
-			<div id="gallery">
-				<div id="main">
-					<div id="images">
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide1.png" alt="" width="310" height="310" />
-						</div>
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide2.png" alt="" width="310" height="310" />
-						</div>
-						<div class="slide">
-							<a href=""></a>
-							<img src="img/slide3.png" alt="" width="310" height="310" />
-						</div>
-					</div>
-				</div>
-				<div id="thumbs">
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide1.png" alt="" width="80" height="80" />
-					</div>
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide2.png" alt="" width="80" height="80" />
-					</div>
-					<div class="thumb">
-						<a href=""></a>
-						<img src="img/slide3.png" alt="" width="80" height="80" />
-					</div>
-				</div>
-				<a href="#" class="thumbs" id="prev">Previous</a>
-				<a href="#" class="thumbs" id="next">Next</a>
+			<div class="arric-slider">
+				<p><img id="largeImg" src="img/slide1.png" alt="Large image"></p>
+				<div class="arric-slider-thumbs">
+					<div class="arric-slider-btnLeft"><img src="img/left.png" class="btn__arrow-artic"></div>
+
+					<ul class="thumbs__item" id="thumbs">				   
+				    <li >
+				      <a href="img/slide1.png" title="Image 2"><img src="img/slide1.png" width="80" height="80"></a>
+				    </li>
+				    <li>
+				      <a href="img/slide2.png" title="Image 3"><img src="img/slide2.png" width="80" height="80"></a>
+				    </li>
+				    <li>
+				      <a href="img/slide3.png" title="Image 4"><img src="img/slide3.png" width="80" height="80"></a>
+				    </li>				   
+				  </ul>
+				  <div class="arric-slider-btnRight"><img src="img/rigth.png" class="btn__arrow-artic"></div>
+
+				</div>				  
 			</div>
-
-
+				
+				
 
 
 			<!--				-->
@@ -192,9 +167,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/formScript.js"></script>
-<script src="js/jquery.carouFredSel-5.2.3.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
 <script src="js/main.js"></script>
 </body>
 

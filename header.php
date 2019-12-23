@@ -54,7 +54,7 @@
 					</form>
 				</div>
 				<a href="/favourites.php"><button class="favourites"></button></a>
-				<a href="busket.html"><button class="busket"></button></a>
+				<a href="/busket.php"><button class="busket"></button></a>
 				<span>24000р</span>
 
 				<button id="feedback"><span>Заказать звонок</span></button>

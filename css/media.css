@@ -359,6 +359,74 @@
 		flex-direction: row;
 		width: 100%;
 	}
+
+/* стили для кнопки фильтра*/	
+	.offer__filter-btn{
+		width: 290px;
+		height: 40px;
+		background: #EEEEEE;
+		align-items: center;
+	    margin: auto;
+	    display: block;
+	}
+	.offer__filter-btnFlex{
+	    align-items: center;
+	    margin-top: 11px;
+	}
+
+	.img__btn{
+		margin-left: 69px;
+	}
+	.offer__filter-btnText{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: #333333;
+		margin-left: 10px;
+
+	}
+
+	.offer__filter-btn-ff{
+		width: 320px;
+		height: 40px;
+		background: #333333;
+		display: none;
+		
+	}
+
+	.offer__filter-btn-ffBLock{
+		margin-top: 8px;
+	}
+
+	.offer__filter-btn-ffText{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: #EEEEEE;
+		text-align: center;
+	}
+
+	.offer__filter-btn-ffBLock{
+		align-items: center;
+	}
+
+	.arrowLeft__btn{
+	 margin-left: 10px;
+	 margin-right: 96px;
+	}
+
+	.OK__btn{
+		margin-left: 95px;
+	}
+
+	.header{
+		display: block;
+	}
+
+	#heaed__title{
+		display: block;
+	}
+
 /*Корзина*/
 	
 	.buscket__item-name img{

@@ -23,7 +23,6 @@ li {
 /*общие стили для элементов*/
 
 p, span {
-	
 	font-size: 14px;
 }
 
@@ -50,9 +49,10 @@ h3 {
 	margin-right: 5px;
 }
 
-img{
+img, button, .busket, #feedback{
 	cursor: pointer;
 }
+
 /****************/
 
 
@@ -155,7 +155,6 @@ button {
 	background-image: url(../img/Search.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	cursor: pointer;
 }
 
 
@@ -165,19 +164,7 @@ button {
 	background-image: url(../img/Search.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	cursor: pointer;
 }
-
-
-/*
-.search button:before {
-	content: "\f002";
-	font-family: FontAwesome;
-	color: #666666;
-	font-size: 20px;
-	font-weight: bold;
-}
-*/
 
 /***************/
 
@@ -210,7 +197,6 @@ button {
 .busket {
 	background: #ffffff;
 	margin-right: 10px;
-	cursor: pointer;
 	width: 60px;
 	height: 60px;
 	border: 2px solid #FFDB4D;
@@ -242,7 +228,6 @@ button {
 	height: 44px;
 	background-color: #ffffff;
 	margin-left: 40px;
-	cursor: pointer;
 	border: 2px solid #FFDB4D;
 	border-radius: 3px;
 	background-image: url(../img/telephone14px.png);
@@ -510,10 +495,6 @@ input[type="button"] {
 	margin-right: 100px;
 }
 
-
-
-
-
 .quantity input {
 	display: inline-block;
 	width: 43px;
@@ -539,7 +520,6 @@ input[type="button"] {
 }
 
 .quantity input:first-child:active {
-
 	background: #FFDB4D;
 	background-image: url(../img/Less.png);
 	background-repeat: no-repeat;
@@ -560,7 +540,6 @@ input[type="button"] {
 }
 
 .quantity input:last-child:active {
-
 	background-color: #FFDB4D;
 	background-image: url(../img/Plus.png);
 	background-repeat: no-repeat;
@@ -592,7 +571,6 @@ input[type="button"] {
 main {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .main-container {
@@ -600,14 +578,12 @@ main {
 	justify-content: space-between;
 	flex-direction: row;
 	margin: 0 70px 0 70px;
-
 }
 
 .main-container aside {
 	min-width: 200px;
 	height: auto;
 	margin-top: 51px;
-
 }
 
 
@@ -617,7 +593,6 @@ main {
 	justify-content: flex-start;
 	flex-direction: column;
 	text-align: left;
-
 }
 
 .sort {
@@ -642,15 +617,11 @@ main {
 	color: #333333;
 }
 
-
-
-
 .goods {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	flex-direction: row;
-	/*	max-width: 1300px;*/
 }
 
 .product_icon {
@@ -679,7 +650,6 @@ main {
 	flex-direction: row;
 }
 
-
 #show{
 	display: none;
 }
@@ -688,6 +658,7 @@ main {
 	margin-left: 10px;
 	margin-top: 10px;
 }
+
 .icon-btn{
 	width: 80px;
 	height: 20px;
@@ -728,9 +699,6 @@ main {
 	cursor: pointer;
 }
 
-
-
-
 .product_icon-img{
 
 }
@@ -755,9 +723,6 @@ main {
 	padding: 10px;
 }
 
-
-
-
 /*КЛАССЫ ДЛЯ ИКОНОК КОРЗИНЫ И ИЗБРАННОГО*/
 
 .bucket_icon {
@@ -765,7 +730,6 @@ main {
 	margin-left: 50px;
 	display: none;
 }
-
 
 .favourites_icon {
 	display: none;
@@ -779,7 +743,6 @@ main {
 	flex-direction: row;
 }
 
-
 .product_icon_price {
 	display: flex;
 	justify-content: space-between;
@@ -787,25 +750,23 @@ main {
 	margin: 20px 10px;
 }
 
-.iconBusket {
+.iconBusket, .iconHeart{
 	height: 16px;
 	width: 16px;
+}
+
+.iconBusket {
 	background-image: url(../img/bucketInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 }
 
-
 .iconHeart {
-	height: 16px;
-	width: 16px;
 	background-image: url(../img/HeartInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 	margin-left: 10px;
 }
-
-
 
 .iconBusket:active {
 	background-image: url(../img/bucketActive16px.png);
@@ -846,11 +807,7 @@ footer {
 	justify-content: center;
 }
 
-
-
 /*стили модального окна*/
-
-
 
 .popup {
 	position: absolute;
@@ -1135,8 +1092,6 @@ input[type='phone'],
 }
 
 /*стили для слайдера*/
-
-
 
 #gallery {
 	position:relative;

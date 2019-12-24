@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Шаблон страницы "Корзина"
-*/
-?>
-
 <?php include 'header.php'; ?>
 
 	<main>

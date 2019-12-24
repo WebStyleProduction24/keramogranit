@@ -1,6 +1,6 @@
 <div class="popup">
 	<div class="popup_container">
-		<div class="close_container"><img id='close' src="<?php echo get_template_directory_uri();?>/img/Close.png" alt=""></div>
+		<div class="close_container"><img id='close' src="img/Close.png" alt=""></div>
 
 		<p>Работаем с понедельника по пятницу,
 		с 10:00 до 19:00</p>
@@ -17,6 +17,6 @@
 </div>
 
 <div class="mail-window">
-	<div class="close_container"><img id='mail-window-close' src="<?php echo get_template_directory_uri();?>/img/Close.png" alt=""></div>
+	<div class="close_container"><img id='mail-window-close' src="img/Close.png" alt=""></div>
 	<span>zakaz@keramogranit.ru</span>
 </div>

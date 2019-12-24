@@ -1,12 +1,3 @@
-<?php
-/*
-Template Name: Шаблон страницы "Избранные товары"
-*/
-?>
-
-
-
-
 <?php include 'header.php'; ?>
 
 <main class="offer">

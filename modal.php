@@ -4,15 +4,15 @@
 
 		<div class="artic-goods-container">
 				<div class="slider slider-for">
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" alt="" width="310" height="310" /></div>
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" alt="" width="310" height="310" /></div>
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" alt="" width="310" height="310" /></div>
+                    <div><img src="img/slide1.png" alt="" width="310" height="310" /></div>
+                    <div><img src="img/slide2.png" alt="" width="310" height="310" /></div>
+                    <div><img src="img/slide3.png" alt="" width="310" height="310" /></div>
                     
                 </div>
                 <div class="slider slider-nav">
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" alt="" width="80" height="80" /></div>
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" alt="" width="80" height="80" /></div>
-                    <div><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" alt="" width="80" height="80" /></div>                   
+                    <div><img src="img/slide1.png" alt="" width="80" height="80" /></div>
+                    <div><img src="img/slide2.png" alt="" width="80" height="80" /></div>
+                    <div><img src="img/slide3.png" alt="" width="80" height="80" /></div>                   
                 </div>
 			<!--
 

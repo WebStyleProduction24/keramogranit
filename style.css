@@ -72,6 +72,9 @@ img{
 	cursor: pointer;
 }
 /****************/
+.product_icon-slide-rigth{
+	display: none;
+}
 
 
 
@@ -746,6 +749,13 @@ main {
 	cursor: pointer;
 }
 
+.hidden-busket{
+	display: block;
+}
+
+.show-busket{
+	display: none;
+}
 
 
 
@@ -1028,11 +1038,11 @@ input[type='phone'],
 }
 
 .arctic__goods-art{
-
 	margin-bottom: 20px;
 	color: #666666;
 	font-size: 14px;
 	font-weight: bold;
+	margin-top: 20px;
 }
 
 .art__number{
@@ -1099,6 +1109,11 @@ input[type='phone'],
 	cursor: pointer;
 	background-color: #fff;
 	margin-top: 32px;
+	border: 2px solid #FFDB4D;
+	border-radius: 3px;
+	width: 237px;
+	height: 44px;
+	padding-left: 20px;
 }
 
 .arctic__goods-heart-text{
@@ -1110,6 +1125,11 @@ input[type='phone'],
 
 .arctic__title{
 	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 3px;
+	margin-bottom: 20px;
 
 }
 
@@ -1248,11 +1268,64 @@ input[type='phone'],
 }
 
 #close__modal{
-    display: none;
+	display: none;
 }
 
 .slider-for{
-  img{
-    width:100%;  
-  }
+	img{
+		width:100%;  
+	}
+}
+
+#largeImg {
+	width: 310px;
+	height: 310px;
+	margin: 20px;
+}
+
+#thumbs a {
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+}
+
+#thumbs a:hover {
+	border-color: #FF9900;
+}
+
+#thumbs li {
+	list-style: none;
+}
+
+#thumbs {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.arric-slider-btnLeft{
+	background: #FFDB4D;
+	width: 16px;
+	height: 80px;	
+	margin-left: 20px;
+
+
+}
+.arric-slider-btnRight{
+	background: #FFDB4D;
+	width: 16px;
+	height: 80px;
+	margin-left: 9px;
+}
+
+.arric-slider-thumbs{
+	display: flex;
+}
+
+.more{
+	display: none;
+}
+
+.more__text{
+	display: none;
 }

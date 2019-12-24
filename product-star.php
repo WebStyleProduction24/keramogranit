@@ -11,5 +11,12 @@
 	<div class="art">
 		<p>Артикул <span>119608</span></p>
 	</div>
-
+	<div class="more" onclick="$('#exampleModal1').arcticmodal();">
+		<div class="more__item">
+			<p class="more__text">
+				Подробнее
+			</p>
+			<img src="<?php echo get_template_directory_uri();?>/img/arrowDown.png" class="more__img">
+		</div>
+	</div>
 </div>

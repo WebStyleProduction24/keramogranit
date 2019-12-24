@@ -18,10 +18,10 @@ add_action('wp_enqueue_scripts', 'styles');
 
 function scripts() {
 	wp_enqueue_script('jquery-googleapis', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', '', '3.4.1');
-	wp_enqueue_script('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+	// wp_enqueue_script('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
 	
 	wp_enqueue_script('formScript', get_template_directory_uri() . '/js/formScript.js');
-	wp_enqueue_script('carouFredSel', get_template_directory_uri() . '/js/jquery.carouFredSel.js', '', '5.2.3');
+	// wp_enqueue_script('carouFredSel', get_template_directory_uri() . '/js/jquery.carouFredSel.js', '', '5.2.3');
 	wp_enqueue_script('arcticmodal', get_template_directory_uri() . '/js/jquery.arcticmodal.min.js', '', '0.3');
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js');
 }

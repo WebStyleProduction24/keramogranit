@@ -1,43 +1,8 @@
-@media screen and (min-width: 1600px) {
-/*выравнивание контента по центру для больишх экранов*/
-	.goods {
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-		flex-direction: row;
-		max-width: 1300px;
-	}
-
-	.main-container {
-		display: flex;
-		justify-content: center;
-		margin: 0 auto;
-	}
-	
-
-
-	
-	
-}
-
 @media screen and (max-width: 1600px) {
 	.main-content {
 		justify-content: space-around;
 	}
-	
-	
 }
-
-/*
-@media (max-width: 1599px) and (min-width 1441px){
-	.main-container {
-		display: flex;
-		justify-content: center;
-		margin: 0 auto;
-	}
-}
-*/
-
 
 
 @media screen and (max-width: 1200px) {
@@ -62,7 +27,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
 	/*	!!!!!!!!!!!!ДЛЯ МОБИЛЬНЫХ ВЕРСИЙ!!!!!!!!!!!!!!!*/
 	/*иконки телефона и почты в блоке email*/
 	/*переход в корзину и избранное в блоке phones*/
@@ -228,10 +193,10 @@
 		margin-top: 40px;
 	}
 
-	.total-block {
+	.total-block{
 		width: 95%;
 	}
-
+	
 	/*Корзина*/
 
 	.main__buscket_container {
@@ -294,29 +259,28 @@
 		font-size: 46px;
 	}
 
-	.total-block {
+	.total-block{
 		width: 95%;
 		height: 194px;
 		flex-direction: column;
 	}
-
-	.total-container {
+	.total-container{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		width: 85%;
 		margin: 0 auto;
 	}
-
-	.about-cost {
+	
+	.about-cost{
 		width: 90%;
 		margin: 0 auto;
 	}
-
-	.about-cost form {
+	
+	.about-cost form{
 		margin: 0 auto;
 	}
-
+	
 	/*Корзина*/
 
 	.main__buscket_container {
@@ -328,14 +292,14 @@
 
 
 @media screen and(max-width: 480px) {
-
-	.busket_form span {
+	
+	.busket_form span{
 		margin: 0 auto;
 	}
-
-
-
-
+	
+	
+	
+	
 }
 
 
@@ -469,8 +433,8 @@
 		margin: 0;
 		margin-right: 8px;
 	}
-
-	.item-name-and-button {
+	
+	.item-name-and-button{
 		width: 180px;
 	}
 }

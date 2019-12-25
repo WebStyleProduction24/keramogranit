@@ -716,7 +716,7 @@ main {
 }
 
 .top__img{
-	margin-top: 10px;
+	
 }
 
 .img__top{
@@ -732,6 +732,11 @@ main {
 	font-weight: 500;
 	font-size: 22px;
 	color: #333333;
+	margin-left: 19px;
+}
+
+.left-top{
+	margin-left: 29px;
 }
 
 .m2{
@@ -742,11 +747,13 @@ main {
 }
 
 .product_icon-text{
-	margin-top: 10px;
+	font-weight: normal;
 	font-size: 16px;
 	color: #333333;
 	margin-bottom: 20px;
 	cursor: pointer;
+	margin-left: 30px;
+    width: 180px;
 }
 
 .hidden-busket{
@@ -768,7 +775,7 @@ main {
 }
 
 .quantity__text{
-	margin-left: 59px;
+	margin-left: 84px;
 	font-size: 14px;
 	color: #999999;
 	margin-top: 5px;
@@ -1287,6 +1294,18 @@ input[type='phone'],
 	width: 80px;
 	height: 80px;
 	margin-left: 10px;
+
+}
+
+#thumbsS a{
+	
+	
+}
+
+#bigImg{
+	width: 180px;
+	height: 180px;
+	margin: 10px 10px 10px 30px;
 }
 
 #thumbs a:hover {
@@ -1303,6 +1322,21 @@ input[type='phone'],
 	display: flex;
 }
 
+#thumbsSS{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+
+
+#thumbsS{
+	margin-top: 12px;
+}
+
+#thumbsS img{
+	margin-bottom: 8px;
+}
 .arric-slider-btnLeft{
 	background: #FFDB4D;
 	width: 16px;
@@ -1328,4 +1362,8 @@ input[type='phone'],
 
 .more__text{
 	display: none;
+}
+
+#exampleModal__open{
+	display: none
 }

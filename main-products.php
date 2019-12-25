@@ -3,7 +3,7 @@
 		<?php include 'sorting.php'; ?>
 
 		<!--		ТОВАРЫ			-->
-		<div class="goods" >
+		<div class="goods" id="goods">
 			<?php include 'hover-product.php'; 
 			$i = 1;
 			while ($i <= 3) {

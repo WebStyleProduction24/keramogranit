@@ -15,19 +15,20 @@
 </div>
 <div class="product_icon-slide " id="show" >
 	<div class="product_icon-flex d-flex">
+		
 		<div class="product_icon-img">
 			<button class="icon-btn shadow__btn"><img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt=""></button>
-			<div class="slider slider-nav">
-				<div class=""><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" class="icon-img"/></div>
-				<div class=""><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" class="icon-img"/></div>
-				<div class=""><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" class="icon-img"/></div>
-				<div class=""><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" class="icon-img"/></div>
-			</div>
+			<ul class="thumbs__item" id="thumbsS">		
+						<li><a href="<?php echo get_template_directory_uri();?>/img/slide1.png" title="Image 1"><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" width="80" height="80"></a></li>
+						<li><a href="<?php echo get_template_directory_uri();?>/img/slide2.png" title="Image 2"><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" width="80" height="80"></a></li>
+						<li><a href="<?php echo get_template_directory_uri();?>/img/slide3.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" width="80" height="80"></a></li>
+						<li><a href="<?php echo get_template_directory_uri();?>/img/slide4.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide4.png" width="80" height="80"></a></li>				   
+					</ul>
 			<button class="icon-btn top__img"><img src="<?php echo get_template_directory_uri();?>/img/arrowDown.png" alt=""></button>
 		</div>
-		<div class="product_icon-item img__top-size">
-			<div class="slider slider-for">
-				<div class=""><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" class="icon-img-size" /></div>
+		<div class="product_icon-item">
+			<div class="slider">
+				<p><img id="bigImg" src="<?php echo get_template_directory_uri();?>/img/slide1.png" alt="Big img"	></p>
 			</div>  
 			<p class="product_icon-text" onclick="$('#exampleModal1').arcticmodal();">Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
 			<div class="product_icon_price ">

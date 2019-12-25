@@ -11,7 +11,7 @@
 	<div class="art">
 		<p>Артикул <span>119608</span></p>
 	</div>
-	<div class="more" onclick="$('#exampleModal1').arcticmodal();">
+	<div class="more" id="show__footer-card">
 		<div class="more__item">
 			<p class="more__text">
 				Подробнее

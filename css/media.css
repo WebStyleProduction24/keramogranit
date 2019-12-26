@@ -327,6 +327,8 @@
 	#heaed__title{
 		display: block;
 	}
+
+	
 }
 
 
@@ -369,6 +371,9 @@
 		width: 100%;
 
 	}
+
+	
+
 
 }
 
@@ -711,7 +716,7 @@
 
 
 	.box-modal {
-		width: 320px;
+		width: auto;
 		height: auto;
 		background: #FFFFFF;
 		border: none !important; 
@@ -719,7 +724,7 @@
 		flex-direction: column;
 		justify-content: space-around;
 	    top: 40px;
-		left: -12px;
+		left: 0px;
 	}
 
 	.artic-goods-container {
@@ -800,7 +805,7 @@
 .arctic__line {
     
     width: 100%;
-    
+    margin-left: 0px;
     margin-top: 10px;
    
 }
@@ -812,7 +817,7 @@
 .arctic__line-1 {
    
     width: 100%;
-   
+   margin-left: 0px;
     margin-top: 10px;
 
 }
@@ -824,6 +829,10 @@
 .arctic__goods-spesh {
     
     margin-right: 21px;
+}
+.arctic__goods-heart-text {
+  
+    margin-left: 0px;
 }
 
 

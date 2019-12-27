@@ -46,7 +46,7 @@ Template Name: Шаблон страницы "Корзина"
 					<input type="text" placeholder="Имя">
 					<input type="phone" placeholder="Телефон">
 					<input type="submit" value="Сделать заказ" class="modalBut">
-					<p>Нажимая на кнопку, я принимаю <br>правила <a href="#">политики конфиденциальности</a></p>
+					<p>Нажимая на кнопку, я принимаю <br>правила <a href="/privacy-policy/">политики конфиденциальности</a></p>
 				</form>
 			</div>
 	</main>

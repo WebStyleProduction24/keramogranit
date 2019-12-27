@@ -1,40 +1,22 @@
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 /*выравнивание контента по центру для больишх экранов*/
 	.goods {
 		display: flex;
 		justify-content: flex-start;
-		flex-wrap: wrap;
 		flex-direction: row;
-		max-width: 1300px;
+		max-width: 1200px;
 	}
 
 	.main-container {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
+/*		margin: 0 70px 0 70px;*/
 	}	
-}
-
-
-
-
-@media screen and (max-width: 1600px) {
-	.main-content {
-		justify-content: space-around;
-	}
-}
-
-
-@media screen and (max-width: 1200px) {
-
-
-	.product_icon {
-
-		margin-left: 15px;
-
-	}
+	
 
 }
+
 
 
 @media screen and (min-width:992px) {
@@ -200,10 +182,9 @@
 	}
 
 	.goods {
-
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;
+	
 		flex-direction: row;
 		max-width: 1300px;
 
@@ -360,7 +341,7 @@
 		width: 120px;
 		height: 120px;
 		padding: 0;
-		margin: 10px;
+		margin: 0 auto;
 	}
 
 
@@ -482,7 +463,6 @@
 	}
 
 	.product_icon_price_icons_block-rigth{
-		
 		margin-top: 10px;
 		display: block;
 		margin-left: 28px;
@@ -591,7 +571,7 @@
 	}
 
 	.product_icon_price{
-		display: block;
+
 		margin-top: 10px;
 		margin-bottom: 20px;
 	}

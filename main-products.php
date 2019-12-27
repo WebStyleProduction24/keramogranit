@@ -1,10 +1,11 @@
 	<div class="main-content" id="main-content">
-		
+
 		<?php include 'sorting.php'; ?>
 
 		<!--		ТОВАРЫ			-->
-		<div class="goods" >
-			<?php include 'hover-product.php'; 
+		<div class="container-goods">
+			<div class="goods">
+				<?php include 'hover-product.php'; 
 			$i = 1;
 			while ($i <= 3) {
 				$i++; 
@@ -18,5 +19,6 @@
 			?>
 
 
+			</div>
 		</div>
 	</div>

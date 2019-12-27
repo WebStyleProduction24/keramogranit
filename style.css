@@ -682,6 +682,10 @@ main {
 	margin-top: 20px;
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
+
+
+
+
 /*классы для ховера */
 .product_icon-slide {
 	width: 310px;
@@ -700,15 +704,84 @@ main {
 	flex-direction: row;
 }
 
+.product_icon:hover{
+	width: 310px;
+	height: 440px;
+	border: 1px solid  #FFDB4D;
+	background: #FFFFFF;	
+	box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+	
+}
+
+.hover__line{
+	width: 180px;
+	height: 2px;
+	border: 1px solid #EEEEEE;
+	margin-left: 8px;
+
+}
+.thumbs__item{
+	display: none;
+}
+
+.form__item{
+	display: none;
+}
+
+.icon-btn{
+	display: none;
+}
+.product_icon:hover .thumbs__item{
+	display: block;
+}
+
+.product_icon:hover .form__item{
+	display: block;
+}
+
+.product_icon:hover .icon-btn{
+	display: block;
+	margin-left: 10px;
+}
+
+.product_icon:hover .product_icon-img{
+
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.product_icon:hover .hover__line{
+	margin-left: 25px;
+}
+
+.product_icon:hover .font__bold{
+	font-weight: 500;
+	font-size: 22px;
+	color: #333333;
+	
+}
+
+.product_icon:hover .m2{
+	margin-top: 2px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #666666;
+}
+
+.product_icon:hover .product_icon-item{
+	margin-left: 10px;
+}
+
+.product_icon:hover .product_icon__img{
+	padding: 0px;
+}
+
 
 #show{
 	display: none;
 }
 
-.product_icon-img{
-	margin-left: 10px;
-	margin-top: 10px;
-}
+
 .icon-btn{
 	width: 80px;
 	height: 20px;
@@ -729,21 +802,21 @@ main {
 }
 
 .font__bold{
-	font-weight: 500;
-	font-size: 22px;
-	color: #333333;
-	margin-left: 19px;
+	
+	
+	margin-left: 5px;
 }
 
 .left-top{
-	margin-left: 29px;
+	margin-left: 17px;
 }
 
 .m2{
-	margin-top: 5px;
-	font-weight: 500;
-	font-size: 16px;
-	color: #666666;
+	margin-top: -3px;
+}
+
+.art{
+	margin-top: 10px;
 }
 
 .product_icon-text{
@@ -752,7 +825,7 @@ main {
 	color: #333333;
 	margin-bottom: 20px;
 	cursor: pointer;
-	margin-left: 30px;
+	margin-left: 13px;
     width: 180px;
 }
 
@@ -775,7 +848,7 @@ main {
 }
 
 .quantity__text{
-	margin-left: 84px;
+	margin-left: 68px;
 	font-size: 14px;
 	color: #999999;
 	margin-top: 5px;
@@ -783,10 +856,10 @@ main {
 }
 .product_icon p {
 	font-size: 16px;
-	margin: 0 10px 0 10px;
+	
 }
 
-.product_icon img {
+.product_icon__img {
 	padding: 10px;
 }
 
@@ -812,6 +885,7 @@ main {
 .product_icon_price_icons_block {
 	display: flex;
 	flex-direction: row;
+	    margin-right: 10px;
 }
 
 
@@ -1303,9 +1377,10 @@ input[type='phone'],
 }
 
 #bigImg{
-	width: 180px;
-	height: 180px;
-	margin: 10px 10px 10px 30px;
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	
 }
 
 #thumbs a:hover {
@@ -1332,7 +1407,9 @@ input[type='phone'],
 
 #thumbsS{
 	margin-top: 12px;
+	margin-left: 10px;
 }
+
 
 #thumbsS img{
 	margin-bottom: 8px;

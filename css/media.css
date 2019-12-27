@@ -1,3 +1,23 @@
+@media screen and (min-width: 1600px) {
+/*выравнивание контента по центру для больишх экранов*/
+	.goods {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		flex-direction: row;
+		max-width: 1300px;
+	}
+
+	.main-container {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}	
+}
+
+
+
+
 @media screen and (max-width: 1600px) {
 	.main-content {
 		justify-content: space-around;

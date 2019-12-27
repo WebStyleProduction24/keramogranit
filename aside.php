@@ -1,4 +1,24 @@
-<aside class="offer__filter">
+
+<div class="offer__filter-btn" id="open__btn-head">
+	<div class="offer__filter-btnFlex d-flex">
+		<img src="<?php echo get_template_directory_uri();?>/img/arrowDown.png" alt="" class="img__btn">
+		<p class="offer__filter-btnText">
+			Показать фильтры
+		</p>
+	</div>
+</div>
+<div class="offer__filter-btn-ff" id="btn-ff">
+	<div class="offer__filter-btn-ffBLock d-flex">
+		<img src="<?php echo get_template_directory_uri();?>/img/arrowLeft.png" class="arrowLeft__btn" id="arrowLeft__btn">
+		<p class="offer__filter-btn-ffText">
+			Фильтры
+		</p>
+		<img src="<?php echo get_template_directory_uri();?>/img/OK.png" class="OK__btn" id="OK__btn">
+	</div>
+</div>
+
+<aside class="offer__filter" id="close__btn-head">
+
 	<div class="cd-tab-filter-wrapper">
 		<div class="cd-tab-filter">
 			<ul class="cd-filters d-flex">
@@ -46,7 +66,7 @@
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter">Цвет</h4>
 					<a class="svg__arrow" id="open__color">
-						<img src="img/arrowUp.png" alt="" class="arrow">
+						<img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 				<ul class="cd-filter-content cd-filters list" id="close__color">
@@ -71,7 +91,7 @@
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-middle">Формат</h4>
 					<a class="svg__arrow-format" id="open__format">
-						<img src="img/arrowUp.png" alt="" class="arrow">
+						<img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 
@@ -97,7 +117,7 @@
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-end">Назначение</h4>
 					<a class="svg__arrow-way" id="open__way">
-						<img src="img/arrowUp.png" alt="" class="arrow">
+						<img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 				<ul class="cd-filter-content cd-filters list" id="close__way">
@@ -122,7 +142,7 @@
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-bottom">Поверхность</h4>
 					<a class="svg__arrow-area" id="open__area">
-						<img src="img/arrowUp.png" alt="" class="arrow">
+						<img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 
@@ -148,7 +168,7 @@
 				<div class="cd-filter-block-title d-flex">
 					<h4 class="offer__filter-title mr__filter-foot">Стиль</h4>
 					<a class="svg__arrow-style" id="open__style">
-						<img src="img/arrowUp.png" alt="" class="arrow">
+						<img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt="" class="arrow">
 					</a>
 				</div>
 

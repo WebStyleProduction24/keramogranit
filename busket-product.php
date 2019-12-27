@@ -1,6 +1,6 @@
 <div class="main__buscket_container">
 	<div class="buscket__item">
-		<div class="buscket__item-name"><img src="img/Rectangle 104.png" alt="">
+		<div class="buscket__item-name"><img src="<?php echo get_template_directory_uri();?>/img/Rectangle 104.png" alt="">
 			<div class="item-name-and-button"><a href="#">Керамогранит Estima Standard ST 07 матовый 300х300 мм wer</a><button>В наличии</button></div>
 		</div>
 		<div class="buscket__item-quantity">
@@ -21,7 +21,8 @@
 			<div class="other-info-price"><span>Цена</span>
 				<p>00000</p>
 			</div>
+			<div class="delete">Удалить</div>
 		</div>
-		<div class="delete">Удалить</div>
+<!--		<div class="delete">Удалить</div>-->
 	</div>
 </div>

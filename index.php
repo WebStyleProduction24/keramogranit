@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <main>
-	<h2>Главная</h2>
+	<h2 id="heaed__title">Главная</h2>
 	<div class="main-container">
 		<!-- для расположения фильтра  -->
 

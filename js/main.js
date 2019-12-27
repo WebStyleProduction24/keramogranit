@@ -95,7 +95,7 @@ $(function(){
 
 
     let modalBtn=0;
-    let modalArr=["img/HeartActive24px.png","img/HeartInactive24px.png"];
+    let modalArr=["img/HeartInactive16px.png","img/HeartActive16px.png"];
     $(this).find('.arctic__btn-heart').click(function(){
         modalBtn++;
         if(modalBtn>=modalArr.length){
@@ -251,6 +251,49 @@ if ( null != block ) {
         }
     }
 
+ thumbsS.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+  }
+
+  function showThumbnail(href, title) {
+      bigImg.src = href;
+      bigImg.alt = title;
+  }
+
+  $('#show__footer-card').on('click', function() {
+    $('#exampleModal__open').slideToggle(100, function(){
+        if( $(this).css('display') === "none"){
+            $(this).removeAttr('style');
+        }
+    });
+
+});
+
+  $('#show__footer-card').on('click', function() {
+    $('#goods').slideToggle(100, function(){
+        if( $(this).css('display') === "flex"){
+            $(this).removeAttr('style');
+        }
+    });
+
+});
+
+  thumbsSS.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+  }
+
+  function showThumbnail(href, title) {
+      bigetImg.src = href;
+      bigetImg.alt = title;
+  }
 
 
 

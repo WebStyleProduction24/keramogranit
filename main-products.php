@@ -2,6 +2,7 @@
 		
 		<?php include 'sorting.php'; ?>
 
+
 		<!--		ТОВАРЫ			-->
 		<div class="goods" id="goods">
 			<?php include 'hover-product.php'; 

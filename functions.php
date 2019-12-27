@@ -32,10 +32,22 @@ add_action('wp_enqueue_scripts', 'scripts');
 add_filter( 'script_loader_src', 'hb_remove_wp_version_from_src' );
 add_filter( 'style_loader_src', 'hb_remove_wp_version_from_src' );
 function hb_remove_wp_version_from_src( $src ) {
-	 global $wp_version;
-	 parse_str( parse_url( $src, PHP_URL_QUERY ), $query );
-	 if ( ! empty($query['ver']) && $query['ver'] === $wp_version ) {
-		  $src = remove_query_arg('ver', $src);
-	 }
-	 return $src;
+	global $wp_version;
+	parse_str( parse_url( $src, PHP_URL_QUERY ), $query );
+	if ( ! empty($query['ver']) && $query['ver'] === $wp_version ) {
+		$src = remove_query_arg('ver', $src);
+	}
+	return $src;
 }
+
+
+
+
+############ Wocommerce
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+
+define('WOOCOMMERCE_USE_CSS', false);

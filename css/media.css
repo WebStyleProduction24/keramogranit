@@ -19,6 +19,27 @@
 
 
 
+@media screen and (max-width: 1024px){
+	
+	.favourites{
+		margin: 0 20px 0 20px;
+	}
+	
+	#feedback{
+		margin-left: 20px;
+	}
+	
+	
+	.product_icon{
+		max-width: 140px;
+	}
+	
+	.img-product img{
+		width: 120px;
+	}
+}
+
+
 @media screen and (min-width:992px) {
 
 	#phoneMobile,

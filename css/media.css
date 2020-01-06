@@ -37,6 +37,43 @@
 	.img-product img{
 		width: 120px;
 	}
+	
+		.main-container aside{
+		width: 150px;
+	}
+	
+	.form-control{
+		width: 35px;
+		margin-right: 5px;
+	}
+
+/*отступы от h4 в фильтре (предварительное)*/
+/*
+	.mr__filter-middle{
+		margin-right: 70px;
+	}
+	
+	.mr__filter{
+		margin-right: 90px;
+	}
+	
+	.mr__filter-end{
+		margin-right: 42px;
+	}
+	
+	.mr__filter-bottom{
+		margin-right: 35px;
+	}
+	
+	.mr__filter-foot{
+		margin-right: 83px;
+	}
+*/
+/*	*/
+	.main-container{
+		margin: 0 20px 0 20px;
+	}
+
 }
 
 

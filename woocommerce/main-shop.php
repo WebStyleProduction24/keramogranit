@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- для расположения фильтра  -->
 
-		<?php include '../aside.php'; ?>
+		<?php include __DIR__.'/../aside.php'; ?>
 
 
 
@@ -40,7 +40,8 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_result_count - 20
 	 * @hooked woocommerce_catalog_ordering - 30
 	 */
-	do_action( 'woocommerce_before_shop_loop' );
+	//do_action( 'woocommerce_before_shop_loop' );
+
 
 	woocommerce_product_loop_start();
 
@@ -56,6 +57,28 @@ if ( woocommerce_product_loop() ) {
 			wc_get_template_part( 'content', 'product' );
 		}
 	}
+
+
+
+	include __DIR__.'/../hover-product.php'; 
+	$i = 1;
+	while ($i <= 3) {
+		$i++; 
+		include __DIR__.'/../product-star.php';
+	}
+	$i = 1;
+	while ($i <= 10) {
+		$i++; 
+		include __DIR__.'/../product.php';
+	}
+
+
+
+
+
+
+
+
 
 	woocommerce_product_loop_end();
 

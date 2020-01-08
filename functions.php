@@ -32,10 +32,63 @@ add_action('wp_enqueue_scripts', 'scripts');
 add_filter( 'script_loader_src', 'hb_remove_wp_version_from_src' );
 add_filter( 'style_loader_src', 'hb_remove_wp_version_from_src' );
 function hb_remove_wp_version_from_src( $src ) {
-	 global $wp_version;
-	 parse_str( parse_url( $src, PHP_URL_QUERY ), $query );
-	 if ( ! empty($query['ver']) && $query['ver'] === $wp_version ) {
-		  $src = remove_query_arg('ver', $src);
-	 }
-	 return $src;
+	global $wp_version;
+	parse_str( parse_url( $src, PHP_URL_QUERY ), $query );
+	if ( ! empty($query['ver']) && $query['ver'] === $wp_version ) {
+		$src = remove_query_arg('ver', $src);
+	}
+	return $src;
+}
+
+//Задаем новые размеры изображений
+add_image_size( 'product-thumbnail', 180, 180, true ); //миниатюры плитки товаров
+
+############ Wocommerce
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+
+define('WOOCOMMERCE_USE_CSS', false);
+
+
+
+// Редактируем Хуки
+
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'woo_product_loop_thumbnail', 10);
+
+remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+add_action('woocommerce_shop_loop_item_title', 'woo_product_loop_title', 10);
+
+
+
+//Новые функции для Хуков
+
+
+//Хук вывода миниатюры в плитке товаров
+function woo_product_loop_thumbnail( $post = null ) {
+	$src = get_the_post_thumbnail_url( $post, 'product-thumbnail' );
+	$alt = get_the_title();
+	$img = '<img src="' . $src . '" alt="' . $alt . '">';
+	echo $img;
+}
+
+//Хук вывода наименования в плитке товаров
+function woo_product_loop_title() {
+	$title = get_the_title();
+	$p = '<p>' . $title . '</p>';
+	echo $p;
+}
+
+
+//Изменяем хук woocommerce_get_price_html
+add_filter( 'woocommerce_get_price_html', 'product_price_html', 100, 2 );
+function product_price_html( $price, $product ){
+	$before_price = '<span>';
+  $price =  get_post_meta( get_the_ID(), '_regular_price', true);
+	$after_price = 'р/м<sup>2</sup></span>';
+	$print = $before_price . $price . $after_price;
+    return apply_filters( 'woocommerce_get_price', $print );
 }

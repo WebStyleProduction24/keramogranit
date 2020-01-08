@@ -2,6 +2,7 @@
 
 		<?php include 'sorting.php'; ?>
 
+
 		<!--		ТОВАРЫ			-->
 		<div class="container-goods">
 			<div class="goods">

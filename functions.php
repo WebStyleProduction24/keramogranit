@@ -64,7 +64,9 @@ add_action('woocommerce_before_shop_loop_item_title', 'woo_product_loop_thumbnai
 function woo_product_loop_thumbnail( $post = null ) {
 
 	$src = get_the_post_thumbnail_url( $post, 'product-thumbnail' );
-	$img = '<img src="' . $src . '" alt="">';
+	$alt = get_the_title();
+	$img = '<img src="' . $src . '" alt="'. $alt .'">';
+
 
 	echo $img;
 }

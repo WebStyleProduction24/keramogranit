@@ -40,8 +40,8 @@ function hb_remove_wp_version_from_src( $src ) {
 	return $src;
 }
 
-
-
+//Задаем новые размеры изображений
+add_image_size( 'product-thumbnail', 180, 180, true );
 
 ############ Wocommerce
 
@@ -61,22 +61,10 @@ add_action('woocommerce_before_shop_loop_item_title', 'woo_product_loop_thumbnai
 
 //Новые функции для Хуков
 
-function woo_product_loop_thumbnail() {
-	global $product;
+function woo_product_loop_thumbnail( $post = null ) {
 
-	$img_start = '<img src="';
-	$img_end = '/img/Rectangle%20104.png" alt="">';
-	$uri = get_template_directory_uri();
+	$src = get_the_post_thumbnail_url( $post, 'product-thumbnail' );
+	$img = '<img src="' . $src . '" alt="">';
 
-	$echo = $img_start . $uri . $img_end;
-
-
-
-	$src = wp_get_attachment_image_src();
-
-
-
-
-
-	echo $echo;
+	echo $img;
 }

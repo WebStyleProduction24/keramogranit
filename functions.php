@@ -81,3 +81,14 @@ function woo_product_loop_title() {
 	$p = '<p>' . $title . '</p>';
 	echo $p;
 }
+
+
+//Изменяем хук woocommerce_get_price_html
+add_filter( 'woocommerce_get_price_html', 'product_price_html', 100, 2 );
+function product_price_html( $price, $product ){
+	$before_price = '<span>';
+  $price =  get_post_meta( get_the_ID(), '_regular_price', true);
+	$after_price = 'р/м<sup>2</sup></span>';
+	$print = $before_price . $price . $after_price;
+    return apply_filters( 'woocommerce_get_price', $print );
+}

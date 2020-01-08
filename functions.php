@@ -41,7 +41,7 @@ function hb_remove_wp_version_from_src( $src ) {
 }
 
 //Задаем новые размеры изображений
-add_image_size( 'product-thumbnail', 180, 180, true );
+add_image_size( 'product-thumbnail', 180, 180, true ); //миниатюры плитки товаров
 
 ############ Wocommerce
 

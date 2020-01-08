@@ -51,3 +51,32 @@ function woocommerce_support() {
 }
 
 define('WOOCOMMERCE_USE_CSS', false);
+
+
+
+// Редактируем Хуки
+
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'woo_product_loop_thumbnail', 10);
+
+//Новые функции для Хуков
+
+function woo_product_loop_thumbnail() {
+	global $product;
+
+	$img_start = '<img src="';
+	$img_end = '/img/Rectangle%20104.png" alt="">';
+	$uri = get_template_directory_uri();
+
+	$echo = $img_start . $uri . $img_end;
+
+
+
+	$src = wp_get_attachment_image_src();
+
+
+
+
+
+	echo $echo;
+}

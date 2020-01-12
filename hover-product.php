@@ -1,4 +1,4 @@
-<div class="product_icon" >
+<div class="product_icon test" >
 	<div class="product_icon-flex d-flex">
 		
 		<div class="product_icon-img">
@@ -41,7 +41,25 @@
 		</div>
 	</div>
 </div>
+
 <!--
+<div class="product_icon test" id="hover">
+	<div class="img-product">
+	 	<img src="<?php echo get_template_directory_uri();?>/img/Rectangle%20104.png" alt="">
+	 </div>
+	<p>Керамогранит Estima Standard ST 07 матовый 300х300 мм io</p>
+	<div class="product_icon_price">
+		<span>650р/м<sup>2</sup></span>
+		<div class="product_icon_price_icons_block">
+			<div class="iconBusket"></div>
+			<div class="iconHeart"></div>
+		</div>
+	</div>
+	<hr>
+	<div class="art">
+		<p>Артикул <span>119608</span></p>
+	</div>
+</div>
 <div class="product_icon-slide " id="show" >
 	<div class="product_icon-flex d-flex">
 		
@@ -83,8 +101,9 @@
 			</div>
 		</div>
 	</div>
+	
 -->
-</div>
+
 <div class="product_icon-slide-rigth" >
 	<div class="product_icon-flex-rigth d-flex">
 		<div class="product_icon-item-rigth img__top">

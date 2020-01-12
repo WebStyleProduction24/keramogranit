@@ -118,20 +118,7 @@ $(function(){
   }
 
 
-  let bl = document.getElementById('hover'),
-  hv = document.getElementById('show');
-
-  bl.onmouseover = function () {
-    bl.style.display = 'none';
-    hv.style.display='block';
-
-
-}
-
-hv.onpointerleave = function () {
-    hv.style.display = 'none';
-    bl.style.display = 'block';
-}
+ 
 
 
 

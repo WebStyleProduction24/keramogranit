@@ -5,18 +5,29 @@ Template Name: Шаблон страницы "Корзина"
 ?>
 
 <?php include 'header.php'; ?>
+<main>
+	<h2><?php the_title(); ?></h2>
 
-	<main>
-		<h2>Корзина</h2>
-		<?php
-		$i = 1;
-		while ($i <= 3) {
-			$i++; 
-			include 'busket-product.php';
-		}
-		?>
+	<?php the_post(); ?>
+	<?php the_content(); ?>
+	
+</main>
 
-		<div class="total-block">
+
+
+
+
+<main>
+	<h2>Корзина</h2>
+	<?php
+	$i = 1;
+	while ($i <= 3) {
+		$i++; 
+		include 'busket-product.php';
+	}
+	?>
+
+	<div class="total-block">
 		
 		<div class="total-container">
 			<div class="total-weight">
@@ -28,28 +39,28 @@ Template Name: Шаблон страницы "Корзина"
 				<p>12450р</p>
 			</div>
 		</div>	
-			<div class="about-cost">
+		<div class="about-cost">
 
-				<form action="">
+			<form action="">
 				
 				<input type="checkbox" name="cost_of_delivery">
 				<label for="cost_of_delivery">Посчитать ориентировочную стоимость доставки</label>
-					<p>1500р</p>
-				</form>
-<!--				<p>1500р</p>-->
-			</div>
+				<p>1500р</p>
+			</form>
+			<!--				<p>1500р</p>-->
 		</div>
-			<div class="busket_form">
-				<h3>Сделать заказ</h3>
-				<span>Мы свяжемся с вами в течение 10 минут (ПН-ПТ, с 10:00 до 19:00)</span>
-				<form action="#" method="post">
-					<input type="text" placeholder="Имя">
-					<input type="phone" placeholder="Телефон">
-					<input type="submit" value="Сделать заказ" class="modalBut">
-					<p>Нажимая на кнопку, я принимаю <br>правила <a href="/privacy-policy/">политики конфиденциальности</a></p>
-				</form>
-			</div>
-	</main>
+	</div>
+	<div class="busket_form">
+		<h3>Сделать заказ</h3>
+		<span>Мы свяжемся с вами в течение 10 минут (ПН-ПТ, с 10:00 до 19:00)</span>
+		<form action="#" method="post">
+			<input type="text" placeholder="Имя">
+			<input type="phone" placeholder="Телефон">
+			<input type="submit" value="Сделать заказ" class="modalBut">
+			<p>Нажимая на кнопку, я принимаю <br>правила <a href="/privacy-policy/">политики конфиденциальности</a></p>
+		</form>
+	</div>
+</main>
 
 
 <?php include 'footer.php'; ?>

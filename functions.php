@@ -12,6 +12,7 @@ function styles() {
 	wp_enqueue_style( 'style-css', get_stylesheet_uri());
 
 	wp_enqueue_style( 'media-css', get_template_directory_uri().'/css/media.css');
+	wp_enqueue_style( 'cart-hover-css', get_template_directory_uri().'/css/cart-hover.css');
 }
 add_action('wp_enqueue_scripts', 'styles');
 

@@ -632,7 +632,8 @@ main{
 
 .product_icon{
 	min-width: 140px;
-	max-width: 200px;
+	/*max-width: 200px;*/
+	width: 200px;
 	height: 379px;
 	border: 1px solid #e5e5e5;
 	margin: 20px 10px 0 10px;

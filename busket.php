@@ -18,6 +18,7 @@ Template Name: Шаблон страницы "Корзина"
 
 
 <main>
+<hr class="grey_hr">
 	<h2>Корзина</h2>
 	<?php
 	$i = 1;

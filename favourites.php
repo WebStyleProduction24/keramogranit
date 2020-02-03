@@ -6,10 +6,11 @@ Template Name: Шаблон страницы "Избранные товары"
 
 
 
-
+ 
 <?php include 'header.php'; ?>
 
 <main class="offer">
+<hr class="grey_hr">
 	<h2>Избранное</h2>
 	<div class="main-container">
 		<!-- для расположения фильтра  -->

@@ -44,7 +44,7 @@ h2{
 	font-size: 56px;
 	text-align: center;
 	margin-bottom: 60px;
-	margin-top: 67px;
+	margin-top: 40px;
 }
 
 h3{
@@ -92,6 +92,10 @@ header{
 	align-items: center;
 }
 
+.contacts a{
+	text-decoration: none;
+}
+
 .email{
 	margin-left: 70px;
 }
@@ -118,6 +122,11 @@ header span{
 main{
 	margin-bottom: 60px;
 	position: relative;
+}
+
+.grey_hr{
+	height: 1px;
+	color: #eeeeee;
 }
 
 .mainHeader{
@@ -739,7 +748,7 @@ main{
 
 .product_icon p{
 	font-size: 16px;
-	margin: 0 10px 0 10px;
+	margin: 10px 10px 0 10px;
 }
 
 /*
@@ -819,11 +828,13 @@ main{
 
 .art{
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .art p{
 	font-size: 14px;
 	color: #999999;
+	margin: 0;
 }
 
 .art p > span{

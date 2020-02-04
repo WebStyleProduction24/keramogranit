@@ -20,6 +20,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <main>
+	<hr class="grey_hr">
 	<h2 id="heaed__title"><?php woocommerce_page_title(); ?></h2>
 
 	<div class="main-container">

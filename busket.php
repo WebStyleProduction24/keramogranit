@@ -6,6 +6,7 @@ Template Name: Шаблон страницы "Корзина"
 
 <?php include 'header.php'; ?>
 <main>
+	<hr class="grey_hr">
 	<h2><?php the_title(); ?></h2>
 
 	<?php the_post(); ?>

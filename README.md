@@ -15,3 +15,16 @@
   <li><strong>product-star.php</strong> - товар с пометкой избранное</li>
  </ul>
   
+<strong>05.02.2020 (v.0.2)</strong> - <i>Добавлены файлы WooCommerce</i>
+
+<ul>
+  <li><strong>woocommerce.php</strong> - подключение Woocommerce к шаблону</li>
+  <li><strong>main-shop.php</strong> - главная страница магазина - сайта</li>
+  <li><strong>content-product.php</strong> - отображение карточки товара </li>
+  <li><strong>content-product.php</strong> - тестовый файл, с хуками Woo, отображающий карточку товара</li>
+  <li><strong>price.php</strong> - отображает цену</li>
+  <li><strong>loop-start.php</strong> - начало цикла вывода продуктов</li>
+  <li><strong>loop-start.php</strong> - конец цикла вывода продуктов</li>
+  <li><strong>cart.php</strong> - отображает корзину</li>
+  <li><strong>cart-product.php</strong> - отображает добавленный в корзину товар с элементами управления</li>
+ </ul>

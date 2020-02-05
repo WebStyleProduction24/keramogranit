@@ -95,3 +95,14 @@ function product_price_html( $price, $product ){
 	$print = $before_price . $price . $after_price;
     return apply_filters( 'woocommerce_get_price', $print );
 }
+
+//AJAX-обновление общей стоимости корзины
+add_filter( 'woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1 );
+function refresh_cart_count( $fragments ){
+    ob_start();
+    ?>
+				<span id="cart-price"><?php echo WC()->cart->get_cart_contents_total(); ?>р</span><br>
+    <?php
+     $fragments['#cart-price'] = ob_get_clean();
+    return $fragments;
+}

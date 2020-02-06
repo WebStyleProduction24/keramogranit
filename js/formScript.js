@@ -1,12 +1,13 @@
 
 $(document).ready(function () {
 	$('.popup, .mail-window').hide();
-	$('#feedback').click(function () {
+	$('#feedback, #phoneMobile').click(function () {
 	$('.popup').slideToggle(500);
 	});
 	$('#close').click(function(){
 		$('.popup').slideUp(500);
 	});
+	
 	$('#mailMobile').click(function(){
 		$('.mail-window').slideToggle(500);
 	});

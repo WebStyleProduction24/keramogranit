@@ -33,5 +33,5 @@
 
 <ul>
   <li><strong>loop/add-to-card.php</strong> - добавление товара в корзину</li>
-  <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары</li>
+  <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
  </ul>

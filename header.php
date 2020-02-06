@@ -49,7 +49,6 @@
 				</div>
 				<a href="/favourites"><button class="favourites"></button></a>
 				<a href="/cart"><button class="busket"></button></a>
-				<?php global $woocommerce; ?>
 				<span id="cart-price"><?php echo WC()->cart->get_cart_contents_total(); ?>р</span>
 				<button id="feedback"><span>Заказать звонок</span></button>
 			</div>

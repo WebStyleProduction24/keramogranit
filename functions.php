@@ -1,5 +1,7 @@
 <?php
 
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
+
 function styles() {
 	wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', '', '1.8.1');
 	wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', '', '4.5.0');
@@ -57,12 +59,15 @@ define('WOOCOMMERCE_USE_CSS', false);
 
 // Редактируем Хуки
 
+//Хук отображения миниатюры товара
 remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
 add_action('woocommerce_before_shop_loop_item_title', 'woo_product_loop_thumbnail', 10);
 
+//Хук отображения наименования товара
 remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
 add_action('woocommerce_shop_loop_item_title', 'woo_product_loop_title', 10);
 
+//Удаляем хук, заврывающий </a> на карточке товара
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
 
@@ -105,4 +110,15 @@ function refresh_cart_count( $fragments ){
     <?php
      $fragments['#cart-price'] = ob_get_clean();
     return $fragments;
+}
+
+//Изменяем кнопку добавления в корзину на странице вывода списка продуктов
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_product_add_to_cart_text' );  // 2.1 +
+function woo_custom_product_add_to_cart_text() {
+$added = '';
+if ( WC()->cart->get_cart_contents_count()) { //Проверяем находится ли товар в корзине
+    $added = ' added';
+  }
+return __( '<div class="iconBusket'.$added.'"></div>', 'woocommerce' );
+  
 }

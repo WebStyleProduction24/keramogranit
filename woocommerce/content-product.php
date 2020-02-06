@@ -72,10 +72,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
 	 *
+	 * deleted @hooked woocommerce_template_loop_product_link_close - 5
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+
+<div class="test"><?php echo do_shortcode("[ti_wishlists_addtowishlist loop=yes]"); ?></div>
 	<hr>
 	<div class="art"><p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
 </div>

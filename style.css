@@ -810,13 +810,19 @@ main{
 	margin-left: 10px;
 }
 
-.iconBusket:active{
+/*Изменение иконки после добавления в корзину*/
+
+.added .iconBusket,
+.added.iconBusket{
 	background-image: url(img/bucketActive16px.png);
 }
+/*Конец*/
 
-.iconHeart:active{
+/*Изменение иконки после добавления в избранное*/
+.tinvwl-product-in-list.iconHeart{
 	background-image: url(img/HeartActive16px.png);
 }
+/*Конец*/
 
 /*************************************************/
 

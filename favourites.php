@@ -23,19 +23,19 @@ Template Name: Шаблон страницы "Избранные товары"
 
 			<!--		ТОВАРЫ			-->
 			<div class="goods">
-				<?php include 'hover-product.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
-				<?php include 'product-star.php'; ?>
+
+
+
+<?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
+
+		<?php the_content(); ?>
+
+	<?php } /* конец while */ ?>
+<?php
+} // конец if
+else 
+	echo "<h2>Записей нет.</h2>"; ?>
+
 			</div>
 		</div>
 	</div>

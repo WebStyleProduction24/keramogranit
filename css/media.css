@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
 /*выравнивание контента по центру для больишх экранов*/
-	.goods {
+	.goods, .goods form{
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: row;

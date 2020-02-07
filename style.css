@@ -637,7 +637,7 @@ main {
 
 }
 
-.goods {
+.goods, .goods form {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -787,6 +787,10 @@ main {
 	display: flex;
 	flex-direction: row;
 }
+.product_icon_price_icons_block a.button, .product_icon_price_icons_block a.button:hover {
+	background-color: #fff;
+	padding: 0;
+}
 
 .product_icon_price {
 	display: flex;
@@ -812,6 +816,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 	margin-left: 10px;
+	background-color: #fff;
 }
 
 /*Изменение иконки после добавления в корзину*/

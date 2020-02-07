@@ -11,6 +11,7 @@
 
 <body>
 
+
 	<header class="header" id="header">
 		<div class="contacts">
 			<div class="email mobilePhoneMail">
@@ -49,7 +50,7 @@
 				</div>
 				<a href="/favourites"><button class="favourites"></button></a>
 				<a href="/cart"><button class="busket"></button></a>
-				<span id="cart-price"><?php echo WC()->cart->get_cart_contents_total(); ?>р</span>
+				<a href="/cart" class="busketPrice"><span><?php echo WC()->cart->get_cart_contents_total(); ?>р</span></a>
 				<button id="feedback"><span>Заказать звонок</span></button>
 			</div>
 		</div>

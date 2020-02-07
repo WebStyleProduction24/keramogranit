@@ -1,4 +1,4 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 /*
 Theme Name: Универдом
 Theme URI: https://github.com/WebStyleProduction24/keramogranit
@@ -12,34 +12,38 @@ GitHub Theme URI: https://github.com/WebStyleProduction24/keramogranit
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 body,
-html{
+html {
 	background: #ffffff;
 	position: relative;
 	font-family: 'Roboto';
 }
 
 ul,
-li{
+li {
 	display: block;
 	padding: 0;
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 /*общие стили для элементов*/
 
 p,
-span{
+span {
 	font-size: 14px;
 }
 
-h2{
+h2 {
 	font-weight: bold;
 	font-size: 56px;
 	text-align: center;
@@ -47,7 +51,7 @@ h2{
 	margin-top: 40px;
 }
 
-h3{
+h3 {
 	font-family: 'Roboto';
 	font-weight: bold;
 	font-size: 36px;
@@ -55,35 +59,36 @@ h3{
 	margin-top: 40px;
 }
 
-.d-flex{
+.d-flex {
 	display: flex;
 }
 
-.fa{
+.fa {
 	margin-right: 5px;
 }
 
 img,
 button,
 .busket,
-#feedback{
+#feedback {
 	cursor: pointer;
 }
+
 .offer__filter-btn,
 .offer__filter-btn-ff,
-.product_icon-slide-rigth{
+.product_icon-slide-rigth {
 	display: none;
 }
 
 /****************/
 
 /*стили header*/
-header{
+header {
 	position: relative;
 }
 
 /*top header*/
-.contacts{
+.contacts {
 	width: 100%;
 	background: #333333;
 	height: 40px;
@@ -92,26 +97,26 @@ header{
 	align-items: center;
 }
 
-.contacts a{
+.contacts a {
 	text-decoration: none;
 }
 
-.email{
+.email {
 	margin-left: 70px;
 }
 
-.phones{
+.phones {
 	margin-right: 70px;
 }
 
 
-header span{
+header span {
 	font-size: 18px;
 	color: #ffffff;
 	margin-left: 10px;
 }
 
-.secondNum{
+.secondNum {
 	margin-right: 15px;
 }
 
@@ -119,17 +124,17 @@ header span{
 
 /*стили mainHeader*/
 
-main{
+main {
 	margin-bottom: 60px;
 	position: relative;
 }
 
-.grey_hr{
+.grey_hr {
 	height: 1px;
 	color: #eeeeee;
 }
 
-.mainHeader{
+.mainHeader {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -138,7 +143,7 @@ main{
 	margin: 0 70px 0 70px;
 }
 
-.searchAndButtons{
+.searchAndButtons {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
@@ -149,7 +154,7 @@ main{
 
 /*Поиск*/
 
-.search form{
+.search form {
 	position: relative;
 	width: 291px;
 	height: 46px;
@@ -157,13 +162,13 @@ main{
 }
 
 .search input,
-button{
+button {
 	border: none;
 	outline: none;
 	border-radius: 3px;
 }
 
-.search input{
+.search input {
 	width: 100%;
 	height: 46px;
 	background: #ffffff;
@@ -171,7 +176,7 @@ button{
 	padding-left: 15px;
 }
 
-.search button{
+.search button {
 	width: 56px;
 	height: 36px;
 	position: absolute;
@@ -184,7 +189,7 @@ button{
 	background-position: center;
 }
 
-.search button:hover{
+.search button:hover {
 
 	background: #EFC622;
 	background-image: url(img/Search.png);
@@ -195,7 +200,7 @@ button{
 /***************/
 
 /*иконки избранного, корзины, кнопка обратной связи*/
-.favourites{
+.favourites {
 	background: #ffffff;
 	margin: 0 20px 0 40px;
 	cursor: pointer;
@@ -208,17 +213,17 @@ button{
 	background-position: 50% 55%;
 }
 
-.favourites:active{
+.favourites:active {
 	background-image: url(img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
 
-.favourites:hover{
+.favourites:hover {
 	border: 2px solid #EFC622;
 }
 
-.busket{
+.busket {
 	background: #ffffff;
 	margin-right: 10px;
 	width: 60px;
@@ -230,24 +235,24 @@ button{
 	background-position: 50% 55%;
 }
 
-.busket:active{
+.busket:active {
 	background-image: url(img/bucketActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
 
 
-.busket:hover{
+.busket:hover {
 	border: 2px solid #EFC622;
 }
 
 
-.searchAndButtons span{
+.searchAndButtons span {
 	color: #333333;
 	margin: 0;
 }
 
-#feedback{
+#feedback {
 	width: 192px;
 	height: 44px;
 	background-color: #ffffff;
@@ -260,12 +265,12 @@ button{
 }
 
 
-#feedback:hover{
+#feedback:hover {
 	border: 2px solid #EFC622;
 	background-color: #EFC622;
 }
 
-#feedback span{
+#feedback span {
 	font-size: 16px;
 	margin-left: 30px;
 }
@@ -273,39 +278,39 @@ button{
 /***************/
 
 /*стили для фильтра*/
-.form__list-item{
+.form__list-item {
 	margin-top: 5px;
 }
 
-.offer__form-text{
+.offer__form-text {
 	margin-top: 3px;
 }
 
-.cd-filter-block{
+.cd-filter-block {
 	margin-top: 15px;
 }
 
-.mr__filter{
+.mr__filter {
 	margin-right: 150px;
 }
 
-.mr__filter-middle{
+.mr__filter-middle {
 	margin-right: 130px;
 }
 
-.mr__filter-end{
+.mr__filter-end {
 	margin-right: 107px;
 }
 
-.svg__arrow{
+.svg__arrow {
 	margin-top: -2px;
 }
 
-.offer__checkbox-item{
+.offer__checkbox-item {
 	margin-bottom: 10px;
 }
 
-.filter a{
+.filter a {
 	text-decoration: none;
 	color: #333333;
 	margin-right: 10px;
@@ -313,40 +318,40 @@ button{
 	margin-left: 11px;
 }
 
-.btn__filter{
+.btn__filter {
 	width: 290px;
 	height: 40px;
 	background: #EEEEEE;
 	display: none;
 }
 
-.btn__filter-text{
+.btn__filter-text {
 	font-weight: bold;
 	font-size: 14px;
 	color: #333333;
 }
 
-.offer__form-line{
+.offer__form-line {
 	border-bottom: 1px solid #EEEEEE;
 	width: 200px;
 	margin-top: 20px;
 }
 
-.cd-main-content{
+.cd-main-content {
 	margin-top: 204px;
 }
 
-.cd-filter{
+.cd-filter {
 	margin-top: 11px;
 }
 
-.offer__filter-title{
+.offer__filter-title {
 	color: #666666;
 	font-size: 14px;
 	margin-bottom: 19px;
 }
 
-.form-control{
+.form-control {
 	width: 50px;
 	height: calc(11px + .75rem + 2px);
 	border-radius: 4px;
@@ -355,49 +360,49 @@ button{
 	border: 1px solid #999999;
 }
 
-.mr{
+.mr {
 	margin-right: 10px;
 }
 
-.offer__form-label{
+.offer__form-label {
 	color: #333333;
 	font-size: 16px;
 }
 
 /*стили для js фильтра начало*/
 
-#close__color{
+#close__color {
 	display: block;
 }
 
-#close__format{
+#close__format {
 	display: block;
 }
 
-#close__way{
+#close__way {
 	display: block;
 }
 
-#close__area{
+#close__area {
 	display: block;
 }
 
-#close__style{
+#close__style {
 	display: block;
 }
 
 /*стили для js фильтра конец*/
 input[type="text"]:focus,
-input[type="phone"]:focus{
+input[type="phone"]:focus {
 	border: 1px solid #FFDB4D;
 }
 
 /*input for checkbox начало*/
-input[type="checkbox"]{
+input[type="checkbox"] {
 	display: none;
 }
 
-input[type="checkbox"] + label{
+input[type="checkbox"] + label {
 	display: block;
 	position: relative;
 	padding-left: 35px;
@@ -407,7 +412,7 @@ input[type="checkbox"] + label{
 	-ms-user-select: none;
 }
 
-input[type=checkbox] + label:before{
+input[type=checkbox] + label:before {
 	content: "";
 	display: inline-block;
 	width: 16px;
@@ -420,7 +425,7 @@ input[type=checkbox] + label:before{
 	border-radius: 3px;
 }
 
-input[type=checkbox]:checked + label:before{
+input[type=checkbox]:checked + label:before {
 	content: "";
 	font-size: 15px;
 	text-align: center;
@@ -431,19 +436,19 @@ input[type=checkbox]:checked + label:before{
 
 /*input for checkbox конец*/
 
-.mr__filter-foot{
+.mr__filter-foot {
 	margin-right: 143px;
 }
 
 /*стили для + - начало*/
 
-.quantity{
+.quantity {
 	display: flex;
 	align-items: center;
 }
 
 
-.quantity input{
+.quantity input {
 	display: inline-block;
 	width: 43px;
 	height: 28px;
@@ -455,7 +460,7 @@ input[type=checkbox]:checked + label:before{
 }
 
 /*цвета кнопок начало*/
-.quantity input:first-child{
+.quantity input:first-child {
 	background: #E5E5E5;
 	border-radius: 6px 0px 0px 6px;
 	margin-right: -5px;
@@ -465,7 +470,7 @@ input[type=checkbox]:checked + label:before{
 	background-position: center center;
 }
 
-.quantity input:first-child:active{
+.quantity input:first-child:active {
 
 	background: #FFDB4D;
 	background-image: url(img/Less.png);
@@ -474,7 +479,7 @@ input[type=checkbox]:checked + label:before{
 }
 
 
-.quantity input:last-child{
+.quantity input:last-child {
 	background: #E5E5E5;
 	border-right: 1px solid #ccc;
 	border-radius: 0px 6px 6px 0px;
@@ -485,7 +490,7 @@ input[type=checkbox]:checked + label:before{
 	background-position: center center;
 }
 
-.quantity input:last-child:active{
+.quantity input:last-child:active {
 
 	background-color: #FFDB4D;
 	background-image: url(img/Plus.png);
@@ -496,24 +501,24 @@ input[type=checkbox]:checked + label:before{
 /*цвета кнопок конец*/
 
 
-input[type="button"]{
+input[type="button"] {
 	cursor: pointer;
 }
 
-.quantity[type='text']{
+.quantity[type='text'] {
 	font-size: 16px;
 	color: #333333;
 }
 
-.qty{
+.qty {
 	width: 95px !important;
 }
 
-.mr__filter-bottom{
+.mr__filter-bottom {
 	margin-right: 100px;
 }
 
-.quantity input{
+.quantity input {
 	display: inline-block;
 	width: 43px;
 	height: 28px;
@@ -525,7 +530,7 @@ input[type="button"]{
 }
 
 /*цвета кнопок начало*/
-.quantity input:first-child{
+.quantity input:first-child {
 	background: #E5E5E5;
 	border-radius: 6px 0px 0px 6px;
 	margin-right: -5px;
@@ -535,14 +540,14 @@ input[type="button"]{
 	background-position: center center;
 }
 
-.quantity input:first-child:active{
+.quantity input:first-child:active {
 	background: #FFDB4D;
 	background-image: url(img/Less.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-.quantity input:last-child{
+.quantity input:last-child {
 	background: #E5E5E5;
 	border-right: 1px solid #ccc;
 	border-radius: 0px 6px 6px 0px;
@@ -553,7 +558,7 @@ input[type="button"]{
 	background-position: center center;
 }
 
-.quantity input:last-child:active{
+.quantity input:last-child:active {
 	background-color: #FFDB4D;
 	background-image: url(img/Plus.png);
 	background-repeat: no-repeat;
@@ -562,40 +567,40 @@ input[type="button"]{
 
 /*цвета кнопок конец*/
 
-input[type="button"]{
+input[type="button"] {
 	cursor: pointer;
 }
 
-.quantity[type='text']{
+.quantity[type='text'] {
 	font-size: 16px;
 	color: #333333;
 }
 
-.qty{
+.qty {
 	width: 95px !important;
 }
 
 /*стили для + - конец*/
 
-main{
+main {
 	display: flex;
 	flex-direction: column;
 }
 
-.main-container{
+.main-container {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	margin: 0 70px 0 70px;
 }
 
-.main-container aside{
+.main-container aside {
 	min-width: 200px;
 	height: auto;
 	margin-top: 51px;
 }
 
-.main-content{
+.main-content {
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
@@ -603,43 +608,43 @@ main{
 	text-align: left;
 }
 
-.sort{
+.sort {
 	display: flex;
 	flex-direction: row;
 	margin-left: 20px;
 }
 
-.sort span{
+.sort span {
 	color: #999999;
 	margin-right: 24px;
 	font-weight: bold;
 }
 
-.sort .main-filter-span{
+.sort .main-filter-span {
 	color: #666666;
 	margin-right: 34px;
 }
 
-.main-filter-span i{
+.main-filter-span i {
 	color: #333333;
 }
 
-.container-goods{
+.container-goods {
 	display: flex;
 	justify-content: center;
 	max-width: 1100px;
-/*	margin: 0 auto;*/
-		
+	/*	margin: 0 auto;*/
+
 }
 
-.goods{
+.goods {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
 
-.product_icon{
+.product_icon {
 	min-width: 140px;
 	/*max-width: 200px;*/
 	width: 200px;
@@ -649,7 +654,7 @@ main{
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5)
 }
 
-.img-product{
+.img-product {
 	margin: 10px;
 	min-width: 120px;
 	max-width: 180px;
@@ -660,7 +665,7 @@ main{
 
 /*классы для ховера */
 
-.product_icon-slide{
+.product_icon-slide {
 	width: 310px;
 	height: 440px;
 	border: 1px solid #FFDB4D;
@@ -673,72 +678,70 @@ main{
 	top: 209px;
 }
 
-.product_icon-flex{
+.product_icon-flex {
 	flex-direction: row;
 }
 
-#show{
+#show {
 	display: none;
 }
 
-.product_icon-img{
+.product_icon-img {
 	margin-left: 10px;
 	margin-top: 10px;
 }
 
-.icon-btn{
+.icon-btn {
 	width: 80px;
 	height: 20px;
 	background: #FFDB4D;
 }
 
-.top__img{
-	
-}
+.top__img {}
 
-.img__top{
+.img__top {
 	margin-top: 10px;
 	margin-right: 10px;
 }
 
-.icon-img{
+.icon-img {
 	margin-top: 10px;
 }
 
-.font__bold{
+.font__bold {
 	font-weight: 500;
 	font-size: 22px;
 	color: #333333;
 	margin-left: 19px;
 }
 
-.left-top{
+.left-top {
 	margin-left: 29px;
 }
 
-.m2{
+.m2 {
 	margin-top: 5px;
 	font-weight: 500;
 	font-size: 16px;
 	color: #666666;
 }
 
-.product_icon-text{
+.product_icon-text {
 	font-weight: normal;
 	font-size: 16px;
 	color: #333333;
 	margin-bottom: 20px;
 	cursor: pointer;
 	margin-left: 30px;
-    width: 180px;
+	width: 180px;
 }
 
 
-.shadow__btn{
+.shadow__btn {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.quantity__text{
+.quantity__text {
 	margin-left: 84px;
 	font-size: 14px;
 	color: #999999;
@@ -746,7 +749,7 @@ main{
 	margin-bottom: 20px;
 }
 
-.product_icon p{
+.product_icon p {
 	font-size: 16px;
 	margin: 10px 10px 0 10px;
 }
@@ -757,34 +760,35 @@ main{
 }
 */
 
-.hidden-busket{
+.hidden-busket {
 	display: block;
 }
-.show-busket{
+
+.show-busket {
 	display: none;
 }
 
 /*КЛАССЫ ДЛЯ ИКОНОК КОРЗИНЫ И ИЗБРАННОГО*/
 
-.bucket_icon{
+.bucket_icon {
 	padding: 0 !important;
 	margin-left: 50px;
 	display: none;
 }
 
-.favourites_icon{
+.favourites_icon {
 	display: none;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*корзина и избранное в товарах*/
-.product_icon_price_icons_block{
+.product_icon_price_icons_block {
 	display: flex;
 	flex-direction: row;
 }
 
-.product_icon_price{
+.product_icon_price {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -792,18 +796,18 @@ main{
 }
 
 .iconBusket,
-.iconHeart{
+.iconHeart {
 	height: 16px;
 	width: 16px;
 }
 
-.iconBusket{
+.iconBusket {
 	background-image: url(img/bucketInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 }
 
-.iconHeart{
+.iconHeart {
 	background-image: url(img/HeartInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
@@ -811,7 +815,6 @@ main{
 }
 
 /*Изменение иконки после добавления в корзину*/
-
 .added .iconBusket,
 .added.iconBusket{
 	background-image: url(img/bucketActive16px.png);
@@ -827,28 +830,28 @@ main{
 /*************************************************/
 
 
-.goods hr{
+.goods hr {
 	margin: 0 10px 10px 10px;
 	color: #eeeeee;
 }
 
-.art{
+.art {
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.art p{
+.art p {
 	font-size: 14px;
 	color: #999999;
 	margin: 0;
 }
 
-.art p > span{
+.art p > span {
 	color: #666666;
 	font-weight: 500;
 }
 
-footer{
+footer {
 	width: 100%;
 	height: 60px;
 	background: #eeeeee;
@@ -859,10 +862,10 @@ footer{
 
 /*стили модального окна*/
 
-.popup{
+.popup {
 	position: absolute;
-	width: 310px;
-	height: 334px;
+	width: 320px;
+	height: 466px;
 	right: 70px;
 	top: 100%;
 	background: #EEEEEE;
@@ -870,52 +873,64 @@ footer{
 	justify-content: center;
 	flex-direction: column;
 	z-index: 1000;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
-.popupShow{
+.popupShow {
 	display: block;
 }
 
 
-.popup p{
+.popup p {
 	color: #666666;
+	margin-top: 20px;
 }
 
-.popup p a{
+.popup p a {
 	color: #333333;
 }
 
-.popup_container{
+.popup span {
+	text-align: center;
+
+}
+
+.popup_container {
 	width: 280px;
 	height: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
 
-.popup hr{
-	margin: 20px 0;
+
+.popup hr {
+	margin: 15px 0;
 	color: #999999;
 }
 
-.close_container{
+.close_container {
 	display: flex;
 	justify-content: flex-end;
 	margin: 13.5px 0 8px 0;
 }
 
-#close{
+#close {
 	cursor: pointer;
 }
 
-form{
+form {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 auto;
-	margin-top:
+
 }
 
 .popup input,
-.busket_form input{
+.busket_form input {
 	width: 280px;
 	height: 46px;
 	margin: 0 auto;
@@ -926,11 +941,11 @@ form{
 
 .popup input[type='text'],
 input[type='phone'],
-.busket_form input[type='text']{
+.busket_form input[type='text'] {
 	padding-left: 20px;
 }
 
-.modalBut{
+.modalBut {
 	background-color: #FFDB4D;
 	width: 218px;
 	height: 44px;
@@ -944,33 +959,69 @@ input[type='phone'],
 	cursor: pointer;
 }
 
+.modalBellBut {
+	width: 193px;
+	height: 34px;
+	border: none !important;
+	font-size: 16px;
+	font-family: "Roboto";
+	color: #333333;
+	line-height: 34px;
+	text-align: center;
+	background-color: #FFDB4D;
+	transition: 0.35s ease-in-out;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.modalBellBut:disabled {
+	background-color: #f7e59d;
+}
 
 /*окошко почты*/
 
-.mail-window{
+.mail-window {
 	width: 320px;
 	height: 84px;
 	background: #EEEEEE;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1000;
 }
 
-.mail-window span{
+.mail-window span,
+.popup span {
 	font-weight: 500;
 	font-size: 20px;
 	color: #333333;
 	text-align: center;
 }
 
-#mail-window-close{
+#mail-window-close {
 	margin-right: 15.5px;
 	cursor: pointer;
 }
 
+
+/*Окно "Заказать звонок"*/
+
+.orderACall{
+	width: 320px;
+	height: 246px;
+	background: #EEEEEE;
+	display: flex;
+	flex-direction: column;
+}
+
+
 /*!!!!!!!!!!!!!!!МОДАЛЬНОЕ ОКНО НА ГЛАВНОЙ!!!!!!!!!!!!!!!!*/
 
-.box-modal{
+.box-modal {
 	width: 680px;
 	height: 695px;
 	background: #FFFFFF;
@@ -983,36 +1034,34 @@ input[type='phone'],
 	left: 25%;
 }
 
-.artic-goods-container{
+.artic-goods-container {
 	display: flex;
 	flex-direction: row;
 }
 
 
-.artic__goods-img img{
+.artic__goods-img img {
 	width: 310px;
 	height: 310px;
 }
 
-.arctic__goods-list{
+.arctic__goods-list {
 	display: flex;
 	flex-direction: column;
 }
 
-.arctic__property{
+.arctic__property {
 	display: flex;
 	flex-direction: column;
 }
 
-.arctic__property-column{
+.arctic__property-column {
 
 	justify-content: space-between;
 	display: flex;
 }
-=============================================================================
-=============================================================================
-=============================================================================
-.arctic__goods-art{
+
+=======================================================================================================================================================================================================================================.arctic__goods-art {
 	margin-bottom: 20px;
 	color: #666666;
 	font-size: 14px;
@@ -1020,24 +1069,21 @@ input[type='phone'],
 }
 
 
-.arctic__goods-art{
+.arctic__goods-art {
 	margin-bottom: 20px;
 	color: #666666;
 	font-size: 14px;
 	font-weight: bold;
 	margin-top: 20px;
 }
-=============================================================================
-=============================================================================
-=============================================================================
 
-.art__number{
+=======================================================================================================================================================================================================================================.art__number {
 	font-size: 16px;
 	color: #333333;
 	font-weight: normal;
 }
 
-.arctic__goods-name{
+.arctic__goods-name {
 	font-weight: 500;
 	font-size: 20px;
 	margin-bottom: 20px;
@@ -1045,7 +1091,7 @@ input[type='phone'],
 	height: 72px;
 }
 
-.arctic__goods-btn{
+.arctic__goods-btn {
 	width: 107px;
 	height: 24px;
 	border-radius: 0px;
@@ -1056,11 +1102,11 @@ input[type='phone'],
 	color: #666666;
 }
 
-.arctic__goods-quantity{
+.arctic__goods-quantity {
 	margin-bottom: 2px;
 }
 
-.arctic__goods-basket{
+.arctic__goods-basket {
 	width: 218px;
 	height: 44px;
 	background-color: #FFDB4D;
@@ -1072,36 +1118,33 @@ input[type='phone'],
 	margin-top: 10px;
 }
 
-.arctic__goods-warring{
+.arctic__goods-warring {
 	margin-top: 10px;
 }
 
-.arctic__goods-warring-text{
+.arctic__goods-warring-text {
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
 
-.arctic__goods-money{
+.arctic__goods-money {
 	font-weight: 500;
 	font-size: 22px;
 }
 
-.arctic__goods-money-m2{
+.arctic__goods-money-m2 {
 	font-weight: 500;
 	font-size: 16px;
 	margin-top: 5px;
 }
 
-=============================================================================
-=============================================================================
-=============================================================================
-.arctic__btn-heart{
+=======================================================================================================================================================================================================================================.arctic__btn-heart {
 	cursor: pointer;
 	background-color: #fff;
 	margin-top: 32px;
 }
 
-.arctic__btn-heart{
+.arctic__btn-heart {
 	cursor: pointer;
 	background-color: #fff;
 	margin-top: 32px;
@@ -1111,24 +1154,19 @@ input[type='phone'],
 	height: 44px;
 	padding-left: 20px;
 }
-=============================================================================
-=============================================================================
-=============================================================================
-.arctic__goods-heart-text{
+
+=======================================================================================================================================================================================================================================.arctic__goods-heart-text {
 	font-weight: normal;
 	font-size: 16px;
 	color: #666666;
 	margin-left: 10px;
 }
 
-=============================================================================
-=============================================================================
-=============================================================================
-.arctic__title{
+=======================================================================================================================================================================================================================================.arctic__title {
 	text-align: center;
 }
 
-.arctic__title{
+.arctic__title {
 	text-align: center;
 	font-style: normal;
 	font-weight: 500;
@@ -1136,11 +1174,8 @@ input[type='phone'],
 	margin-top: 3px;
 	margin-bottom: 20px;
 }
-=============================================================================
-=============================================================================
-=============================================================================
 
-.arctic__goods-item{
+=======================================================================================================================================================================================================================================.arctic__goods-item {
 	font-weight: bold;
 	font-size: 14px;
 	color: #666666;
@@ -1148,23 +1183,23 @@ input[type='phone'],
 	margin-right: 170px;
 }
 
-.arctic__goods-spesh{
+.arctic__goods-spesh {
 	font-weight: normal;
 	font-size: 16px;
 	color: #333333;
 	margin-right: 30px;
 }
 
-.arctic__flex{
+.arctic__flex {
 	display: flex;
 	justify-content: space-between;
 }
 
-.arctic__margin{
+.arctic__margin {
 	margin-right: 110px;
 }
 
-.arctic__line{
+.arctic__line {
 	border: 1px solid #EEEEEE;
 	width: 331px;
 	margin-left: 13px;
@@ -1172,7 +1207,7 @@ input[type='phone'],
 	margin-bottom: 10px;
 }
 
-.arctic__line-1{
+.arctic__line-1 {
 	border: 1px solid #EEEEEE;
 	width: 257px;
 	margin-left: 13px;
@@ -1182,22 +1217,22 @@ input[type='phone'],
 
 /*стили для слайдера*/
 
-#gallery{
+#gallery {
 	position: relative;
 }
 
-#gallery #main{
+#gallery #main {
 	width: 310px;
 	height: 310px;
 	position: relative;
 }
 
 #gallery #images,
-#gallery #thumbs{
+#gallery #thumbs {
 	overflow: hidden;
 }
 
-#gallery #images{
+#gallery #images {
 	width: 310px;
 	height: 310px;
 	margin: 0 auto;
@@ -1206,14 +1241,14 @@ input[type='phone'],
 	top: 0;
 }
 
-#gallery #images .slide{
+#gallery #images .slide {
 	width: 400px;
 	height: 210px;
 	position: relative;
 	float: left;
 }
 
-#gallery #images .slide a{
+#gallery #images .slide a {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -1222,13 +1257,13 @@ input[type='phone'],
 	height: 310px;
 }
 
-#gallery #thumbs{
+#gallery #thumbs {
 	width: 330px;
 	height: 40px;
 	margin: 10px 0 0 73px;
 }
 
-#gallery #thumbs .thumb{
+#gallery #thumbs .thumb {
 	width: 59px;
 	height: 80px;
 	float: left;
@@ -1236,7 +1271,7 @@ input[type='phone'],
 	margin: 0 30px 0 0;
 }
 
-#gallery #thumbs .thumb a{
+#gallery #thumbs .thumb a {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -1249,7 +1284,7 @@ input[type='phone'],
 }
 
 #gallery #prev,
-#gallery #next{
+#gallery #next {
 	text-indent: -999em;
 	position: absolute;
 	display: block;
@@ -1259,96 +1294,73 @@ input[type='phone'],
 	bottom: 20px;
 }
 
-#gallery #prev{
+#gallery #prev {
 	background-position: 0 0;
 	left: 25px;
 }
 
-#gallery #next{
+#gallery #next {
 	background-position: -19px 0;
 	right: 25px;
 }
 
-#main .caroufredsel_wrapper{
+#main .caroufredsel_wrapper {
 	height: 310px !important;
 	margin: 0 !important;
 }
 
-#images{
+#images {
 	height: 310px !important;
 }
 
-#close__modal{
+#close__modal {
 	display: none;
 }
 
 
 
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-==============================================================================================================================
-
-
-.slider-for{
-	img{
-		width:100%;  
+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================.slider-for {
+	img {
+		width: 100%;
 	}
 }
 
-#largeImg{
+#largeImg {
 	width: 310px;
 	height: 310px;
 	margin: 20px;
 }
 
-#thumbs a{
+#thumbs a {
 	width: 80px;
 	height: 80px;
 	margin-left: 10px;
 
 }
 
-#thumbsS a{
-	
-	
-}
+#thumbsS a {}
 
-#bigImg{
+#bigImg {
 	width: 180px;
 	height: 180px;
 	margin: 10px 10px 10px 30px;
 }
 
-#thumbs a:hover{
+#thumbs a:hover {
 	border-color: #FF9900;
 }
 
-#thumbs li{
+#thumbs li {
 	list-style: none;
 }
 
-#thumbs{
+#thumbs {
 	margin: 0;
 	padding: 0;
 	display: flex;
 }
 
-#thumbsSS{
+#thumbsSS {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -1356,38 +1368,40 @@ input[type='phone'],
 
 
 
-#thumbsS{
+#thumbsS {
 	margin-top: 12px;
 }
 
-#thumbsS img{
+#thumbsS img {
 	margin-bottom: 8px;
 }
-.arric-slider-btnLeft{
+
+.arric-slider-btnLeft {
 	background: #FFDB4D;
 	width: 16px;
-	height: 80px;	
+	height: 80px;
 	margin-left: 20px;
 }
-.arric-slider-btnRight{
+
+.arric-slider-btnRight {
 	background: #FFDB4D;
 	width: 16px;
 	height: 80px;
 	margin-left: 9px;
 }
 
-.arric-slider-thumbs{
+.arric-slider-thumbs {
 	display: flex;
 }
 
-.more{
+.more {
 	display: none;
 }
 
-.more__text{
+.more__text {
 	display: none;
 }
 
-#exampleModal__open{
+#exampleModal__open {
 	display: none
 }

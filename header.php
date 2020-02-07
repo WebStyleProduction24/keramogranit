@@ -50,7 +50,7 @@
 				</div>
 				<a href="/favourites"><button class="favourites"></button></a>
 				<a href="/cart"><button class="busket"></button></a>
-				<a href="/cart" class="busketPrice"><span><?php echo WC()->cart->get_cart_contents_total(); ?>р</span></a>
+				<div id="cart-price"><a href="/cart" class="busketPrice"><span><?php echo WC()->cart->get_cart_contents_total(); ?>р</span></a></div>
 				<button id="feedback"><span>Заказать звонок</span></button>
 			</div>
 		</div>

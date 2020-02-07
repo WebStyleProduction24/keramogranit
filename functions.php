@@ -106,7 +106,7 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1 );
 function refresh_cart_count( $fragments ){
     ob_start();
     ?>
-				<span id="cart-price"><?php echo WC()->cart->get_cart_contents_total(); ?>р</span><br>
+				<div id="cart-price"><a href="/cart" class="busketPrice"><span><?php echo WC()->cart->get_cart_contents_total(); ?>р</span></a></div>
     <?php
      $fragments['#cart-price'] = ob_get_clean();
     return $fragments;
@@ -115,10 +115,16 @@ function refresh_cart_count( $fragments ){
 //Изменяем кнопку добавления в корзину на странице вывода списка продуктов
 add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_product_add_to_cart_text' );  // 2.1 +
 function woo_custom_product_add_to_cart_text() {
-$added = '';
-if ( WC()->cart->get_cart_contents_count()) { //Проверяем находится ли товар в корзине
-    $added = ' added';
-  }
-return __( '<div class="iconBusket'.$added.'"></div>', 'woocommerce' );
-  
+	$added = '';
+
+	foreach( WC()->cart->get_cart() as $cart_item_key => $values ) {
+		$_product = $values['data'];
+
+		if( get_the_ID() == $_product->id ) {
+			$added = ' added';
+		}
+	}
+	
+	return __('<div class="iconBusket' . $added . '"></div>', 'woocommerce');
+
 }

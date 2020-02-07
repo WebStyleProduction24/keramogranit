@@ -9,8 +9,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+wp_enqueue_script( 'tinvwl' );
 ?>
 <div class="tinv-wishlist woocommerce tinv-wishlist-clear">
+	<?php do_action( 'tinvwl_before_wishlist', $wishlist ); ?>
 	<?php if ( function_exists( 'wc_print_notices' ) && isset( WC()->session ) ) {
 		wc_print_notices();
 	} ?>
@@ -19,8 +21,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 	$form_url = tinv_url_wishlist( $wishlist['share_key'], $wl_paged, true );
 	?>
 	<form action="<?php echo esc_url( $form_url ); ?>" method="post" autocomplete="off">
+		<?php do_action( 'tinvwl_before_wishlist_table', $wishlist ); ?>
 		<table class="tinvwl-table-manage-list">
-		
+			<thead>
+			<tr>
+				<?php if ( isset( $wishlist_table['colm_checkbox'] ) && $wishlist_table['colm_checkbox'] ) { ?>
+					<th class="product-cb"><input type="checkbox" class="global-cb"
+					                              title="<?php _e( 'Select all for bulk action', 'ti-woocommerce-wishlist' ) ?>">
+					</th>
+				<?php } ?>
+				<th class="product-remove"></th>
+				<th class="product-thumbnail">&nbsp;</th>
+				<th class="product-name"><span
+						class="tinvwl-full"><?php esc_html_e( 'Product Name', 'ti-woocommerce-wishlist' ); ?></span><span
+						class="tinvwl-mobile"><?php esc_html_e( 'Product', 'ti-woocommerce-wishlist' ); ?></span></th>
+				<?php if ( isset( $wishlist_table_row['colm_price'] ) && $wishlist_table_row['colm_price'] ) { ?>
+					<th class="product-price"><?php esc_html_e( 'Unit Price', 'ti-woocommerce-wishlist' ); ?></th>
+				<?php } ?>
+				<?php if ( isset( $wishlist_table_row['colm_date'] ) && $wishlist_table_row['colm_date'] ) { ?>
+					<th class="product-date"><?php esc_html_e( 'Date Added', 'ti-woocommerce-wishlist' ); ?></th>
+				<?php } ?>
+				<?php if ( isset( $wishlist_table_row['colm_stock'] ) && $wishlist_table_row['colm_stock'] ) { ?>
+					<th class="product-stock"><?php esc_html_e( 'Stock Status', 'ti-woocommerce-wishlist' ); ?></th>
+				<?php } ?>
+				<?php if ( isset( $wishlist_table_row['add_to_cart'] ) && $wishlist_table_row['add_to_cart'] ) { ?>
+					<th class="product-action">&nbsp;</th>
+				<?php } ?>
+			</tr>
+			</thead>
 			<tbody>
 			<?php do_action( 'tinvwl_wishlist_contents_before' ); ?>
 
@@ -152,6 +180,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 			<?php do_action( 'tinvwl_wishlist_contents_after' ); ?>
 			</tbody>
+			<tfoot>
+			<tr>
+				<td colspan="100">
+					<?php do_action( 'tinvwl_after_wishlist_table', $wishlist ); ?>
+					<?php wp_nonce_field( 'tinvwl_wishlist_owner', 'wishlist_nonce' ); ?>
+				</td>
+			</tr>
+			</tfoot>
 		</table>
 	</form>
 	<?php do_action( 'tinvwl_after_wishlist', $wishlist ); ?>

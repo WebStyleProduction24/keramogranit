@@ -35,3 +35,11 @@
   <li><strong>loop/add-to-card.php</strong> - добавление товара в корзину</li>
   <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
  </ul>
+
+<strong>08.02.2020 (v.0.2.2)</strong> - <i>Добавлены новые файлы Темы</i>
+
+<ul>
+  <li><strong>sidebar.php</strong> - отвечает за вывод боковой панели (фильтр товаров)</li>
+  <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
+ </ul>
+ <i>Реализован функционал страницы Избранное</i>

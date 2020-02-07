@@ -1,45 +1,24 @@
 <?php
 /*
-Template Name: Шаблон страницы "Избранные товары"
+Template Name: Избранное
 */
 ?>
 
-
-
- 
-<?php include 'header.php'; ?>
+<?php get_header(); ?>
 
 <main class="offer">
-<hr class="grey_hr">
-	<h2>Избранное</h2>
+	<hr class="grey_hr">
+	<h2><?php the_title();?></h2>
 	<div class="main-container">
-		<!-- для расположения фильтра  -->
-		<?php include 'aside.php'; ?>
-
-		<!--	для контента	-->
+		<?php get_sidebar(); ?>
 		<div class="main-content">
-			<?php include 'sorting.php'; ?>
-			
-
-			<!--		ТОВАРЫ			-->
+			<?php get_sorting(); ?>
 			<div class="goods">
-
-
-
-<?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
-
-		<?php the_content(); ?>
-
-	<?php } /* конец while */ ?>
-<?php
-} // конец if
-else 
-	echo "<h2>Записей нет.</h2>"; ?>
-
+				<?php the_post(); ?>
+				<?php the_content(); ?>	
 			</div>
 		</div>
 	</div>
 </main>
 
-
-<?php include 'footer.php'; ?>
+<?php get_footer(); ?>

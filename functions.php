@@ -128,3 +128,8 @@ function woo_custom_product_add_to_cart_text() {
 	return __('<div class="iconBusket' . $added . '"></div>', 'woocommerce');
 
 }
+
+//Подключение sorting.php
+function get_sorting() {
+	get_template_part( 'sorting');
+}

@@ -43,6 +43,7 @@
   <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
   <li><strong>main-start.php</strong> - отвечает за открытие main-блока</li>
   <li><strong>main-end.php</strong> - отвечает за закрытие main-блока</li>
+  <li><strong>ti-wishlist-empty.php</strong> - выводит сообщение, что товары в избранном отстутсвуют</li>
  </ul>
  <i>Реализован функционал страницы Избранное</i>
  <p>Добавлена папка <i><u>templates</u></i> для подключаемых файлов в шаблонах темы</p>

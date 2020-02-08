@@ -1,0 +1,28 @@
+<?php
+/**
+ * The Template for displaying empty wishlist.
+ *
+ * @version             1.15.5
+ * @package           TInvWishlist\Template
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+?>
+<div class="tinv-wishlist woocommerce">
+	<p class="cart-empty">
+		<?php if ( get_current_user_id() === $wishlist['author'] ) { ?>
+			<?php esc_html_e( 'Your Wishlist is currently empty.', 'ti-woocommerce-wishlist' ); ?>
+		<?php } else { ?>
+			<?php esc_html_e( 'Wishlist is currently empty.', 'ti-woocommerce-wishlist' ); ?>
+		<?php } ?>
+	</p>
+
+
+	<p class="return-to-shop">
+		<a class="button wc-backward"
+		   href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><?php esc_html_e( 'Return To Shop', 'ti-woocommerce-wishlist' ); ?></a>
+	</p>
+</div>

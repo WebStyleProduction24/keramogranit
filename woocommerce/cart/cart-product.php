@@ -46,7 +46,11 @@
 							<input type='button' class='plus' field='quantity' />
 						</div>
 					</form>
-					<p>650р<span>/м2</span></p>
+					<p>
+						650р<br>
+						<?php	echo WC()->cart->get_product_price( $_product ); ?><span>/м2</span>
+
+					</p>
 
 				</div>
 				<div class="buscket__item_other-info">
@@ -55,8 +59,23 @@
 					</div>
 					<div class="other-info-price"><span>Цена</span>
 						<p>00000</p>
-					</div>
-					<div class="delete">Удалить</div>
+					</div>				
+
+							<?php
+								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+									'woocommerce_cart_item_remove_link',
+									sprintf(
+										'<a href="%s" aria-label="%s" data-product_id="%s" data-product_sku="%s"><div class="delete">Удалить</div></a>',
+										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+										esc_html__( 'Remove this item', 'woocommerce' ),
+										esc_attr( $product_id ),
+										esc_attr( $_product->get_sku() )
+									),
+									$cart_item_key
+								);
+							?>
+
+
 				</div>
 				<!--		<div class="delete">Удалить</div>-->
 			</div>

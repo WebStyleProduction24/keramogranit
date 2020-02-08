@@ -7,7 +7,7 @@
 		</div>
 		<div class="total-cost">
 			<span>Общая стоимость</span>
-			<p>12450р</p>
+			<p><?php wc_cart_totals_subtotal_html(); ?></p>
 		</div>
 	</div>	
 	<div class="about-cost">

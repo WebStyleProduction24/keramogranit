@@ -22,52 +22,19 @@ do_action( 'woocommerce_before_cart' ); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-	<div class="main__buscket_container">
-	<div class="buscket__item">
-		<div class="buscket__item-name"><img src="<?php echo get_template_directory_uri();?>/img/Rectangle 104.png" alt="">
-			<div class="item-name-and-button"><a href="#">Керамогранит Estima Standard ST 07 матовый 300х300 мм wer</a><button>В наличии</button></div>
-		</div>
-		<div class="buscket__item-quantity">
-			<span>Кол-во коробок</span>
-			<form method='post' action='#'>
-				<div class="quantity">
-					<input type='button' class='minus' field='quantity' />
-					<input type='text' name='quantity' value='0' class='qty' />
-					<input type='button' class='plus' field='quantity' />
-				</div>
-			</form>
-			<p>650р<span>/м2</span></p>
-		</div>
-		<div class="buscket__item_other-info">
-			<div class="other-info-weight"><span>Вес</span>
-				<p>1.23кг</p>
-			</div>
-			<div class="other-info-price"><span>Цена</span>
-				<p>00000</p>
-			</div>
-			<div class="delete">Удалить</div>
-		</div>
-<!--		<div class="delete">Удалить</div>-->
-	</div>
-</div>
+	<?php
+	foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+		$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+		$product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 
+		if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+			$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
+			
+			include 'cart-product.php'; 
 
-
-
-
-<?php
-foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-	$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-	$product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
-
-	if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
-		$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
-		
-		include 'cart-product.php'; 
-
+		}
 	}
-}
-?>
+	?>
 
 
 
@@ -107,34 +74,6 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 					?>
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-
-						<td class="product-remove">
-							<?php
-								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-									'woocommerce_cart_item_remove_link',
-									sprintf(
-										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-										esc_html__( 'Remove this item', 'woocommerce' ),
-										esc_attr( $product_id ),
-										esc_attr( $_product->get_sku() )
-									),
-									$cart_item_key
-								);
-							?>
-						</td>
-
-						<td class="product-thumbnail">
-						<?php
-						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-
-						if ( ! $product_permalink ) {
-							echo $thumbnail; // PHPCS: XSS ok.
-						} else {
-							printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
-						}
-						?>
-						</td>
 
 						<td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 						<?php

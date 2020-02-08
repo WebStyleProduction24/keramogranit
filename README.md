@@ -44,6 +44,8 @@
   <li><strong>main-start.php</strong> - отвечает за открытие main-блока</li>
   <li><strong>main-end.php</strong> - отвечает за закрытие main-блока</li>
   <li><strong>ti-wishlist-empty.php</strong> - выводит сообщение, что товары в избранном отстутсвуют</li>
+  <li><strong>delivery-calculation.php</strong> - расчет стоимости заказа</li>
+  <li><strong>order-form.php</strong> - форма заказа</li>
  </ul>
  <i>Реализован функционал страницы Избранное</i>
  <p>Добавлена папка <i><u>templates</u></i> для подключаемых файлов в шаблонах темы</p>

@@ -141,4 +141,12 @@ function get_main_start() {
 function get_main_end() {
 	get_template_part( 'templates/main-end');
 }
+//Подключение delivery-calculation.php
+function get_delivery_calculation() {
+	get_template_part( 'templates/delivery', 'calculation');
+}
+//Подключение order-form.php
+function get_order_form() {
+	get_template_part( 'templates/order', 'form');
+}
 

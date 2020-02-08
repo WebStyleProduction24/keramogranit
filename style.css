@@ -986,9 +986,9 @@ input[type='phone'],
 	cursor: pointer;
 }
 
-#modalBellBut {
-	width: 193px;
-	height: 34px;
+#modalBellBut, .modalBellButPopup {
+	width: 193px !important;
+	height: 34px !important;
 	border: none !important;
 	font-size: 16px;
 	font-family: "Roboto";
@@ -998,11 +998,11 @@ input[type='phone'],
 	background-color: #FFDB4D;
 	transition: 0.35s ease-in-out;
 	cursor: pointer;
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 	margin: 0 auto;
 }
 
-#modalBellBut:disabled {
+#modalBellBut:disabled,.modalBellButPopup:disabled {
 	background-color: #f7e59d;
 }
 

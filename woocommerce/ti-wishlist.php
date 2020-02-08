@@ -10,9 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-	<?php if ( function_exists( 'wc_print_notices' ) && isset( WC()->session ) ) {
-		wc_print_notices();
-	} ?>
 
 
 

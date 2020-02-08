@@ -19,11 +19,13 @@
   <li><strong>favourites.php</strong></li>
   <li><strong>busket.php</strong></li>
 </ul>
+<hr>
 <strong>06.02.2020 (v.0.2.1)</strong> - <i>Добавлены новые файлы WooCommerce</i>
 <ul>
   <li><strong>loop/add-to-card.php</strong> - добавление товара в корзину</li>
   <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
 </ul>
+<hr>
 <strong>05.02.2020 (v.0.2)</strong> - <i>Добавлены файлы WooCommerce</i>
 <ul>
   <li><strong>woocommerce.php</strong> - подключение Woocommerce к шаблону</li>
@@ -36,6 +38,7 @@
   <li><strong>cart.php</strong> - отображает корзину</li>
   <li><strong>cart-product.php</strong> - отображает добавленный в корзину товар с элементами управления</li>
 </ul>
+<hr>
 <strong>06.12.2019</strong> - <i>обновлена структура проекта</i>
 <ul>
   <li><strong>header.php</strong> - шапка сайта</li>

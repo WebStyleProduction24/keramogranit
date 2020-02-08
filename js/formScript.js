@@ -1,18 +1,28 @@
-
 $(document).ready(function () {
-	$('.popup, .mail-window').hide();
+	$('.popup, .mail-window .orderACall').hide();
 	$('#feedback, #phoneMobile').click(function () {
-	$('.popup').slideToggle(500);
+		$('.orderACall').slideToggle(500);
 	});
-	$('#close').click(function(){
+	$('#closeorderACall').click(function () {
+		$('.orderACall').slideUp(500);
+	});
+
+
+
+	$('#modalBellBut').click(function () {
+		$('.popup').slideToggle(500);
+	});
+	$('#close').click(function () {
 		$('.popup').slideUp(500);
 	});
-	
-	$('#mailMobile').click(function(){
+
+
+
+	$('#mailMobile').click(function () {
 		$('.mail-window').slideToggle(500);
 	});
-	$('#mail-window-close').click(function(){
+	$('#mail-window-close').click(function () {
 		$('.mail-window').slideUp(500);
 	});
-	
+
 });

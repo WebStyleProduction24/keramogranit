@@ -110,7 +110,7 @@ header {
 }
 
 
-header span {
+.contacts span {
 	font-size: 18px;
 	color: #ffffff;
 	margin-left: 10px;
@@ -637,7 +637,7 @@ main {
 
 }
 
-.goods, .goods form {
+.goods {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -816,20 +816,21 @@ main {
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 	margin-left: 10px;
-	background-color: #fff;
 }
 
 /*Изменение иконки после добавления в корзину*/
 .added .iconBusket,
-.added.iconBusket{
+.added.iconBusket {
 	background-image: url(img/bucketActive16px.png);
 }
+
 /*Конец*/
 
 /*Изменение иконки после добавления в избранное*/
-.tinvwl-product-in-list.iconHeart{
+.tinvwl-product-in-list.iconHeart {
 	background-image: url(img/HeartActive16px.png);
 }
+
 /*Конец*/
 
 /*************************************************/
@@ -889,12 +890,29 @@ footer {
 }
 
 
-.popup p {
+.mail-window span,
+.popup span,
+.orderACall span{
 	color: #666666;
-	margin-top: 20px;
+	font-size: 14px;
+	
+
 }
 
-.popup p a {
+.popup p, .orderACall p, .mail-window p {
+	font-weight: 500;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+	
+}
+
+.orderACall p{
+	margin-bottom: 10px;
+}
+
+
+.popup span a {
 	color: #333333;
 }
 
@@ -910,8 +928,12 @@ footer {
 	text-align: center;
 }
 
+.popup_container p:nth-child(odd){
+	margin-bottom: 20px;
+}
 
-.popup hr {
+
+.popup hr, .orderACall hr {
 	margin: 15px 0;
 	color: #999999;
 }
@@ -964,7 +986,7 @@ input[type='phone'],
 	cursor: pointer;
 }
 
-.modalBellBut {
+#modalBellBut {
 	width: 193px;
 	height: 34px;
 	border: none !important;
@@ -977,9 +999,10 @@ input[type='phone'],
 	transition: 0.35s ease-in-out;
 	cursor: pointer;
 	margin-bottom: 20px;
+	margin: 0 auto;
 }
 
-.modalBellBut:disabled {
+#modalBellBut:disabled {
 	background-color: #f7e59d;
 }
 
@@ -999,13 +1022,6 @@ input[type='phone'],
 	z-index: 1000;
 }
 
-.mail-window span,
-.popup span {
-	font-weight: 500;
-	font-size: 20px;
-	color: #333333;
-	text-align: center;
-}
 
 #mail-window-close {
 	margin-right: 15.5px;
@@ -1015,12 +1031,18 @@ input[type='phone'],
 
 /*Окно "Заказать звонок"*/
 
-.orderACall{
+.orderACall {
 	width: 320px;
 	height: 246px;
 	background: #EEEEEE;
 	display: flex;
 	flex-direction: column;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	right: 0;
+	margin: auto;
+	z-index: 5;
 }
 
 

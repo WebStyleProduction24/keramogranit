@@ -41,5 +41,15 @@
 <ul>
   <li><strong>sidebar.php</strong> - отвечает за вывод боковой панели (фильтр товаров)</li>
   <li><strong>ti-wishlist.php</strong> - отображает добавленные в избранное товары (работает при активированном плагине TI WooCommerce Wishlist)</li>
+  <li><strong>main-start.php</strong> - отвечает за открытие main-блока</li>
+  <li><strong>main-end.php</strong> - отвечает за закрытие main-блока</li>
  </ul>
  <i>Реализован функционал страницы Избранное</i>
+ <p>Добавлена папка <i><u>templates</u></i> для подключаемых файлов в шаблонах темы</p>
+ <u>Удалены файлы из шаблона</u>
+
+<ul>
+  <li><strong>aside.php</strong></li>
+  <li><strong>favourites.php</strong></li>
+  <li><strong>busket.php</strong></li>
+ </ul>

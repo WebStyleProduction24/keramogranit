@@ -131,5 +131,14 @@ function woo_custom_product_add_to_cart_text() {
 
 //Подключение sorting.php
 function get_sorting() {
-	get_template_part( 'sorting');
+	get_template_part( 'templates/sorting');
 }
+//Подключение main-start.php
+function get_main_start() {
+	get_template_part( 'templates/main-start');
+}
+//Подключение main-end.php
+function get_main_end() {
+	get_template_part( 'templates/main-end');
+}
+

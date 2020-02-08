@@ -19,17 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<main>
-	<hr class="grey_hr">
-	<h2 id="heaed__title"><?php woocommerce_page_title(); ?></h2>
-
-	<div class="main-container">
-
-		<!-- для расположения фильтра  -->
-
-		<?php include __DIR__.'/../aside.php'; ?>
-
-
+<?php get_main_start(); ?>
 
 <?php
 if ( woocommerce_product_loop() ) {
@@ -58,41 +48,6 @@ if ( woocommerce_product_loop() ) {
 			wc_get_template_part( 'content', 'product' );
 		}
 	}
-
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
-			the_post();
-
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 */
-			do_action( 'woocommerce_shop_loop' );
-
-			wc_get_template_part( 'content', 'product-test' );
-		}
-	}
-
-
-
-	include __DIR__.'/../hover-product.php'; 
-	$i = 1;
-	while ($i <= 3) {
-		$i++; 
-		include __DIR__.'/../product-star.php';
-	}
-	$i = 1;
-	while ($i <= 10) {
-		$i++; 
-		include __DIR__.'/../product.php';
-	}
-
-
-
-
-
-
-
-
 
 	woocommerce_product_loop_end();
 

@@ -21,8 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="main-content" id="main-content">
 		
-		<?php include __DIR__.'/../../sorting.php'; ?>
+		<?php get_sorting(); ?>
 
-
-		<!--		ТОВАРЫ			-->
-		<div class="goods" id="goods">
+		<div class="goods">

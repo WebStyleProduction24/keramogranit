@@ -1,21 +1,11 @@
-<?php include 'header.php'; ?>
+<?php get_main_start(); ?>
 
-<main>
-<hr class="grey_hr">
-	<h2 id="heaed__title">Главная</h2>
-	<div class="main-container">
-		<!-- для расположения фильтра  -->
-
-		<?php include 'aside.php'; ?>
-
-
-		<!--	для контента	-->
-		<?php include 'main-products.php'; ?>
-		
-
+<div class="main-content">
+	<?php get_sorting(); ?>
+	<div class="goods">
+		<?php the_post(); ?>
+		<?php the_content(); ?>	
 	</div>
+</div>
 
-</main>
-
-<?php include 'footer.php'; ?>
- 
+<?php get_main_end(); ?>

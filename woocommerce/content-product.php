@@ -38,6 +38,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 <!-- <li <?php //wc_product_class( '', $product ); ?>> !-->
 
 <div class="product_icon">
+	<div class="product_hover">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -92,5 +93,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	<hr>
 	<div class="art"><p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
+</div>
 </div>
 <!-- </li> !--> 

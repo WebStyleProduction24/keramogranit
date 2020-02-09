@@ -663,6 +663,13 @@ main {
 	left: -110px;
 	top: 0px;
 }
+.goods form {
+	display: none;
+}
+
+.product_icon:hover form {
+	display: flex;
+}
 .product_icon:hover .product_icon-img {
 	display: block;
 }
@@ -689,7 +696,7 @@ main {
 	border: 2px solid #ffe600;
 	content: '';
 	width: calc(100% + 120px);
-	height: calc(100% + 100px);
+	height: calc(100% + 60px);
 	top: -2px;
 	left: -122px;
 	bottom: -100px;
@@ -995,7 +1002,6 @@ footer {
 }
 
 form {
-	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 auto;

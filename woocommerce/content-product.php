@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 <div class="product_icon">
 	<div class="product_hover">
-	<?php
+		<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
@@ -79,14 +79,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	</div>
 
 
-			<form method='post' action='#' class="form__item">
-				<div class="quantity left-top">
-					<input type='button' value='' class='minus' field='quantity' />
-					<input type='text' name='quantity' value='0' class='qty' />
-					<input type='button' value='' class='plus' field='quantity' />
-				</div>
-				<p class="quantity__text">Коробки</p>
-			</form>
+	<form method='post' action='#' class="form__item">
+		<div class="quantity left-top">
+			<input type='button' value='' class='minus' field='quantity' />
+			<input type='text' name='quantity' value='0' class='qty' />
+			<input type='button' value='' class='plus' field='quantity' />
+		</div>
+		<p class="quantity__text">Коробки</p>
+	</form>
 
 
 	<hr>

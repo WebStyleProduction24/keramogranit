@@ -48,7 +48,15 @@
 						<button type="submit"></button>
 					</form>
 				</div>
-				<a href="/favourites"><button class="favourites"></button></a>
+
+				<?php
+					$page_favourites ='';
+					if (is_page('favourites')) {
+						$page_favourites =' page';
+					}
+				?>
+				
+				<a href="/favourites"><button class="favourites<?php echo $page_favourites?>"></button></a>
 				<a href="/cart"><button class="busket"></button></a>
 				<div id="cart-price"><a href="/cart" class="busketPrice"><span><?php echo WC()->cart->get_cart_contents_total(); ?>р</span></a></div>
 				<button id="feedback"><span>Заказать звонок</span></button>

@@ -213,7 +213,7 @@ button {
 	background-position: 50% 55%;
 }
 
-.favourites:active {
+.favourites:active, .favourites.page {
 	background-image: url(img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;

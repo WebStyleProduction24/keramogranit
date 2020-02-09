@@ -47,6 +47,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 					do_action( 'tinvwl_wishlist_row_before', $wl_product, $product );
 					?>
 						<div class="product_icon">
+							<div class="product_hover">
+
 							<?php
 							
 							do_action( 'woocommerce_before_shop_loop_item_title' );
@@ -59,9 +61,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<button class="iconHeart tinvwl-product-in-list" type="submit" name="tinvwl-remove" value="<?php echo esc_attr( $wl_product['ID'] ); ?>" />
 									</div>
 								</div>
+
+								<form method='post' action='#' class="form__item">
+									<div class="quantity left-top">
+										<input type='button' value='' class='minus' field='quantity' />
+										<input type='text' name='quantity' value='0' class='qty' />
+										<input type='button' value='' class='plus' field='quantity' />
+									</div>
+									<p class="quantity__text">Коробки</p>
+								</form>
+
 								<hr>
 								<div class="art"><p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
+
+								<div class="product_icon-img">
+									<button class="icon-btn shadow__btn"><img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt=""></button>
+									<ul class="thumbs__item" id="thumbsS">		
+										<li><a href="<?php echo get_template_directory_uri();?>/img/slide1.png" title="Image 1"><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" width="80" height="80"></a></li>
+										<li><a href="<?php echo get_template_directory_uri();?>/img/slide2.png" title="Image 2"><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" width="80" height="80"></a></li>
+										<li><a href="<?php echo get_template_directory_uri();?>/img/slide3.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" width="80" height="80"></a></li>
+										<li><a href="<?php echo get_template_directory_uri();?>/img/slide4.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide4.png" width="80" height="80"></a></li>				   
+									</ul>
+									<button class="icon-btn top__img"><img src="<?php echo get_template_directory_uri();?>/img/arrowDown.png" alt=""></button>
+								</div>
+
 							</div>
+						</div>
 
 
 						

@@ -657,6 +657,21 @@ main {
 
 /*Раскрытие карточки при наведении*/
 
+.product_icon-img {
+	display: none;
+	position: absolute;
+	left: -110px;
+	top: 0px;
+}
+.product_icon:hover .product_icon-img {
+	display: block;
+}
+.product_icon-img {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+
 .product_hover {
 	height: 100%;
 	position: absolute;
@@ -673,10 +688,10 @@ main {
 	z-index: 2;
 	border: 2px solid #ffe600;
 	content: '';
-	width: calc(100% + 100px);
+	width: calc(100% + 120px);
 	height: calc(100% + 100px);
 	top: -2px;
-	left: -102px;
+	left: -122px;
 	bottom: -100px;
 	background-color: #fff;
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5);
@@ -720,11 +735,6 @@ main {
 
 #show {
 	display: none;
-}
-
-.product_icon-img {
-	margin-left: 10px;
-	margin-top: 10px;
 }
 
 .icon-btn {

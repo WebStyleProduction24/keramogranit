@@ -93,6 +93,16 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	<hr>
 	<div class="art"><p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
+	<div class="product_icon-img">
+		<button class="icon-btn shadow__btn"><img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt=""></button>
+		<ul class="thumbs__item" id="thumbsS">		
+			<li><a href="<?php echo get_template_directory_uri();?>/img/slide1.png" title="Image 1"><img src="<?php echo get_template_directory_uri();?>/img/slide1.png" width="80" height="80"></a></li>
+			<li><a href="<?php echo get_template_directory_uri();?>/img/slide2.png" title="Image 2"><img src="<?php echo get_template_directory_uri();?>/img/slide2.png" width="80" height="80"></a></li>
+			<li><a href="<?php echo get_template_directory_uri();?>/img/slide3.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide3.png" width="80" height="80"></a></li>
+			<li><a href="<?php echo get_template_directory_uri();?>/img/slide4.png" title="Image 3"><img src="<?php echo get_template_directory_uri();?>/img/slide4.png" width="80" height="80"></a></li>				   
+		</ul>
+		<button class="icon-btn top__img"><img src="<?php echo get_template_directory_uri();?>/img/arrowDown.png" alt=""></button>
+	</div>
 </div>
 </div>
 <!-- </li> !--> 

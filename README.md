@@ -4,7 +4,10 @@
 <strong>10.02.2020 (v.0.2.2)</strong> - <i>Добавлены новые файлы Темы</i>
 <ul>
   <li><strong>content-single-product.php</strong> - отвечает за вывод карточки товара</li>
-<i>Реализован функционал страницы Избранное</i>
+  <li><strong>woocommerce/sinfle-product/meta.php</strong> - отвечает за вывод артикула товара</li>
+  <li><strong>woocommerce/sinfle-product/stock.php</strong> - выводит статус наличия товара</li>
+</ul>
+<p>Добавлена папка <i><u>woocommerce/sinfle-product</u></i> для подключаемых файлов в шаблонах темы</p>
 <hr>
 
 <strong>08.02.2020 (v.0.2.2)</strong> - <i>Добавлены новые файлы Темы</i>

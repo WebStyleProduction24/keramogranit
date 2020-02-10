@@ -70,6 +70,8 @@ add_action('woocommerce_shop_loop_item_title', 'woo_product_loop_title', 10);
 //Удаляем хук, заврывающий </a> на карточке товара
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 
+//Удаляем хук отображения стоимости товара
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 
 
 //Новые функции для Хуков
@@ -155,6 +157,7 @@ function get_order_form() {
 	get_template_part( 'templates/order', 'form');
 }
 
+//Выводим стоимость текущей вариации без диапазона цен
 add_filter('woocommerce_variable_price_html', 'custom_variation_price_default', 10, 2);
 add_filter('woocommerce_variable_sale_price_html', 'custom_variation_price_default', 10, 2 );
 

@@ -50,7 +50,7 @@ if ( post_password_required() ) {
 		 *
 		 * @hooked woocommerce_template_single_title - 5
 		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
+		 * deleted @hooked woocommerce_template_single_price - 10
 		 * @hooked woocommerce_template_single_excerpt - 20
 		 * @hooked woocommerce_template_single_add_to_cart - 30
 		 * @hooked woocommerce_template_single_meta - 40
@@ -64,7 +64,7 @@ if ( post_password_required() ) {
 	<div><?php $product->list_attributes();?>
 
 	</div>
-	
+
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

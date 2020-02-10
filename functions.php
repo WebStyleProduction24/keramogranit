@@ -92,15 +92,19 @@ function woo_product_loop_title() {
 }
 
 
-//Изменяем хук woocommerce_get_price_html
-add_filter( 'woocommerce_get_price_html', 'product_price_html', 100, 2 );
-function product_price_html( $price, $product ){
-	$before_price = '<span>';
-  $price =  get_post_meta( get_the_ID(), '_regular_price', true);
-	$after_price = 'р/м<sup>2</sup></span>';
-	$print = $before_price . $price . $after_price;
-    return apply_filters( 'woocommerce_get_price', $print );
+//Изменяем вывод валюты и вместо руб выводим р/м^2
+add_filter('woocommerce_currency_symbol', 'misha_new_symbol', 10, 2);
+function misha_new_symbol( $valyuta_symbol, $valyuta_code ) {
+	if( $valyuta_code == 'RUB' ) {
+		return 'р/м<sup>2</sup>';
+	}
+	return $valyuta_symbol;
 }
+
+
+
+
+
 
 //AJAX-обновление общей стоимости корзины
 add_filter( 'woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1 );
@@ -151,3 +155,21 @@ function get_order_form() {
 	get_template_part( 'templates/order', 'form');
 }
 
+add_filter('woocommerce_variable_price_html', 'custom_variation_price_default', 10, 2);
+add_filter('woocommerce_variable_sale_price_html', 'custom_variation_price_default', 10, 2 );
+
+function custom_variation_price_default( $price, $product ) {
+  foreach($product->get_available_variations() as $pav){
+      $def=true;
+      foreach($product->get_variation_default_attributes() as $defkey=>$defval){
+          if($pav['attributes']['attribute_'.$defkey]!=$defval){
+              $def=false;             
+          }   
+      }
+      if($def){
+          $price = $pav['display_price'];         
+      }
+  }   
+
+  return woocommerce_price($price);
+}

@@ -5,9 +5,11 @@
 <ul>
   <li><strong>content-single-product.php</strong> - отвечает за вывод карточки товара</li>
   <li><strong>woocommerce/sinfle-product/meta.php</strong> - отвечает за вывод артикула товара</li>
+  <li><strong>woocommerce/sinfle-product/add-to-cart/variable.php</strong> - отвечает за меню выбора опций вариативного товара</li>
   <li><strong>woocommerce/sinfle-product/stock.php</strong> - выводит статус наличия товара</li>
 </ul>
 <p>Добавлена папка <i><u>woocommerce/sinfle-product</u></i> для подключаемых файлов в шаблонах темы</p>
+<p>Добавлена папка <i><u>woocommerce/sinfle-product/add-to-cart</u></i> для подключаемых файлов отвечающих за кнопку добавления в корзину</p>
 <hr>
 
 <strong>08.02.2020 (v.0.2.2)</strong> - <i>Добавлены новые файлы Темы</i>

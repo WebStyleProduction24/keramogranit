@@ -95,8 +95,8 @@ function woo_product_loop_title() {
 
 
 //Изменяем вывод валюты и вместо руб выводим р/м^2
-add_filter('woocommerce_currency_symbol', 'misha_new_symbol', 10, 2);
-function misha_new_symbol( $valyuta_symbol, $valyuta_code ) {
+add_filter('woocommerce_currency_symbol', 'new_symbol', 10, 2);
+function new_symbol( $valyuta_symbol, $valyuta_code ) {
 	if( $valyuta_code == 'RUB' ) {
 		return 'р/м<sup>2</sup>';
 	}

@@ -58,6 +58,17 @@ if ( post_password_required() ) {
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
 		do_action( 'woocommerce_single_product_summary' );
+		$variations = $product->get_available_variations();
+
+		foreach ( $variations as $variation ) {
+
+			$variationId = $variation['variation_id'];
+
+			echo get_the_post_thumbnail($variationId, array(100,100));
+
+		}
+
+// echo $product->ID;
 		?>
 	</div>
 

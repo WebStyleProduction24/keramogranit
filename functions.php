@@ -79,7 +79,8 @@ remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pro
 function woo_product_loop_thumbnail( $post = null ) {
 	$src = get_the_post_thumbnail_url( $post, 'product-thumbnail' );
 	$alt = get_the_title();
-	$img = '<div class="img-product"><img src="' . $src . '" alt="' . $alt . '"></div>';
+	$href = get_permalink();
+	$img = '<a href="' . $href . '"><div class="img-product"><img src="' . $src . '" alt="' . $alt . '"></div></a>';
 	echo $img;
 }
 

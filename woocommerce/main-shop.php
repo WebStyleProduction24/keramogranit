@@ -22,6 +22,16 @@ defined( 'ABSPATH' ) || exit;
 <?php get_main_start(); ?>
 
 <?php
+if ( is_singular( 'product' ) ) {
+
+		while ( have_posts() ) :
+			the_post();
+			wc_get_template_part( 'content', 'single-product' );
+		endwhile;
+	} else {
+		?>
+
+<?php
 if ( woocommerce_product_loop() ) {
 
 	/**
@@ -64,6 +74,7 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked wc_no_products_found - 10
 	 */
 	do_action( 'woocommerce_no_products_found' );
+}
 }
 
 ?>

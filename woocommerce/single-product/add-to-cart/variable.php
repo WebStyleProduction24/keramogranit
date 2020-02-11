@@ -76,5 +76,19 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php do_action( 'woocommerce_after_variations_form' ); ?>
 </form>
 
+
+<?php $variations = $product->get_available_variations();
+
+		foreach ( $variations as $variation ) {
+
+			$variationId = $variation['variation_id'];
+
+			echo get_the_post_thumbnail($variationId, array(100,100));
+
+		}
+
+?>
+
+
 <?php
 do_action( 'woocommerce_after_add_to_cart_form' );

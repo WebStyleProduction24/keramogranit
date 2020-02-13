@@ -73,6 +73,12 @@ remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pro
 //Удаляем хук отображения стоимости товара
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 
+//Удаляем хук отображения артикула товара в карточке товара
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+//Удаляем хук отображения наименования товара в карточке товара
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+remove_action('woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
 
 //Новые функции для Хуков
 

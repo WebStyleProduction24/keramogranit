@@ -10,8 +10,9 @@
 			<div class="iconHeart"></div>
 		</div>
 	</div>
-	<hr>
+	
 	<div class="art">
+		<hr>
 		<p>Артикул <span>119608</span></p>
 	</div>
 </div>
@@ -49,8 +50,6 @@
 				</div>
 				<p class="quantity__text">Коробки</p>
 			</form>
-
-
 			<div class="art">
 				<p>Артикул <span>119608</span></p>
 			</div>

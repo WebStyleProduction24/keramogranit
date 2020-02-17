@@ -14,8 +14,13 @@ $(document).ready(function () {
 		$('.popup').slideToggle(500);
 //		if('.orderACall')
 	});
-	$('#close').click(function () {
-		$('.popup').slideUp(500);
+	$('#modalBellBut').click(function () {
+		 $('.popup, .mail-window').slideToggle(500, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }  
+         
+        });
 	});
 
 	$('#mailMobile').click(function () {
@@ -23,9 +28,6 @@ $(document).ready(function () {
 		$('.mail-window').slideToggle(500);
 	});
 	$('#mail-window-close').click(function () {
-		$('.mail-window').slideUp(500);
+		$('.popup, .mail-window').slideUp(500);
 	});
-
-
-
 });

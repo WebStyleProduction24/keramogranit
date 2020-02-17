@@ -90,7 +90,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 
 	
-	<div class="art"><hr><p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
+	<div class="art">
+		<hr>
+		<p>Артикул <span><?php echo $product->get_sku(); ?></span></p></div>
 	<div class="product_icon-img">
 		<button class="icon-btn shadow__btn"><img src="<?php echo get_template_directory_uri();?>/img/arrowUp.png" alt=""></button>
 		<ul class="thumbs__item" id="thumbsS">		

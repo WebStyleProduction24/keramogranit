@@ -10,8 +10,14 @@
 				</div>
 			</a>			
 			<div class="art">
-				<hr>
-				<p>Артикул <span>119608</span></p>
+				
+						<p>
+							Артикул
+							 <span>
+							 119608
+							</span>
+						</p>
+					
 			</div>
 
 		</div>

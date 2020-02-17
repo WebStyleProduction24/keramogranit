@@ -66,7 +66,8 @@
 									'woocommerce_cart_item_remove_link',
 									sprintf(
 										'<a href="%s" aria-label="%s" data-product_id="%s" data-product_sku="%s"><div class="delete">Удалить</div></a>',
-										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+										esc_url( wc_get_cart_remove_url( $cart_item_key )
+										 ),
 										esc_html__( 'Remove this item', 'woocommerce' ),
 										esc_attr( $product_id ),
 										esc_attr( $_product->get_sku() )

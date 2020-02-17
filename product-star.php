@@ -11,8 +11,14 @@
 	</div>
 	
 	<div class="art">
-		<hr>
-		<p>Артикул <span>119608</span></p>
+		
+				<p>
+					Артикул
+					 <span>
+					 119608
+					</span>
+				</p>
+			
 	</div>
 	<div class="more" id="show__footer-card">
 		<div class="more__item">

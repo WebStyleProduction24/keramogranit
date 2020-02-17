@@ -8,9 +8,9 @@
 						<div class="iconHeart"></div>
 					</div>
 				</div>
-			</a>			
+			</a>
+			<hr>
 			<div class="art">
-				<hr>
 				<p>Артикул <span>119608</span></p>
 			</div>
 

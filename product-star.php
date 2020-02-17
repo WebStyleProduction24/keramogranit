@@ -9,9 +9,8 @@
 			<div class="iconHeart"></div>
 		</div>
 	</div>
-	
+	<hr>
 	<div class="art">
-		<hr>
 		<p>Артикул <span>119608</span></p>
 	</div>
 	<div class="more" id="show__footer-card">

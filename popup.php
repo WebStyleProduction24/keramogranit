@@ -38,7 +38,7 @@
 		<hr>
 		
 		<form action="#" method="post">
-			<input value="     Заказать звонок" id="modalBellBut">
+			<input type="submit" value="     Заказать звонок" id="modalBellBut">
 		</form>
 	</div>
 </div>

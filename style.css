@@ -184,7 +184,7 @@ button {
 	right: 5px;
 	border-radius: 4px;
 	background: #FFDB4D;
-	background-image: url(img/Search.svg);
+	background-image: url(img/Search.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -208,13 +208,14 @@ button {
 	height: 60px;
 	border: 2px solid #FFDB4D;
 	border-radius: 50%;
-	background-image: url(img/Favourite.svg);
+	background-image: url(img/HeartActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
 
-.favourites:active, .favourites.page {
-	background-image: url(img/Ellipse2.svg);
+.favourites:active,
+.favourites.page {
+	background-image: url(img/HeartInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
@@ -230,13 +231,13 @@ button {
 	height: 60px;
 	border: 2px solid #FFDB4D;
 	border-radius: 50%;
-	background-image: url(img/Card.svg);
+	background-image: url(img/bucketInactive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
 
 .busket:active {
-	background-image: url(img/CardActive.svg);
+	background-image: url(img/bucketActive24px.png);
 	background-repeat: no-repeat;
 	background-position: 50% 55%;
 }
@@ -259,7 +260,7 @@ button {
 	margin-left: 40px;
 	border: 2px solid #FFDB4D;
 	border-radius: 3px;
-	background-image: url(img/Call.svg);
+	background-image: url(img/telephone14px.png);
 	background-repeat: no-repeat;
 	background-position: 10% 50%;
 }
@@ -893,13 +894,13 @@ main {
 }
 
 .iconBusket {
-	background-image: url(img/buscketInActive.svg);
+	background-image: url(img/bucketInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 }
 
 .iconHeart {
-	background-image: url(img/FavouriteInActive.svg);
+	background-image: url(img/HeartInactive16px.png);
 	background-repeat: no-repeat;
 	background-position: 85% 50%;
 	margin-left: 10px;
@@ -908,14 +909,14 @@ main {
 /*Изменение иконки после добавления в корзину*/
 .added .iconBusket,
 .added.iconBusket {
-	background-image: url(img/busketActive.svg);
+	background-image: url(img/bucketActive16px.png);
 }
 
 /*Конец*/
 
 /*Изменение иконки после добавления в избранное*/
 .tinvwl-product-in-list.iconHeart {
-	background-image: url(img/FavouriteActive.svg);
+	background-image: url(img/HeartActive16px.png);
 }
 
 /*Конец*/
@@ -1016,7 +1017,6 @@ footer {
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
-	
 }
 
 .popup_container p:nth-child(odd) {

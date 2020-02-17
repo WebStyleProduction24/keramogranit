@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	$('.popup, .mail-window .orderACall').hide();
 	$('#feedback, #phoneMobile').click(function (openMobile) {
-			openMobile.preventDefault();
+		openMobile.preventDefault();
 		$('.orderACall').slideToggle(500);
 	});
 	$('#closeorderACall').click(function () {
@@ -10,24 +10,19 @@ $(document).ready(function () {
 
 
 	$('#modalBellBut').click(function (openCall) {
-			openCall.preventDefault();
+		openCall.preventDefault();
 		$('.popup').slideToggle(500);
 //		if('.orderACall')
-	});
-	$('#modalBellBut').click(function () {
-		 $('.popup, .mail-window').slideToggle(500, function(){
-            if( $(this).css('display') === "none"){
-                $(this).removeAttr('style');
-            }  
-         
-        });
+});
+	$('#close').click(function () {
+		$('.popup').slideUp(500);
 	});
 
 	$('#mailMobile').click(function () {
-	
+		
 		$('.mail-window').slideToggle(500);
 	});
 	$('#mail-window-close').click(function () {
-		$('.popup, .mail-window').slideUp(500);
+		$('.mail-window').slideUp(500);
 	});
 });

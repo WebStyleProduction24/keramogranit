@@ -118,22 +118,6 @@ $(function(){
   }
 
 
-  let bl = document.getElementById('hover'),
-  hv = document.getElementById('show');
-
-  bl.onmouseover = function () {
-    bl.style.display = 'none';
-    hv.style.display='block';
-
-
-}
-
-hv.onpointerleave = function () {
-    hv.style.display = 'none';
-    bl.style.display = 'block';
-}
-
-
 
 $('#open__btn-head').on('click', function() {
     $('#close__btn-head').slideToggle(100, function(){
@@ -251,18 +235,6 @@ if ( null != block ) {
         }
     }
 
- thumbsS.onclick = function(event) {
-      let thumbnail = event.target.closest('a');
-
-      if (!thumbnail) return;
-      showThumbnail(thumbnail.href, thumbnail.title);
-      event.preventDefault();
-  }
-
-  function showThumbnail(href, title) {
-      bigImg.src = href;
-      bigImg.alt = title;
-  }
 
   $('#show__footer-card').on('click', function() {
     $('#exampleModal__open').slideToggle(100, function(){

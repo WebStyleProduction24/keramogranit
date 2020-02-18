@@ -659,35 +659,27 @@ main {
 .iconBusket {
 	display: none;
 }
-
 .product_icon:hover .iconBusket {
 	display: block !important;
 }
-
-.iconBusket.added,
-.added .iconBusket {
+.iconBusket.added, .added .iconBusket {
 	display: block;
 }
-
-.tinvwl_add_to_wishlist_button {
+.tinvwl_add_to_wishlist_button  {
 	display: none;
 }
-
-.product_icon:hover .tinvwl_add_to_wishlist_button {
+.product_icon:hover .tinvwl_add_to_wishlist_button  {
 	display: block;
 }
-
 .tinvwl_add_to_wishlist_button.tinvwl-product-in-list {
 	display: block;
 }
-
 .product_icon-img {
 	display: none;
 	position: absolute;
 	left: -110px;
 	top: 0px;
 }
-
 .goods form {
 	display: none;
 }
@@ -695,11 +687,9 @@ main {
 .product_icon:hover form {
 	display: flex;
 }
-
 .product_icon:hover .product_icon-img {
 	display: block;
 }
-
 .product_icon-img {
 	margin-left: 10px;
 	margin-top: 10px;
@@ -736,9 +726,9 @@ main {
 
 
 @media (min-width: 992px) {
-	.product_icon:hover::before {
-		display: block;
-	}
+.product_icon:hover::before {
+	display: block;
+}
 }
 
 /* КонецРаскрытие карточки при наведении*/
@@ -750,11 +740,6 @@ main {
 	min-height: 120px;
 	max-height: 180px;
 }
-
-.img-product img {
-	object-fit: cover;
-}
-
 
 
 /*классы для ховера */
@@ -876,9 +861,7 @@ main {
 	display: flex;
 	flex-direction: row;
 }
-
-.product_icon_price_icons_block a.button,
-.product_icon_price_icons_block a.button:hover {
+.product_icon_price_icons_block a.button, .product_icon_price_icons_block a.button:hover {
 	background-color: #fff;
 	padding: 0;
 }
@@ -994,24 +977,22 @@ footer {
 
 .mail-window span,
 .popup span,
-.orderACall span {
+.orderACall span{
 	color: #666666;
 	font-size: 14px;
-
+	
 
 }
 
-.popup p,
-.orderACall p,
-.mail-window p {
+.popup p, .orderACall p, .mail-window p {
 	font-weight: 500;
 	font-size: 20px;
 	color: #333333;
 	text-align: center;
-
+	
 }
 
-.orderACall p {
+.orderACall p{
 	margin-bottom: 10px;
 }
 
@@ -1033,13 +1014,12 @@ footer {
 	
 }
 
-.popup_container p:nth-child(odd) {
+.popup_container p:nth-child(odd){
 	margin-bottom: 20px;
 }
 
 
-.popup hr,
-.orderACall hr {
+.popup hr, .orderACall hr {
 	margin: 15px 0;
 	color: #999999;
 }
@@ -1091,8 +1071,7 @@ input[type='phone'],
 	cursor: pointer;
 }
 
-#modalBellBut,
-.modalBellButPopup {
+#modalBellBut, .modalBellButPopup {
 	width: 193px !important;
 	height: 34px !important;
 	border: none !important;
@@ -1106,13 +1085,9 @@ input[type='phone'],
 	cursor: pointer;
 	margin-bottom: 20px !important;
 	margin: 0 auto;
-	background-image: url(img/telephone14px.png);
-	background-repeat: no-repeat;
-	background-position: 10% 50%;
 }
 
-#modalBellBut:disabled,
-.modalBellButPopup:disabled {
+#modalBellBut:disabled,.modalBellButPopup:disabled {
 	background-color: #f7e59d;
 }
 
@@ -1155,10 +1130,7 @@ input[type='phone'],
 	margin: auto;
 	z-index: 5;
 	display: none;
-}
-
-#closeorderACall {
-	cursor: pointer;
+	
 }
 
 

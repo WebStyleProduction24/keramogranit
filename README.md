@@ -1,6 +1,15 @@
 # keramogranit
 Разработка сайта для ООО "СИСТЕМА" по договору №2019-11-1 от 29.11.2019г.
 
+<strong>18.02.2020 (v.0.2.5)</strong>
+<u>Удалены файлы из шаблона</u>
+<ul>
+  <li><strong>hover-product.php</strong></li>
+  <li><strong>product-card.php</strong></li>
+  <li><strong>product-star.php</strong></li>
+  <li><strong>woocommerce/content-product-test.php</strong></li>
+</ul><hr>
+
 <strong>14.02.2020 (v.0.2.4)</strong> - <i>Добавлены новые файлы Темы</i>
 <ul>
   <li><strong>woocommerce/sinfle-product/add-to-cart/variation.php</strong> - отвечает за вывод параметров вариативного вариантов</li>

@@ -21,18 +21,22 @@ defined( 'ABSPATH' ) || exit;
 
 <?php get_main_start(); ?>
 
+
+<!--  -->
+
 <?php
 if ( is_singular( 'product' ) ) {
 
-		while ( have_posts() ) :
-			the_post();
-			wc_get_template_part( 'content', 'single-product' );
-		endwhile;
-	} else {
-		?>
+// Запуск цикла отображения товара на отдельной странице
+	while ( have_posts() ) :
+		the_post();
+		wc_get_template_part( 'content', 'single-product' );
+	endwhile;
+// Конец цикла отображения товара на отдельной странице
+} else {
 
-<?php
-if ( woocommerce_product_loop() ) {
+// Запуск цикла отображения товара на главной странице
+	if ( woocommerce_product_loop() ) {
 
 	/**
 	 * Hook: woocommerce_before_shop_loop.
@@ -67,7 +71,9 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_pagination - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop' );
+// Конец цикла отображения товара на главной странице
 } else {
+	//Условие, если товаров нет
 	/**
 	 * Hook: woocommerce_no_products_found.
 	 *

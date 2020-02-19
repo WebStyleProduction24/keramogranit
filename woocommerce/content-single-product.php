@@ -134,14 +134,16 @@ if ( post_password_required() ) {
 				</div>
 			</div>
 		</div>
+		<hr class="line__hr">
 		<h3 class="arctic__title">Характеристики</h3>
+
 		<div class="arctic__flex">
 			<div class="arctic__property">
 				<div class="arctic__property-column">
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -150,7 +152,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -159,7 +161,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -168,7 +170,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -179,7 +181,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item arctic__margin">
 						Назначени
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="right__column">
 						Для стен
 					</p>
 				</div>
@@ -188,7 +190,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item arctic__margin">
 						Назначени
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="right__column">
 						Для стен
 					</p>
 				</div>
@@ -197,7 +199,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item arctic__margin">
 						Назначени
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="right__column">
 						Для стен
 					</p>
 				</div>
@@ -206,7 +208,7 @@ if ( post_password_required() ) {
 					<p class="arctic__goods-item arctic__margin">
 						Назначени
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="right__column">
 						Для стен
 					</p>
 				</div>

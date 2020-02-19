@@ -239,7 +239,7 @@
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -248,7 +248,7 @@
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>
@@ -257,7 +257,7 @@
 					<p class="arctic__goods-item">
 						Поверхность
 					</p>
-					<p class="arctic__goods-spesh">
+					<p class="arctic__goods-spesh" id="left__column">
 						Матовая
 					</p>
 				</div>

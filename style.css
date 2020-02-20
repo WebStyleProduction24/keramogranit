@@ -886,9 +886,9 @@ main {
 }
 
 .iconHeart {
+	background-position-y: 1px;
 	background-image: url(img/FavouriteInActive.svg);
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
 	margin-left: 10px;
 }
 
@@ -902,6 +902,7 @@ main {
 
 /*Изменение иконки после добавления в избранное*/
 .tinvwl-product-in-list.iconHeart {
+	background-position-y: 1px;
 	background-image: url(img/FavouriteActive.svg);
 }
 

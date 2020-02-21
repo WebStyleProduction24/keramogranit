@@ -33,6 +33,10 @@ $(document).ready(function () {
 	$('#mail-window-close').click(function () {
 		$('.popup, .mail-window').slideUp(500);
 	});
+	 $('.modal__window').click(function (e) {
+        e.preventDefault();
+        $('#exampleModal1').arcticmodal();
+    });    
 	
 	
 });

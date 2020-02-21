@@ -104,21 +104,7 @@ $(function(){
         $(this).find('img').attr("src",modalArr[modalBtn]);
     });
 
-    thumbs.onclick = function(event) {
-      let thumbnail = event.target.closest('a');
-
-      if (!thumbnail) return;
-      showThumbnail(thumbnail.href, thumbnail.title);
-      event.preventDefault();
-  }
-
-  function showThumbnail(href, title) {
-      largeImg.src = href;
-      largeImg.alt = title;
-  }
-
-
-
+ 
 $('#open__btn-head').on('click', function() {
     $('#close__btn-head').slideToggle(100, function(){
         if( $(this).css('display') === "none"){
@@ -204,36 +190,6 @@ $('#arrowLeft__btn').on('click', function() {
     });
 
 });
-function getTopOffset(e) { 
-    var y = 0;
-    do { y += e.offsetTop; } while (e = e.offsetParent);
-    return y;
-}
-var block = document.getElementById('#open__btn-head'); /* fixblock - значение атрибута id блока */
-if ( null != block ) {
-    var topPos = getTopOffset( block );
-
-    window.onscroll = function() {
-        var scrollHeight = Math.max( document.documentElement.scrollHeight, document.documentElement.clientHeight),
-
-            // определяем высоту рекламного блока
-            blockHeight = block.offsetHeight,
-
-            // вычисляем высоту подвала, footer заменить на значение атрибута id подвала
-            footerHeight = document.getElementById('#footer').offsetHeight,         
-
-            // считаем позицию, до которой блок будет зафиксирован 
-            stopPos = scrollHeight - blockHeight - footerHeight; 
-
-            var newcss = (topPos < window.pageYOffset) ? 
-            'top:20px; position: fixed;' : 'position:static;';
-
-            if ( window.pageYOffset > stopPos ) 
-                newcss = 'position:static;';
-
-            block.setAttribute( 'style', newcss );
-        }
-    }
 
 
   $('#show__footer-card').on('click', function() {
@@ -254,21 +210,4 @@ if ( null != block ) {
 
 });
 
-  thumbsSS.onclick = function(event) {
-      let thumbnail = event.target.closest('a');
-
-      if (!thumbnail) return;
-      showThumbnail(thumbnail.href, thumbnail.title);
-      event.preventDefault();
-  }
-
-  function showThumbnail(href, title) {
-      bigetImg.src = href;
-      bigetImg.alt = title;
-  }
-
-
-
-
-});
 

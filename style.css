@@ -1578,6 +1578,13 @@ input[type='phone'],
 	cursor: pointer;
 }
 
+.box-modal_close{
+	position: absolute;
+    left: 658px;
+    top: 5px;
+    cursor: pointer;
+}
+
 
 /*Скрываем кнопку "Прсмотр корзины*/
 .added_to_cart {

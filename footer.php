@@ -4,7 +4,7 @@
 
 <div style="display: none">
 	<div class="box-modal" id="exampleModal1">
-
+	<div class="box-modal_close arcticmodal-close">X</div>
 		<div class="artic-goods-container">
 
 			<div class="arric-slider">
@@ -152,6 +152,7 @@
 		</div>
 	</div>
 </div>
+
 <?php wp_footer(); ?>
 </body>
 

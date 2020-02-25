@@ -691,7 +691,7 @@ main {
 	display: block;
 }
 .product_icon-img {
-	margin-left: 10px;
+	
 	margin-top: 10px;
 }
 
@@ -720,10 +720,21 @@ main {
 	box-shadow: 0 0 3px rgba(51, 51, 51, 0.5);
 }
 
+.product_icon:hover .thumbs__item li{
+	margin-left: 0;
+}
+
+.product_icon:hover .thumbs__item img{
+	border:none;
+}
+
 .product_icon:hover .art{
 	bottom: -62px;
 }
 
+.thumbs__item img{
+	border: 2px solid #333333; 
+}
 
 @media (min-width: 992px) {
 .product_icon:hover::before {
@@ -790,7 +801,7 @@ main {
 }
 
 .left-top {
-	margin-left: 29px;
+	margin-left: 5px;
 }
 
 .m2 {
@@ -1464,7 +1475,8 @@ input[type='phone'],
 .thumbs__item li {
 	width: 80px;
 	height: 80px;
-	margin-left: 10px;
+	margin-bottom: 10px;
+	    margin-left: 10px;
 
 }
 
@@ -1500,6 +1512,7 @@ input[type='phone'],
 
 #thumbsS {
 	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 #thumbsS img {
@@ -1550,6 +1563,29 @@ input[type='phone'],
 .arctic__goods-heart-text{
 	margin-left: 10px;
 }
+
+
+#text__left{
+	margin-left: 58px;
+}
+
+.woocommerce-Price-amount{
+	font-weight: 500;
+    color: #333333;
+}
+
+.modal__window{
+	cursor: pointer;
+}
+
+.box-modal_close{
+	position: absolute;
+    left: 658px;
+    top: 5px;
+    cursor: pointer;
+}
+
+
 /*Скрываем кнопку "Прсмотр корзины*/
 .added_to_cart {
 	display: none;

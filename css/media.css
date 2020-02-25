@@ -747,7 +747,7 @@
 		left: 0px;
 	}
 	.thumbs__item li{
-		margin-left: 0;
+		margin-left: -18px;
 	}
 
 	.artic-goods-container {
@@ -777,13 +777,14 @@
 	.arric-slider-btnLeft{
 		width: 20px;
 		height: 55px;
-		
-		margin-left: 16px;
+		margin-right: 38px;
+		margin-left: 11px;
 	}
 
 	.arric-slider-btnRight{
 		width: 20px;
-		height: 55px;		
+		height: 55px;
+		margin-left: 33px;		
 	}
 
 	.thumbs__item img {
@@ -878,7 +879,14 @@
 }
 
 .box-modal_close{
-	left: 307px;
+	left: 299px;
+	top: 0px;
+}
+
+.arcticmodal-overlay {
+    opacity: 0;
+    background-color: transparent;
+    backdrop-filter: none;
 }
 
 

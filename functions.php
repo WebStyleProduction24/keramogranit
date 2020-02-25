@@ -8,11 +8,11 @@ function styles() {
 	// wp_enqueue_style( 'fonts-googleapis-css', 'https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 	wp_enqueue_style( 'fotorama-css', 'http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css', '', '4.6.4');
 
-	wp_enqueue_style( 'arcticmodal-css', get_template_directory_uri().'/css/jquery.arcticmodal-0.3.css', '', '0.3');
+	
 	wp_enqueue_style( 'buscket-css', get_template_directory_uri().'/css/buscket-style.css');
 
 	wp_enqueue_style( 'style-css', get_stylesheet_uri());
-
+	wp_enqueue_style( 'arcticmodal-css', get_template_directory_uri().'/css/jquery.arcticmodal-0.3.css', '', '0.3');
 	wp_enqueue_style( 'media-css', get_template_directory_uri().'/css/media.css');
 	wp_enqueue_style( 'cart-hover-css', get_template_directory_uri().'/css/cart-hover.css');
 }

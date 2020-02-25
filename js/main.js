@@ -103,9 +103,7 @@ $(function(){
         }
         $(this).find('img').attr("src",modalArr[modalBtn]);
     });
-
- 
-$('#open__btn-head').on('click', function() {
+    $('#open__btn-head').on('click', function() {
     $('#close__btn-head').slideToggle(100, function(){
         if( $(this).css('display') === "none"){
             $(this).removeAttr('style');
@@ -209,5 +207,6 @@ $('#arrowLeft__btn').on('click', function() {
     });
 
 });
+}); 
 
 

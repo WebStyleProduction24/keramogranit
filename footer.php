@@ -4,7 +4,7 @@
 
 <div style="display: none">
 	<div class="box-modal" id="exampleModal1">
-	<div class="box-modal_close arcticmodal-close">X</div>
+	<div class="box-modal_close arcticmodal-close"><img src="http://keramogranit/wp-content/themes/keramogranit/img/Close.png"></div>
 		<div class="artic-goods-container">
 
 			<div class="arric-slider">

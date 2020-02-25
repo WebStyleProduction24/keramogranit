@@ -881,7 +881,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 20px 10px;
+	margin: 52px 10px 7px 10px;
 }
 
 .iconBusket,
@@ -1157,8 +1157,8 @@ input[type='phone'],
 	flex-direction: column;
 	justify-content: space-around;
 	position: absolute;
-	top: 25%;
-	left: 25%;
+	top: 6%;
+    left: 29%;
 }
 
 .artic-goods-container {
@@ -1580,11 +1580,16 @@ input[type='phone'],
 
 .box-modal_close{
 	position: absolute;
-    left: 658px;
+    left: 642px;
     top: 5px;
     cursor: pointer;
 }
 
+.arcticmodal-overlay{
+	opacity: 0.6;
+    background: rgba(51, 51, 51, 0.8);
+    backdrop-filter: blur(20px);
+}
 
 /*Скрываем кнопку "Прсмотр корзины*/
 .added_to_cart {

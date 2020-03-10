@@ -1595,3 +1595,11 @@ input[type='phone'],
 .added_to_cart {
 	display: none;
 }
+
+@media (min-width: 300px) and (max-width:440px) {
+.arcticmodal-overlay {
+    opacity: 0;
+   
+}
+
+}

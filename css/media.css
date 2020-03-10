@@ -883,11 +883,6 @@
 	top: 0px;
 }
 
-.arcticmodal-overlay {
-    opacity: 0;
-    background-color: transparent;
-    backdrop-filter: none;
-}
 
 
 }

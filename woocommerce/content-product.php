@@ -81,9 +81,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	<form method='post' action='#' class="form__item">
 		<div class="quantity left-top">
-			<input type='button' value='' class='minus' field='quantity' />
+			<input type='button' class='minus' field='quantity' />
 			<input type='text' name='quantity' value='0' class='qty' />
-			<input type='button' value='' class='plus' field='quantity' />
+			<input type='button' class='plus' field='quantity' />
 		</div>
 		<p class="quantity__text" id="text__left">Коробки</p>
 	</form>

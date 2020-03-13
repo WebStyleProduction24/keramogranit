@@ -34,6 +34,11 @@
 	.img-product img{
 		width: 120px;
 	}
+	.product_icon_price_icons_block {
+    
+    margin-left: 86px;
+    
+	}
 }
 
 
@@ -402,6 +407,11 @@
 	.busket_form span{
 		margin: 0 auto;
 	}
+	.product_icon_price_icons_block {
+   
+    margin-left: 87px;
+   
+}
 	
 	
 	
@@ -882,7 +892,11 @@
 	left: 299px;
 	top: 0px;
 }
-
+.product_icon_price {
+    
+    top: 242px;
+    
+}
 
 
 }

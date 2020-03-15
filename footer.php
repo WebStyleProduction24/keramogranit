@@ -150,7 +150,11 @@
 				<div class="arctic__line-1"></div>
 			</div>
 		</div>
+		<div class="footer">
+			<p>2019, Универдом</p>
+		</div>
 	</div>
+
 </div>
 
 <?php wp_footer(); ?>

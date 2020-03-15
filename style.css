@@ -991,6 +991,17 @@ footer {
 	justify-content: center;
 }
 
+.footer{
+	margin-top: 60px;
+
+	width: 100%;
+	height: 60px;
+	background: #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /*стили модального окна*/
 
 .generalPopupContainer {

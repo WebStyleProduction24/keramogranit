@@ -9,6 +9,9 @@
 		justify-content: center;
 		margin: 0 auto;
 /*		margin: 0 70px 0 70px;*/
+	}
+	.footer{
+		display: none;
 	}	
 	
 
@@ -17,7 +20,7 @@
 
 
 @media screen and (max-width: 1024px){
-	
+
 	.favourites{
 		margin: 0 20px 0 20px;
 	}
@@ -366,6 +369,9 @@
 	h2 {
 		font-size: 46px;
 	}
+	.footer{
+		display: flex;
+	}	
 
 	.total-block{
 		width: 95%;

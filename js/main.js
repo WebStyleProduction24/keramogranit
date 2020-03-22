@@ -233,4 +233,35 @@ $(document).ready(function () {
 		}
 	});
 
+
+
+	
+	/**
+	 * Sets product images for the chosen variation
+	 */
+	$.fn.wc_variations_image_update = function( variation ) {
+		var $form             = this,
+			$product          = $form.closest( '.product' ),
+			$product_gallery  = $product.find( '.images' ),
+			$gallery_nav      = $product.find( '.flex-control-nav' ),
+			$product_img_wrap = $product_gallery.find( '.woocommerce-product-gallery__image, .woocommerce-product-gallery__image--placeholder' ).eq( 0 ),
+			$product_img      = $product_img_wrap.find( '.wp-post-image' ),
+			$product_link     = $product_img_wrap.find( 'a' ).eq( 0 );
+
+		if ( variation && variation.image && variation.image.src && variation.image.src.length > 1 ) {
+			$product_img.wc_set_variation_attr( 'srcset', variation.image.srcset );
+		} else {
+			$form.wc_variations_image_reset();
+		}
+
+		window.setTimeout( function() {
+			$( window ).trigger( 'resize' );
+			$form.wc_maybe_trigger_slide_position_reset( variation );
+			$product_gallery.trigger( 'woocommerce_gallery_init_zoom' );
+		}, 20 );
+	};
+
+
+
+
 });

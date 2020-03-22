@@ -695,6 +695,7 @@ main {
 
 .product_icon:hover form {
 	display: flex;
+	width: 180px;
 }
 
 .product_icon:hover .product_icon-img {
@@ -734,6 +735,8 @@ main {
 .product_icon:hover .thumbs__item li {
 	margin-left: 0;
 }
+
+
 
 .product_icon:hover .thumbs__item img {
 	border: none;
@@ -882,6 +885,8 @@ main {
 .product_icon_price_icons_block {
 	display: flex;
 	flex-direction: row;
+	margin-left: 123px;
+    position: absolute;
 }
 
 .product_icon_price_icons_block a.button,
@@ -894,8 +899,21 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 52px 10px 7px 10px;
+	position: absolute;
+    top: 292px;
+    left: 15px;
 }
+
+.product_icon:hover .product_icon_price {
+	display: flex;	
+    position: relative;
+    top: -3px;
+    left: 16px;
+    margin-left: 0px;
+    margin-top: 53px;
+    margin-bottom: 20px;
+}
+
 
 .iconBusket,
 .iconHeart {
@@ -965,6 +983,16 @@ main {
 }
 
 footer {
+	width: 100%;
+	height: 60px;
+	background: #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer{
+	margin-top: 60px;
 	width: 100%;
 	height: 60px;
 	background: #eeeeee;
@@ -1179,7 +1207,7 @@ input[type='phone'],
 	justify-content: space-around;
 	position: absolute;
 	top: 6%;
-    left: 29%;
+    left: 28%;
 }
 
 .artic-goods-container {

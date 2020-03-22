@@ -182,3 +182,16 @@ function custom_variation_price_default( $price, $product ) {
 
   return woocommerce_price($price);
 }
+
+remove_action( 'woocommerce_locate_template', array('wcva_override_variable_template','wcva_override_default_variable_template'), 10, 3 );
+add_action( 'woocommerce_locate_template', 'wcva_override_default_variable_template_custom');
+
+function wcva_override_default_variable_template_custom($template) {
+
+	if (  strstr($template, 'variable.php')) {
+		$template = get_template_directory() . '/woocommerce/single-product/add-to-cart/variable.php';
+	}
+
+	return $template;
+
+}

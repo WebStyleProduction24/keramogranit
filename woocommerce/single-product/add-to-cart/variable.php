@@ -77,7 +77,7 @@ do_action( 'woocommerce_before_add_to_cart_form' );
                     
 					$newvalues = get_terms( $taxonomies, $args);
 					
-					$fields   = new wcva_swatch_form_fields();
+					$fields   = new wcva_swatch_form_fields_();
 					
 					$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean(    $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) : $product->get_variation_default_attribute( $attribute_name );
 				    

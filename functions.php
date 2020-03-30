@@ -15,6 +15,13 @@ function styles() {
 	wp_enqueue_style( 'arcticmodal-css', get_template_directory_uri().'/css/jquery.arcticmodal-0.3.css', '', '0.3');
 	wp_enqueue_style( 'media-css', get_template_directory_uri().'/css/media.css');
 	wp_enqueue_style( 'cart-hover-css', get_template_directory_uri().'/css/cart-hover.css');
+
+	//Переподключаем стили из плагина woocommerce-colororimage-variation-select на стили темы
+	if (is_plugin_active( 'woocommerce/woocommerce.php' ) && is_plugin_active( 'woocommerce-colororimage-variation-select/woocommerce-colororimage-variation-select.php' ) ) {
+		wp_deregister_style('wcva-frontend');
+	  wp_enqueue_style( 'wcva-frontend-custom-wsp24', get_template_directory_uri().'/css/front-end.css' );
+	}
+
 }
 add_action('wp_enqueue_scripts', 'styles');
 
@@ -183,15 +190,25 @@ function custom_variation_price_default( $price, $product ) {
   return woocommerce_price($price);
 }
 
-remove_action( 'woocommerce_locate_template', array('wcva_override_variable_template','wcva_override_default_variable_template'), 10, 3 );
-add_action( 'woocommerce_locate_template', 'wcva_override_default_variable_template_custom');
 
-function wcva_override_default_variable_template_custom($template) {
 
-	if (  strstr($template, 'variable.php')) {
-		$template = get_template_directory() . '/woocommerce/single-product/add-to-cart/variable.php';
+if (is_plugin_active( 'woocommerce/woocommerce.php' ) && is_plugin_active( 'woocommerce-colororimage-variation-select/woocommerce-colororimage-variation-select.php' ) ) {
+	// Подключаем кастомный wcva_swatch_form_fields.php из темы
+	require 'templates/wcva_swatch_form_fields.php';
+
+	//Переключаем variable.php плагина woocommerce-colororimage-variation-select на кастомный из текущей темы
+
+	remove_action( 'woocommerce_locate_template', array('wcva_override_variable_template','wcva_override_default_variable_template'), 10, 3 );
+	add_action( 'woocommerce_locate_template', 'wcva_override_default_variable_template_custom');
+
+	function wcva_override_default_variable_template_custom($template) {
+
+		if (  strstr($template, 'variable.php')) {
+			$template = get_template_directory() . '/woocommerce/single-product/add-to-cart/variable.php';
+		}
+
+		return $template;
+
 	}
-
-	return $template;
 
 }

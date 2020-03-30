@@ -1,6 +1,15 @@
 # keramogranit
 Разработка сайта для ООО "СИСТЕМА" по договору №2019-11-1 от 29.11.2019г.
 
+<strong>30.03.2020 (v.0.2.6)</strong> - <i>Добавлены новые файлы Темы</i>
+<ul>
+  <li><strong>woocommerce/single-product/product-image.php</strong> - отвечает за вывод главного изображение товара в карточке</li>
+  <li><strong>css/front-end.css</strong> - стили выбора вариаций товара</li>
+  <li><strong>templates/wcva_swatch_form_fields.php</strong> - содержит фунции вывода и выбора вариаций товара</li>
+</ul>
+
+<hr>
+
 <strong>18.02.2020 (v.0.2.5)</strong>
 <u>Удалены файлы из шаблона</u>
 <ul>
@@ -25,9 +34,9 @@
 <strong>10.02.2020 (v.0.2.3)</strong> - <i>Добавлены новые файлы Темы</i>
 <ul>
   <li><strong>content-single-product.php</strong> - отвечает за вывод карточки товара</li>
-  <li><strong>woocommerce/sinfle-product/meta.php</strong> - отвечает за вывод артикула товара</li>
-  <li><strong>woocommerce/sinfle-product/add-to-cart/variable.php</strong> - отвечает за меню выбора опций вариативного товара</li>
-  <li><strong>woocommerce/sinfle-product/stock.php</strong> - выводит статус наличия товара</li>
+  <li><strong>woocommerce/single-product/meta.php</strong> - отвечает за вывод артикула товара</li>
+  <li><strong>woocommerce/single-product/add-to-cart/variable.php</strong> - отвечает за меню выбора опций вариативного товара</li>
+  <li><strong>woocommerce/single-product/stock.php</strong> - выводит статус наличия товара</li>
   <li><strong>woocommerce/ti-addtowishlist.php</strong> - отображает иконку добавления товара в избранное</li>
 </ul>
 <p>Добавлена папка <i><u>woocommerce/sinfle-product</u></i> для подключаемых файлов в шаблонах темы</p>

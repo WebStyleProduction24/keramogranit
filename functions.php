@@ -101,8 +101,9 @@ function woo_product_loop_thumbnail( $post = null ) {
 
 //Хук вывода наименования в плитке товаров
 function woo_product_loop_title() {
+	global $product;
 	$title = get_the_title();
-	$p = '<p class="modal__window">' . $title . '</p>';
+	$p = '<p class="modal__window" data-product_id="' . $product->get_id() . '">' . $title . '</p>';
 	echo $p;
 }
 

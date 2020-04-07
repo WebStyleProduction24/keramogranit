@@ -5,7 +5,7 @@ $(document).ready(function () {
 		$('.orderACall').slideToggle(500);
 	});
 	$('#closeorderACall').click(function () {
-		$('.orderACall').slideUp(500);
+		$('.orderACall, .popup').slideUp(500);
 	});
 
 
@@ -14,9 +14,7 @@ $(document).ready(function () {
 		$('.popup').slideToggle(500);
 //		if('.orderACall')
 	});
-	$('#close').click(function () {
-		$('.popup').slideUp(500);
-	});
+	
 
 	$('#mailMobile').click(function () {
 	
